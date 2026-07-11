@@ -1,0 +1,172 @@
+import { Page } from "page.slint";
+import {
+    GroupBox,
+    TabWidget,
+    VerticalBox,
+    LineEdit,
+    HorizontalBox,
+    Button,
+} from "std-widgets.slint";
+
+export component Triangles inherits Page {
+    title: "Triangle Calculator";
+
+    property <image> right-triangle-svg: @image-url("images/right-triangle.svg");
+    callback calculate_triangle(string, string, string, string, string);
+
+    in-out property <string> hypotenuse-text: "";
+    in-out property <string> cathetus1-text: "";
+    in-out property <string> cathetus2-text: "";
+    in-out property <string> abc-angle: "";
+    in-out property <string> acb-angle: "";
+
+    property <length> result-size: 16px;
+
+    function do_calculate() {
+        root.calculate_triangle(hypotenuse-text, cathetus1-text, cathetus2-text, abc-angle, acb-angle);
+    }
+
+    GroupBox {
+        TabWidget {
+            Tab {
+                // Scoaterea Rectangle-ului gol care stătea deasupra layout-ului
+                title: "Dreptunghic";
+
+                VerticalBox {
+                    HorizontalBox {
+                        alignment: start;
+                        padding: 0px;
+                        spacing: 5px;
+                        Button {
+                            text: "Calculate";
+                            primary: true;
+                            clicked => {
+                                root.do_calculate();
+                            }
+                        }
+
+                        Rectangle {
+                            border-radius: 3px;
+                            background: red;
+
+                            Button {
+                                text: "Clear";
+                                clicked => {
+                                    root.hypotenuse-text = "";
+                                    root.cathetus1-text = "";
+                                    root.cathetus2-text = "";
+                                    root.abc-angle = "";
+                                    root.acb-angle = "";
+                                }
+                            }
+                        }
+                    }
+
+                    HorizontalBox {
+                        alignment: start;
+                        VerticalBox {
+                            alignment: start;
+                            Text {
+                                text: "Hypotenuse BC";
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.hypotenuse-text; 
+                                input-type: decimal;
+                                accepted => { root.do_calculate(); }
+                            }
+
+                            Text {
+                                text: "Cathetus 1 AB: ";
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.cathetus1-text;
+                                input-type: decimal;
+                                accepted => { root.do_calculate(); }
+                            }
+
+                            Text {
+                                text: "Cathetus 2 AC";
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.cathetus2-text;
+                                input-type: decimal;
+                                accepted => { root.do_calculate(); }
+                            }
+                        }
+
+                        VerticalBox {
+                            alignment: start;
+                            Text {
+                                text: "ABC angle:";
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.abc-angle;
+                                input-type: decimal;
+                                accepted => { root.do_calculate(); }
+                            }
+
+                            Text {
+                                text: "ACB angle:";
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.acb-angle; 
+                                input-type: decimal;
+                                accepted => { root.do_calculate(); }
+                            }
+                        }
+
+                        Image {
+                            horizontal-alignment: ImageHorizontalAlignment.center;
+                            source: right-triangle-svg;
+                            height: 300px;
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    GroupBox {
+        HorizontalBox {
+            VerticalBox {
+                Text {
+                    text: "Hypotenuse BC: " + root.hypotenuse-text + " mm";
+                    font-size: result-size;
+                }
+
+                Text {
+                    text: "Cathetus 1 AB: " + root.cathetus1-text + " mm";
+                    font-size: result-size;
+                }
+
+                Text {
+                    text: "Cathetus 2 AC: " + root.cathetus2-text + " mm";
+                    font-size: result-size;
+                }
+            }
+
+            VerticalBox {
+                Text {
+                    text: "Angle ABC: " + root.abc-angle + "°";
+                    font-size: result-size;
+                }
+
+                Text {
+                    text: "Angle ACB: " + root.acb-angle + "°";
+                    font-size: result-size;
+                }
+            }
+        }
+    }
+}

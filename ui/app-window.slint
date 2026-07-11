@@ -1,0 +1,60 @@
+import { Button, VerticalBox } from "std-widgets.slint";
+import { SideBar } from "side_bar.slint";
+import { NumberOfElementsPage } from "number_of_elements.slint";
+import { Triangles } from "triangle.slint";
+
+export component AppWindow inherits Window {
+    title: "Inventor Calculator Helper";
+
+    icon: @image-url("images/ico.svg");
+    
+    preferred-width: 1000px;
+    preferred-height: 500px;
+
+    // Proprietăți globale gestionate de Rust
+    in-out property <string> computed-distance: "0";
+    in-out property <string> computed-center-distance: "0";
+    in-out property <string> computed-hypotenuse-text: "";
+    in-out property <string> computed-cathetus1-text: "";
+    in-out property <string> computed-cathetus2-text: "";
+    in-out property <string> computed-abc-angle: "";
+    in-out property <string> computed-acb-angle: "";
+
+    callback calculate-distance(string, string, string);
+    callback calculate-triangle(string, string, string, string, string);
+
+    HorizontalLayout {
+        side-bar := SideBar {
+            accessible-role: navigation;
+            accessible-label: "Sidebar";
+            model: [
+                "Number of elements",
+                "Triangles",
+            ];
+        }
+        VerticalLayout {
+            accessible-role: main;
+            accessible-label: "Content";
+
+            if(side-bar.current-item == 0): NumberOfElementsPage {
+                distance: root.computed-distance;
+                center-distance: root.computed-center-distance;
+                submit_values(total, thickness, count) => {
+                    root.calculate-distance(total, thickness, count);
+                }
+            }
+            if(side-bar.current-item == 1): Triangles {
+                // IMPORTANT: Folosim <=> pentru sincronizare în timp real în ambele sensuri
+                hypotenuse-text <=> root.computed-hypotenuse-text;
+                cathetus1-text <=> root.computed-cathetus1-text;
+                cathetus2-text <=> root.computed-cathetus2-text;
+                abc-angle <=> root.computed-abc-angle;
+                acb-angle <=> root.computed-acb-angle;
+                
+                calculate_triangle(hypotenuse, cathetus1, cathetus2, abc, acb) => {
+                    root.calculate-triangle(hypotenuse, cathetus1, cathetus2, abc, acb);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+import {
+    Button,
+    GroupBox,
+    VerticalBox,
+    LineEdit,
+    SpinBox,
+    HorizontalBox,
+} from "std-widgets.slint";
+
+import { Page } from "page.slint";
+
+export component NumberOfElementsPage inherits Page {
+    title: "Number Of Elements";
+
+    in-out property <string> center-distance: "0";
+    in-out property <string> distance: "0";
+    callback submit_values(string, string, string);
+
+    property <image> center: @image-url("images/circle.svg");
+    property <image> edge: @image-url("images/edge.svg");
+
+    // Main calculation function
+    function do_calculate() {
+        root.submit_values(total_distance.text, thickness.text, number_of_objects.text);
+    }
+
+    GroupBox {
+
+        VerticalBox {
+            spacing: 3px;
+            alignment: start;
+            padding: 10px;
+
+            HorizontalBox {
+                alignment: start;
+                padding: 0px;
+                spacing: 5px;
+                Button {
+                    text: "Calculate";
+                    primary: true;
+                    clicked => {
+                        root.do_calculate();
+                    }
+                }
+
+                Rectangle {
+                    background: red;
+                    border-radius: 3px;
+                    Button {
+                        text: "Clear";
+                        clicked => {
+                            total_distance.text = "";
+                            thickness.text = "";
+                            number_of_objects.text = "0";
+                            root.distance = "0";
+                            root.center-distance = "0"
+                        }
+                    }
+                }
+            }
+
+            Text {
+                text: "Total Distance (mm): ";
+            }
+
+            total_distance := LineEdit {
+                placeholder-text: "0.0";
+                text: "";
+                input-type: decimal;
+                // Triggers when Enter is pressed in this field
+                accepted => { root.do_calculate(); }
+            }
+
+            Text {
+                text: "Object Thickness (mm): ";
+            }
+
+            thickness := LineEdit {
+                placeholder-text: "0.0";
+                text: "";
+                input-type: decimal;
+                // Triggers when Enter is pressed in this field
+                accepted => { root.do_calculate(); }
+            }
+
+            Text {
+                text: "Number of Objects (mm): ";
+            }
+
+            number_of_objects := LineEdit {
+                placeholder-text: "0";
+                text: "0";
+                input-type: number;
+                // Triggers when Enter is pressed in this field
+                accepted => { root.do_calculate(); }
+            }
+        }
+    }
+
+    GroupBox {
+        HorizontalLayout {
+            VerticalBox {
+                Image {
+                    source: edge;
+                }
+
+                Text {
+                    text: "Distance from the edge: " + root.distance + " mm";
+                    font-size: 18px;
+                }
+            }
+
+            VerticalBox {
+                Image {
+                    source: center;
+                }
+
+                Text {
+                    text: "Distance from the center: " + root.center-distance + " mm";
+                    font-size: 18px;
+
+                }
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ use std::error::Error;
 
 // Declare the folder-module. Rust looks for object_calculator/mod.rs automatically!
 mod object_calculator;
+mod triangle_calculator;
 
 slint::include_modules!();
 

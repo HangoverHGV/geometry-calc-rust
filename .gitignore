@@ -4411,3 +4411,5 @@
 /.idea/geometry-calc-rust.iml
 /.idea/modules.xml
 /.idea/vcs.xml
+/target
+/.idea

@@ -109,7 +109,7 @@ export component Triangles inherits Page {
                             abc := LineEdit {
                                 placeholder-text: "0.0";
                                 text: abc-angle;
-                                input-type: number;
+                                input-type: decimal;
                                 accepted => { root.do_calculate(); }
                             }
 
@@ -120,7 +120,7 @@ export component Triangles inherits Page {
                             acb := LineEdit {
                                 placeholder-text: "0.0";
                                 text: acb-angle;
-                                input-type: number;
+                                input-type: decimal;
                                 accepted => { root.do_calculate(); }
                             }
                         }

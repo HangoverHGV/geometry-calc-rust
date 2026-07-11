@@ -14,6 +14,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Call the re-exported function from your module
     object_calculator::setup_callbacks(&ui);
 
+    triangle_calculator::setup_callbacks(&ui);
+
     ui.run()?;
     Ok(())
 }

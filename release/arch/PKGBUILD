@@ -1,0 +1,36 @@
+# Maintainer: HangoverHGV
+pkgname=inventor-math-calculator
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="A sleek geometry and spacer calculator helper built with Rust and Slint UI."
+arch=('x86_64')
+url="https://github.com/HangoverHGV/geometry-calc-rust"
+license=('MIT')
+depends=('fontconfig' 'libxcb')
+makedepends=('rust' 'cargo')
+
+source=()
+sha256sums=()
+
+package() {
+  # Change directory to the project root (exactly 2 directories up from release/arch)
+  cd "$startdir/../.."
+
+  echo "🔨 Compiling the local binary in Release mode..."
+  cargo build --release
+
+  echo "📦 Packaging the application for the system..."
+  # 1. Install the compiled binary into the system binary path
+  install -Dm755 "target/release/inventor-math-calculator" "${pkgdir}/usr/bin/inventor-math-calculator"
+
+  # 2. Install your custom app icon
+  install -Dm644 "ui/images/ico.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/inventor-math-calculator.svg"
+
+  # 3. Generate and install the desktop launcher shortcut
+  # Fix: Escaped the backslash before 'Icon' to prevent string interpretation bugs
+  echo -e "[Desktop Entry]\nName=Inventor Calculator Helper\nExec=inventor-math-calculator\nIcon=inventor-math-calculator\nType=Application\nTerminal=false\nCategories=Utility;Math;Science;" > "inventor-math-calculator.desktop"
+  install -Dm644 "inventor-math-calculator.desktop" "${pkgdir}/usr/share/applications/inventor-math-calculator.desktop"
+
+  # Clean up the temporary local desktop file
+  rm "inventor-math-calculator.desktop"
+}

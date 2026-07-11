@@ -1,0 +1,83 @@
+[config]
+skip_core_tasks = true
+
+# ==========================================
+# 1. ARCH LINUX TASKS
+# ==========================================
+
+[tasks.clean-arch]
+description = "Clean up previous Arch Linux build artifacts"
+condition = { platforms = ["linux"] }
+script = [
+    "echo '🧹 Cleaning up old Arch packages...'",
+    "cd release/arch && rm -rf pkg/ src/ *.pkg.tar.zst"
+]
+
+[tasks.build-arch]
+description = "Build a clean, production-ready Arch Linux package"
+condition = { platforms = ["linux"] }
+dependencies = ["clean-arch"]
+script = [
+    "echo '📦 Generating clean Arch Linux installer...'",
+    "cd release/arch && makepkg -Cf",
+    "echo '✅ Arch Linux installer package created successfully in release/arch/'"
+]
+
+# ==========================================
+# 2. WINDOWS TASKS
+# ==========================================
+
+[tasks.clean-windows]
+description = "Clean up previous Windows builds"
+condition = { platforms = ["windows"] }
+script_runner = "powershell"
+script_extension = "ps1"
+script = [
+    "Write-Host 'Cleaning up old Windows artifacts...'",
+    "if (Test-Path 'release/windows') { Remove-Item -Recurse -Force 'release/windows' }",
+    "New-Item -ItemType Directory -Force -Path 'release/windows' | Out-Null"
+]
+
+[tasks.build-windows]
+description = "Compile and generate a Windows Setup Installer"
+condition = { platforms = ["windows"] }
+dependencies = ["clean-windows"]
+script_runner = "powershell"
+script_extension = "ps1"
+script = [
+    "Write-Host 'Compiling natively for Windows (Release Mode)...'",
+    "cargo build --release",
+    
+    "Write-Host 'Packaging assets for the installer...'",
+    "Copy-Item 'target/release/inventor-math-calculator.exe' 'release/windows/'",
+    "New-Item -ItemType Directory -Force -Path 'release/windows/ui/images' | Out-Null",
+    "Copy-Item -Path 'ui/images/*' -Destination 'release/windows/ui/images/' -Recurse",
+    
+    "Write-Host 'Copying installer configuration script...'",
+    "Copy-Item 'build_assets/installer.iss' 'release/windows/'",
+    
+    "Write-Host 'Checking for Inno Setup Compiler...'",
+    "$iscc = \"C:\\Program Files (x86)\\Inno Setup 6\\ISCC.exe\"",
+    "if (-not (Test-Path $iscc)) {",
+    "    Write-Warning 'Inno Setup compiler was not found at standard path!'",
+    "    Write-Warning 'Please install it or check your installation path.'",
+    "    exit 1",
+    "}",
+
+    "Write-Host 'Compiling Inno Setup Installer executable...'",
+    "& $iscc release/windows/installer.iss",
+    
+    "Write-Host 'Windows Setup Wizard prepared successfully!'",
+    "Write-Host 'Installer Output: release/windows/inventor-calculator-helper-setup.exe'"
+]
+
+# ==========================================
+# 3. UNIVERSAL RELEASE AUTOMATION
+# ==========================================
+
+[tasks.release-all]
+description = "Detects the OS platform and runs the correct build script"
+run_task = [
+    { name = "build-windows", condition = { platforms = ["windows"] } },
+    { name = "build-arch", condition = { platforms = ["linux"] } }
+]

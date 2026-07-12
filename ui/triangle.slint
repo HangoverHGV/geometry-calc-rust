@@ -14,6 +14,14 @@ export component Triangles inherits Page {
     property <image> right-triangle-svg: @image-url("images/right-triangle.svg");
     callback calculate_triangle(string, string, string, string, string);
 
+    // 1. INPUT PROPERTIES: Keep track of ONLY what the user types
+    property <string> input-hypotenuse: "";
+    property <string> input-cathetus1: "";
+    property <string> input-cathetus2: "";
+    property <string> input-abc-angle: "";
+    property <string> input-acb-angle: "";
+
+    // 2. RESULT PROPERTIES: Updated exclusively by your Rust code
     in-out property <string> hypotenuse-text: "";
     in-out property <string> cathetus1-text: "";
     in-out property <string> cathetus2-text: "";
@@ -22,14 +30,14 @@ export component Triangles inherits Page {
 
     property <length> result-size: 16px;
 
+    // Send what the user is typing to Rust
     function do_calculate() {
-        root.calculate_triangle(hypotenuse-text, cathetus1-text, cathetus2-text, abc-angle, acb-angle);
+        root.calculate_triangle(input-hypotenuse, input-cathetus1, input-cathetus2, input-abc-angle, input-acb-angle);
     }
 
     GroupBox {
         TabWidget {
             Tab {
-                // Scoaterea Rectangle-ului gol care stătea deasupra layout-ului
                 title: "Dreptunghic";
 
                 VerticalBox {
@@ -37,13 +45,6 @@ export component Triangles inherits Page {
                         alignment: start;
                         padding: 0px;
                         spacing: 5px;
-                        Button {
-                            text: "Calculate";
-                            primary: true;
-                            clicked => {
-                                root.do_calculate();
-                            }
-                        }
 
                         Rectangle {
                             border-radius: 3px;
@@ -52,11 +53,21 @@ export component Triangles inherits Page {
                             Button {
                                 text: "Clear";
                                 clicked => {
+                                    // Reset inputs
+                                    root.input-hypotenuse = "";
+                                    root.input-cathetus1 = "";
+                                    root.input-cathetus2 = "";
+                                    root.input-abc-angle = "";
+                                    root.input-acb-angle = "";
+                                    
+                                    // Reset results
                                     root.hypotenuse-text = "";
                                     root.cathetus1-text = "";
                                     root.cathetus2-text = "";
                                     root.abc-angle = "";
                                     root.acb-angle = "";
+                                    
+                                    root.do_calculate();
                                 }
                             }
                         }
@@ -66,62 +77,47 @@ export component Triangles inherits Page {
                         alignment: start;
                         VerticalBox {
                             alignment: start;
-                            Text {
-                                text: "Hypotenuse BC";
-                            }
-
+                            Text { text: "Hypotenuse BC"; }
                             LineEdit {
                                 placeholder-text: "0.0";
-                                text <=> root.hypotenuse-text; 
+                                text <=> root.input-hypotenuse; 
                                 input-type: decimal;
-                                accepted => { root.do_calculate(); }
+                                edited => { root.do_calculate(); }
                             }
 
-                            Text {
-                                text: "Cathetus 1 AB: ";
-                            }
-
+                            Text { text: "Cathetus 1 AB: "; }
                             LineEdit {
                                 placeholder-text: "0.0";
-                                text <=> root.cathetus1-text;
+                                text <=> root.input-cathetus1;
                                 input-type: decimal;
-                                accepted => { root.do_calculate(); }
+                                edited => { root.do_calculate(); }
                             }
 
-                            Text {
-                                text: "Cathetus 2 AC";
-                            }
-
+                            Text { text: "Cathetus 2 AC"; }
                             LineEdit {
                                 placeholder-text: "0.0";
-                                text <=> root.cathetus2-text;
+                                text <=> root.input-cathetus2;
                                 input-type: decimal;
-                                accepted => { root.do_calculate(); }
+                                edited => { root.do_calculate(); }
                             }
                         }
 
                         VerticalBox {
                             alignment: start;
-                            Text {
-                                text: "ABC angle:";
-                            }
-
+                            Text { text: "ABC angle:"; }
                             LineEdit {
                                 placeholder-text: "0.0";
-                                text <=> root.abc-angle;
+                                text <=> root.input-abc-angle;
                                 input-type: decimal;
-                                accepted => { root.do_calculate(); }
+                                edited => { root.do_calculate(); }
                             }
 
-                            Text {
-                                text: "ACB angle:";
-                            }
-
+                            Text { text: "ACB angle:"; }
                             LineEdit {
                                 placeholder-text: "0.0";
-                                text <=> root.acb-angle; 
+                                text <=> root.input-acb-angle; 
                                 input-type: decimal;
-                                accepted => { root.do_calculate(); }
+                                edited => { root.do_calculate(); }
                             }
                         }
 
@@ -144,12 +140,10 @@ export component Triangles inherits Page {
                     text: "Hypotenuse BC: " + root.hypotenuse-text + " mm";
                     font-size: result-size;
                 }
-
                 Text {
                     text: "Cathetus 1 AB: " + root.cathetus1-text + " mm";
                     font-size: result-size;
                 }
-
                 Text {
                     text: "Cathetus 2 AC: " + root.cathetus2-text + " mm";
                     font-size: result-size;
@@ -161,7 +155,6 @@ export component Triangles inherits Page {
                     text: "Angle ABC: " + root.abc-angle + "°";
                     font-size: result-size;
                 }
-
                 Text {
                     text: "Angle ACB: " + root.acb-angle + "°";
                     font-size: result-size;

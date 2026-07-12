@@ -35,13 +35,8 @@ export component NumberOfElementsPage inherits Page {
                 alignment: start;
                 padding: 0px;
                 spacing: 5px;
-                Button {
-                    text: "Calculate";
-                    primary: true;
-                    clicked => {
-                        root.do_calculate();
-                    }
-                }
+                
+                // --- Removed the "Calculate" Button entirely ---
 
                 Rectangle {
                     background: red;
@@ -53,7 +48,10 @@ export component NumberOfElementsPage inherits Page {
                             thickness.text = "";
                             number_of_objects.text = "0";
                             root.distance = "0";
-                            root.center-distance = "0"
+                            root.center-distance = "0";
+                            
+                            // Send cleared states to Rust to reset the output dimensions immediately
+                            root.do_calculate();
                         }
                     }
                 }
@@ -67,7 +65,8 @@ export component NumberOfElementsPage inherits Page {
                 placeholder-text: "0.0";
                 text: "";
                 input-type: decimal;
-                // Triggers when Enter is pressed in this field
+                // 👇 This fires on every single keystroke change!
+                edited => { root.do_calculate(); }
                 accepted => { root.do_calculate(); }
             }
 
@@ -79,7 +78,8 @@ export component NumberOfElementsPage inherits Page {
                 placeholder-text: "0.0";
                 text: "";
                 input-type: decimal;
-                // Triggers when Enter is pressed in this field
+                // 👇 This fires on every single keystroke change!
+                edited => { root.do_calculate(); }
                 accepted => { root.do_calculate(); }
             }
 
@@ -91,7 +91,8 @@ export component NumberOfElementsPage inherits Page {
                 placeholder-text: "0";
                 text: "0";
                 input-type: number;
-                // Triggers when Enter is pressed in this field
+                // 👇 This fires on every single keystroke change!
+                edited => { root.do_calculate(); }
                 accepted => { root.do_calculate(); }
             }
         }

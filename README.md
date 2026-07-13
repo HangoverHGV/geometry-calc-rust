@@ -1,6 +1,18 @@
 # 3D CAD Helper
-
 This is an app created to ease the work with any 3D CAD software.
+
+## Release
+
+All release scripts are covered in [Makefile.toml](Makefile.toml). The command below will list all the details of the file
+
+```shell
+cargo make --list-all-steps
+```
+
+Build for current platform only:
+```shell
+cargo make release-all
+```
 
 ## Number of elements
 ![NofEl.png](README_IMGs/NofEl.png)

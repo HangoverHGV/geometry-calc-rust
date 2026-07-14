@@ -2,6 +2,7 @@ import { Button, VerticalBox } from "std-widgets.slint";
 import { SideBar } from "side_bar.slint";
 import { NumberOfElementsPage } from "number_of_elements.slint";
 import { Triangles } from "triangle.slint";
+import { ForceCalculator } from "force_calculator.slint";
 
 export component AppWindow inherits Window {
     title: "Inventor Calculator Helper";
@@ -42,6 +43,7 @@ export component AppWindow inherits Window {
             model: [
                 "Number of elements",
                 "Triangles",
+                "Force Calculator"
             ];
         }
         VerticalLayout {
@@ -67,6 +69,7 @@ export component AppWindow inherits Window {
                     root.calculate-triangle(hypotenuse, cathetus1, cathetus2, abc, acb);
                 }
             }
+            if(side-bar.current-item ==2): 
         }
     }
 }

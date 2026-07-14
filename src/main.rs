@@ -17,6 +17,8 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     triangle_calculator::setup_callbacks(&ui);
 
+    force_calculator::setup_ui_dropdowns(&ui);
+
     ui.run()?;
     Ok(())
 }

@@ -8,27 +8,31 @@ import {
 } from "std-widgets.slint";
 
 import { Page } from "page.slint";
-
-export enum ForceUnits {
+// Ensure the exported enums are available
+export enum SlintForceUnits {
     Newtons,
-    Kilonewtons,
+    Kilonewton,
     KilogramForce,
     MetricTonsForce,
 }
-export enum MassUnits {
+
+export enum SlintMassUnits {
     Kilogram,
     MetricTon,
 }
 
-
 export component ForceCalculator inherits Page {
     title: "Force Elements";
-    in-out property <ForceUnits> exported_force_unit;
-    in-out property <string> exported_force;
+    // 1. Data arrays passed down from AppWindow
+    in property <[string]> force-unit-options;
+    in property <[string]> mass-unit-options;
 
-    in-out property <MassUnits> exported_mass_unit;
-    in-out property <string> exported_mass;
+    // 2. Outgoing computed results
+    in property <string> computed-force;
+    in property <string> computed-mpa;
 
+    // 3. Callback to execute the Rust calculation
+    callback calculate-force(string, string, string, string);
     // Main calculation function
     function do_calculate() {
         // root.submit_values(total_distance.text, thickness.text, number_of_objects.text);
@@ -83,7 +87,8 @@ export component ForceCalculator inherits Page {
                     }
                 }
                 mass_unit:= ComboBox {
-                    model: [MassUnits.Kilogram, MassUnits.MetricTon];
+                    model: root.mass-unit-options;
+                    selected(current-value) => { root.do_calculate() }
                 }
             }
 

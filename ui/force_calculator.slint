@@ -88,7 +88,7 @@ export component ForceCalculator inherits Page {
                 }
                 mass_unit:= ComboBox {
                     model: root.mass-unit-options;
-                    selected(current-value) => { root.do_calculate() }
+                    selected => { root.do_calculate() }
                 }
             }
 

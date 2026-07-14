@@ -1,10 +1,10 @@
-use slint::{ SharedString, ModelRc, VecModel, ComponentHandle };
+use slint::{ SharedString, ModelRc, VecModel };
 use crate::AppWindow;
-
+use strum::{EnumIter, IntoEnumIterator};
 
 pub const DEFAULT_GRAVITY: f64 = 9.80665;
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, EnumIter)]
 pub enum ForceUnits{
     Newtons,
     Kilonewton,
@@ -13,6 +13,11 @@ pub enum ForceUnits{
 }
 
 impl ForceUnits{
+
+    pub fn get_options_model() -> Vec<SharedString> {
+        Self::iter().map(|unit| {unit.to_shared_string()}).collect()
+    }
+
     pub fn to_newtons(&self, val: f64) -> f64 {
         match *self {
             ForceUnits::Newtons => val,
@@ -41,12 +46,16 @@ impl ForceUnits{
     }
 }
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, EnumIter)]
 pub enum MassUnits{
     Kilogram,
     MetricTon,
 }
 impl MassUnits {
+    pub fn get_options_model() -> Vec<SharedString> {
+        Self::iter().map(|unit| {unit.to_shared_string()}).collect()
+    }
+
     pub fn to_kg(&self, val: f64) -> f64{
         match *self {
             MassUnits::Kilogram => val,
@@ -64,16 +73,14 @@ impl MassUnits {
 }
 
 pub fn setup_ui_dropdowns(ui: &AppWindow){
-    let force_options =vec![
-        ForceUnits::Newtons.to_shared_string(),
-        ForceUnits::Kilonewton.to_shared_string(),
-        ForceUnits::KilogramForce.to_shared_string(),
-        ForceUnits::MetricTonsForce.to_shared_string(),
-    ];
-
+    let force_options = ForceUnits::get_options_model();
     let force_model = ModelRc::new(VecModel::from(force_options));
 
     ui.set_force_unit_options(force_model);
 
+    let mass_options = MassUnits::get_options_model();
+    let mass_model = ModelRc::new(VecModel::from(mass_options));
+
+    ui.set_mass_unit_options(mass_model);
 
 }

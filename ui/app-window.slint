@@ -11,14 +11,26 @@ export component AppWindow inherits Window {
     preferred-width: 1000px;
     preferred-height: 500px;
 
-    // Proprietăți globale gestionate de Rust
+    // Global Properties to be sent to rust 
+    //                  ###
+
+    // Object Distance Calculator
     in-out property <string> computed-distance: "0";
     in-out property <string> computed-center-distance: "0";
+
+    // Right Angle Calculator
     in-out property <string> computed-hypotenuse-text: "";
     in-out property <string> computed-cathetus1-text: "";
     in-out property <string> computed-cathetus2-text: "";
     in-out property <string> computed-abc-angle: "";
     in-out property <string> computed-acb-angle: "";
+
+    //Force Calculator
+    in property <[string]> force-unit-options;
+    in property <[string]> mass-unit-options;
+
+
+    //                  ###
 
     callback calculate-distance(string, string, string);
     callback calculate-triangle(string, string, string, string, string);

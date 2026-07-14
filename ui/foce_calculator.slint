@@ -1,0 +1,113 @@
+import {
+    Button,
+    GroupBox,
+    VerticalBox,
+    LineEdit,
+    SpinBox,
+    HorizontalBox, ComboBox,
+} from "std-widgets.slint";
+
+import { Page } from "page.slint";
+
+export enum ForceUnits {
+    Newtons,
+    Kilonewtons,
+    KilogramForce,
+    MetricTonsForce,
+}
+export enum MassUnits {
+    Kilogram,
+    MetricTon,
+}
+
+
+export component ForceCalculator inherits Page {
+    title: "Force Elements";
+    in-out property <ForceUnits> exported_force_unit;
+    in-out property <string> exported_force;
+
+    in-out property <MassUnits> exported_mass_unit;
+    in-out property <string> exported_mass;
+
+    // Main calculation function
+    function do_calculate() {
+        // root.submit_values(total_distance.text, thickness.text, number_of_objects.text);
+    }
+
+    GroupBox {
+
+        VerticalBox {
+            spacing: 3px;
+            alignment: start;
+            padding: 10px;
+
+            HorizontalBox {
+                alignment: start;
+                padding: 0px;
+                spacing: 5px;
+
+                // --- Removed the "Calculate" Button entirely ---
+
+                Rectangle {
+                    background: red;
+                    border-radius: 3px;
+                    Button {
+                        text: "Clear";
+                        clicked => {
+                            // total_distance.text = "";
+                            // thickness.text = "";
+                            // number_of_objects.text = "0";
+                            // root.distance = "0";
+                            // root.center-distance = "0";
+                            
+                            // Send cleared states to Rust to reset the output dimensions immediately
+                            root.do_calculate();
+                        }
+                    }
+                }
+            }
+
+            HorizontalBox {
+                VerticalBox {
+                    Text {
+                        text: "Mass";
+                    }
+
+                    mass := LineEdit {
+                        placeholder-text: "0.0";
+                        text: "";
+                        input-type: decimal;
+                        // This fires on every single keystroke change!
+                        edited => { root.do_calculate(); }
+                        accepted => { root.do_calculate(); }
+                    }
+                }
+                mass_unit:= ComboBox {
+                    model: [MassUnits.Kilogram, MassUnits.MetricTon];
+                }
+            }
+
+            thickness := LineEdit {
+                placeholder-text: "0.0";
+                text: "";
+                input-type: decimal;
+                // 👇 This fires on every single keystroke change!
+                edited => { root.do_calculate(); }
+                accepted => { root.do_calculate(); }
+            }
+
+            Text {
+                text: "Number of Objects (mm): ";
+            }
+
+            number_of_objects := LineEdit {
+                placeholder-text: "0";
+                text: "0";
+                input-type: number;
+                // 👇 This fires on every single keystroke change!
+                edited => { root.do_calculate(); }
+                accepted => { root.do_calculate(); }
+            }
+        }
+    }
+}

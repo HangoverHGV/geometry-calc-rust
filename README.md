@@ -1,29 +1,42 @@
 # 3D CAD Helper
-This is an app created to ease the work with any 3D CAD software.
 
-## Release
+A sleek, lightweight desktop utility designed to accelerate engineering and geometry calculations for CAD and fabrication workflows. Built entirely in **Rust** and powered by the **Slint UI** toolkit for native, hardware-accelerated performance.
 
-All release scripts are covered in [Makefile.toml](Makefile.toml). The command below will list all the details of the file
+---
 
+## 📸 Features & Usage Examples
+
+### Number of Elements
+Calculate precise placement spacing when relying on design constraints like edge distance or the center of a circle.
+
+![Number of Elements Screenshot](README_IMGs/NofEl.png)
+
+### Right-Angle Triangle Solver
+Quickly compute hypotenuse, opposite/adjacent sides (catheti), and angles without breaking your CAD workflow.
+
+![Right Angle Triangle Screenshot](README_IMGs/RightAngleTriangle.png)
+
+### Force & Pressure Calculator
+Instantly resolve mechanical force calculations, conversions, and target area calculations within an intuitive interface.
+
+![Force Calculator Screenshot](README_IMGs/force_calculator.png)
+---
+
+## 🛠️ Build & Release Automation
+
+This project uses `cargo-make` for local automation and integrates seamlessly with **GitHub Actions** for cross-platform distribution.
+
+### Prerequisites
+
+Ensure you have the following installed on your system:
+* [Rust & Cargo](https://rustup.rs/)
+* [cargo-make](https://github.com/sagiegurari/cargo-make) (Install via `cargo install cargo-make`)
+
+### Local Compilation
+
+To list all available build tasks defined in [Makefile.toml](Makefile.toml):
 ```shell
 cargo make --list-all-steps
 ```
 
-Build for current platform only:
-```shell
-cargo make release-all
-```
-
-## Number of elements
-![NofEl.png](README_IMGs/NofEl.png)
-Here is an example of usage. If the used constraint is an edge or the center of a circle.
-
-## Right Angle Triangle
-![RightAngleTriangle.png](README_IMGs/RightAngleTriangle.png)
-
-An example of Right Angle Triangle calculator of hypotenuse and catheters and Angles.
-
-
-# ToDo
-
-1. Calculator to convert kg (and kg/sqm ) to N and to MPa to use it in simulations.
+Build 

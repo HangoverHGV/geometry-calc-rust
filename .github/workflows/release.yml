@@ -26,8 +26,9 @@ jobs:
           toolchain: stable
           target: x86_64-pc-windows-msvc
 
+      # 👇 Fixed: Changed "davidB/rust-cargo-make-action@v1" to the correct repo
       - name: Install cargo-make
-        uses: davidB/rust-cargo-make-action@v1
+        uses: davidB/rust-cargo-make@v1
 
       - name: Cache Cargo Registry & Build
         uses: Swatinem/rust-cache@v2
@@ -76,12 +77,18 @@ jobs:
         with:
           key: "arch"
 
+      # We manually install cargo-make using 'cargo install' inside the Arch container
+      # directly so we don't have to worry about container/runner action incompatibilities.
       - name: Build native package with makepkg via cargo-make
         run: |
           useradd -m builder
           echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
           chown -R builder:builder .
+          
+          # Install cargo-make directly into the Arch environment
           su builder -c "cargo install --no-default-features --force cargo-make"
+          
+          # Execute your build-arch task
           su builder -c "cargo make build-arch"
 
       # Save the compiled .pkg.tar.zst package temporarily

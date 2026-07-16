@@ -2,7 +2,7 @@ import { Button, VerticalBox } from "std-widgets.slint";
 import { SideBar } from "side_bar.slint";
 import { NumberOfElementsPage } from "number_of_elements.slint";
 import { Triangles } from "triangle.slint";
-import { ForceCalculator } from "force_calculator.slint";
+import { ForceCalculator} from "force_calculator.slint";
 
 export component AppWindow inherits Window {
     title: "Inventor Calculator Helper";
@@ -29,7 +29,8 @@ export component AppWindow inherits Window {
     //Force Calculator
     in property <[string]> force-unit-options;
     in property <[string]> mass-unit-options;
-
+    in-out property <string> computed-force;
+    in-out property <string> computed-mpa;
 
     //                  ###
 
@@ -73,7 +74,13 @@ export component AppWindow inherits Window {
             if(side-bar.current-item ==2): ForceCalculator {
                 force-unit-options: root.force-unit-options;
                 mass-unit-options: root.mass-unit-options;
-                
+
+                computed-force <=> root.computed-force;
+                computed-mpa <=> root.computed-mpa;
+
+                calculate-force(mass, mass_unit, export_unit, area) => {
+                    root.calculate-force(mass, mass_unit, export_unit, area);
+                }
             } 
         }
     }

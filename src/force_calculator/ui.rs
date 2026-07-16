@@ -1,7 +1,8 @@
+use std::str::FromStr;
 use slint::{SharedString, ModelRc, VecModel, ComponentHandle};
 use crate::AppWindow;
 use strum::{EnumIter, IntoEnumIterator};
-use crate::force_calculator::force_calculator::DEFAULT_GRAVITY;
+use crate::force_calculator::force_calculator::{calculate_newton, DEFAULT_GRAVITY};
 
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, EnumIter)]
@@ -47,6 +48,13 @@ impl ForceUnits{
     }
 }
 
+impl FromStr for ForceUnits{
+    type Err = ();
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        Self::iter().find(|variant| variant.to_shared_string() == s).ok_or(())
+    }
+}
+
 #[derive(Debug, Clone, Copy, PartialEq, Eq, EnumIter)]
 pub enum MassUnits{
     Kilogram,
@@ -74,6 +82,14 @@ impl MassUnits {
 
 }
 
+impl FromStr for MassUnits {
+    type Err = ();
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        Self::iter().find(|variant| variant.to_shared_string() == s).ok_or(())
+    }
+}
+
 pub fn setup_ui_dropdowns(ui: &AppWindow){
     let force_options = ForceUnits::get_options_model();
     let force_model = ModelRc::new(VecModel::from(force_options));
@@ -93,6 +109,21 @@ pub fn setup_callback(ui: &AppWindow){
         let ui = ui_handle.unwrap();
 
         let mass: f64 = mass_str.parse().unwrap_or(0.0);
+        let mass_unit: MassUnits = mass_unit_str.parse().unwrap_or(MassUnits::Kilogram);
+        let export_unit: ForceUnits = export_unit_str.parse().unwrap_or(ForceUnits::Newtons);
+        let area: Option<f64> = if area_str.trim().is_empty(){
+            None
+        } else {
+            Some(area_str.parse().unwrap_or(0.0))
+        };
+
+        let (force, mpa_val) = calculate_newton(mass, mass_unit, export_unit, area);
+
+        ui.set_computed_force(format!("{:.2}", force).into());
+        ui.set_computed_mpa(format!("{:.9}", mpa_val).into());
     });
+
+
+
 
 }

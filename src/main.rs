@@ -12,12 +12,13 @@ slint::include_modules!();
 fn main() -> Result<(), Box<dyn Error>> {
     let ui = AppWindow::new()?;
 
+    // Init
+    force_calculator::setup_ui_dropdowns(&ui);
+
     // Call the re-exported function from your module
     object_calculator::setup_callbacks(&ui);
-
     triangle_calculator::setup_callbacks(&ui);
-
-    force_calculator::setup_ui_dropdowns(&ui);
+    force_calculator::setup_callback(&ui);
 
     ui.run()?;
     Ok(())

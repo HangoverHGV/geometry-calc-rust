@@ -9,24 +9,13 @@ import {
 } from "std-widgets.slint";
 
 import { Page } from "page.slint";
-// Ensure the exported enums are available
-export enum SlintForceUnits {
-    Newtons,
-    Kilonewton,
-    KilogramForce,
-    MetricTonsForce,
-}
-
-export enum SlintMassUnits {
-    Kilogram,
-    MetricTon,
-}
 
 export component ForceCalculator inherits Page {
     title: "Force Elements";
     // 1. Data arrays passed down from AppWindow
     in property <[string]> force-unit-options;
     in property <[string]> mass-unit-options;
+    in property <[string]> area-unit-options;
 
     // 2. Outgoing computed results
     in property <string> computed-force;
@@ -36,7 +25,7 @@ export component ForceCalculator inherits Page {
     callback calculate-force(string, string, string, string);
     // Main calculation function
     function do_calculate() {
-        // root.submit_values(total_distance.text, thickness.text, number_of_objects.text);
+        root.calculate-force(mass.text, mass_unit.current-value, export_unit.current-value, area.text);
     }
 
     GroupBox {
@@ -59,13 +48,8 @@ export component ForceCalculator inherits Page {
                     Button {
                         text: "Clear";
                         clicked => {
-                            // total_distance.text = "";
-                            // thickness.text = "";
-                            // number_of_objects.text = "0";
-                            // root.distance = "0";
-                            // root.center-distance = "0";
-                            
-                            // Send cleared states to Rust to reset the output dimensions immediately
+                            mass.text = "";
+                            area.text = "";
                             root.do_calculate();
                         }
                     }
@@ -106,28 +90,42 @@ export component ForceCalculator inherits Page {
             HorizontalBox {
                 VerticalBox {
                     Text {
-                        text: "Area (mm²)";
+                        text: "Area (mm²) -> defaul 1000mm2";
                     }
-                    area := LineEdit{
-                        placeholder-text: "0.0";
-                        text: "";
-                        input-type: decimal;
-                        edited() => { root.do_calculate(); }
-                        accepted() => { root.do_calculate(); }
 
+                    area := LineEdit {
+                        placeholder-text: "0.0";
+                        text: "1000.0";
+                        input-type: decimal;
+                        edited => { root.do_calculate(); }
+                        accepted => { root.do_calculate(); }
                     }
                 }
 
                 VerticalBox {
                     Text {
-                        text: "Convert Unit";
+                        text: "Unit";
                     }
 
-                    export_unit := ComboBox {
-                        model: root.force-unit-options;
-                        selected(current-value) => {
+                    area_unit := ComboBox {
+                        model: root.area-unit-options;
+                        selected => {
                             root.do_calculate()
-                        }
+                        };
+                        height: 30px;
+                    }
+                }
+            }
+
+            HorizontalBox {
+                Text {
+                    text: "Convert Unit";
+                }
+
+                export_unit := ComboBox {
+                    model: root.force-unit-options;
+                    selected(current-value) => {
+                        root.do_calculate()
                     }
                 }
             }

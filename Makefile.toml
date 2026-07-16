@@ -1,6 +1,55 @@
 [config]
 skip_core_tasks = true
 
+[env]
+# We dynamically pull the version directly from Cargo.toml via cargo-make's built-in env variable
+APP_VERSION = "${CARGO_MAKE_CRATE_VERSION}"
+
+# ==========================================
+# 0. AUTO-TAGGING & DEPLOYMENT AUTOMATION
+# ==========================================
+
+[tasks.publish-version]
+description = "Automatically tags the current commit with Cargo.toml version and pushes it to trigger CI/CD"
+category = "Publish"
+dependencies = ["git-check-clean"]
+script_runner = "@shell"
+script = [
+    '''
+    echo "=========================================================="
+    echo "Automated Release Deployer starting..."
+    echo "Target App Version: v${APP_VERSION}"
+    echo "=========================================================="
+
+    # Check if this Git tag already exists locally or on remote
+    if git rev-parse "v${APP_VERSION}" >/dev/null 2>&1; then
+        echo "Error: Git tag 'v${APP_VERSION}' already exists locally!"
+        exit 1
+    fi
+
+    echo "Creating Git tag: v${APP_VERSION}"
+    git tag -a "v${APP_VERSION}" -m "Release version ${APP_VERSION}"
+
+    echo "Pushing tag to GitHub..."
+    git push origin "v${APP_VERSION}"
+
+    echo "Successfully tagged and pushed v${APP_VERSION}! GitHub Actions is now building your releases."
+    '''
+]
+
+# Helper task to ensure you don't tag an uncommitted working directory
+[tasks.git-check-clean]
+private = true
+script_runner = "@shell"
+script = [
+    '''
+    if [ -n "$(git status --porcelain)" ]; then
+        echo "Error: Working directory has uncommitted changes. Please commit or stash them first."
+        exit 1
+    fi
+    '''
+]
+
 # ==========================================
 # 1. ARCH LINUX TASKS
 # ==========================================
@@ -17,10 +66,22 @@ script = [
 description = "Build a clean, production-ready Arch Linux package"
 condition = { platforms = ["linux"] }
 dependencies = ["clean-arch"]
+script_runner = "@shell"
 script = [
-    "echo '📦 Generating clean Arch Linux installer...'",
-    "cd release/arch && makepkg -Cf",
-    "echo 'Arch Linux installer package created successfully in release/arch/'"
+    '''
+    echo "Injecting Cargo.toml version ${APP_VERSION} into PKGBUILD..."
+    cp release/arch/PKGBUILD release/arch/PKGBUILD.tmp
+    sed -i "s/^pkgver=.*/pkgver=${APP_VERSION}/" release/arch/PKGBUILD.tmp
+
+    echo "Generating clean Arch Linux installer..."
+    cd release/arch
+    makepkg -Cf -p PKGBUILD.tmp --skipinteg
+
+    # Cleanup temporary files
+    rm -f PKGBUILD.tmp
+    rm -rf src/ pkg/
+    echo "Arch Linux installer package created successfully in release/arch/"
+    '''
 ]
 
 # ==========================================
@@ -97,7 +158,7 @@ dependencies = [
 description = "Clean up previous Debian packages"
 condition = { platforms = ["linux"] }
 script = [
-    "echo '🧹 Cleaning up old Debian packages...'",
+    "echo 'Cleaning up old Debian packages...'",
     "rm -rf target/debian/ release/debian/*.deb"
 ]
 
@@ -105,10 +166,16 @@ script = [
 description = "Build a clean, production-ready Debian (.deb) package"
 condition = { platforms = ["linux"] }
 dependencies = ["clean-debian"]
+script_runner = "@shell"
 script = [
-    "echo 'Generating clean Debian package...'",
-    "cargo deb --no-build", # Uses your existing cargo build target
-    "mkdir -p release/debian",
-    "cp target/debian/*.deb release/debian/",
-    "echo 'Debian package created successfully in release/debian/'"
+    '''
+    echo "Generating clean Debian package..."
+    # Cargo-deb reads Cargo.toml automatically, meaning the dynamic version is natively used[cite: 2]
+    cargo deb --no-build
+    mkdir -p release/debian
+
+    # Copy specifically matching package name utilizing the dynamic variable
+    cp target/debian/*${APP_VERSION}*.deb release/debian/
+    echo "Debian package version ${APP_VERSION} created successfully in release/debian/"
+    '''
 ]

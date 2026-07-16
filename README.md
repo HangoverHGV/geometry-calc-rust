@@ -38,5 +38,7 @@ To list all available build tasks defined in [Makefile.toml](Makefile.toml):
 ```shell
 cargo make --list-all-steps
 ```
-
-Build 
+To automatically compile, package, and prepare a production-ready release for your current operating system:
+```shell
+cargo make release-all
+```

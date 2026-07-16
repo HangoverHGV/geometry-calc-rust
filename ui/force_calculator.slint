@@ -4,7 +4,8 @@ import {
     VerticalBox,
     LineEdit,
     SpinBox,
-    HorizontalBox, ComboBox,
+    HorizontalBox,
+    ComboBox,
 } from "std-widgets.slint";
 
 import { Page } from "page.slint";
@@ -86,32 +87,54 @@ export component ForceCalculator inherits Page {
                         accepted => { root.do_calculate(); }
                     }
                 }
-                mass_unit:= ComboBox {
-                    model: root.mass-unit-options;
-                    selected => { root.do_calculate() }
+
+                VerticalBox {
+                    Text {
+                        text: "Unit";
+                    }
+
+                    mass_unit := ComboBox {
+                        model: root.mass-unit-options;
+                        selected => {
+                            root.do_calculate()
+                        };
+                        height: 30px;
+                    }
                 }
             }
 
-            thickness := LineEdit {
-                placeholder-text: "0.0";
-                text: "";
-                input-type: decimal;
-                // 👇 This fires on every single keystroke change!
-                edited => { root.do_calculate(); }
-                accepted => { root.do_calculate(); }
+            HorizontalBox {
+                Text {
+                    text: "Convert Unit";
+                }
+
+                export_unit := ComboBox {
+                    model: root.force-unit-options;
+                    selected(current-value) => {
+                        root.do_calculate()
+                    }
+                }
             }
 
-            Text {
-                text: "Number of Objects (mm): ";
-            }
+            HorizontalBox {
+                Rectangle {
+                    background: #3d3636;
+                    border-radius: 2px;
 
-            number_of_objects := LineEdit {
-                placeholder-text: "0";
-                text: "0";
-                input-type: number;
-                // 👇 This fires on every single keystroke change!
-                edited => { root.do_calculate(); }
-                accepted => { root.do_calculate(); }
+                    Text {
+
+                        text: root.computed-force + "N";
+                        font-size: 18px;
+                    }
+                }
+                Rectangle {
+                    background: #3d3636;
+                    border-radius: 2px;
+                    Text {
+                        text: root.computed-mpa + "MPa";
+                        font-size: 18px;
+                    }
+                }
             }
         }
     }

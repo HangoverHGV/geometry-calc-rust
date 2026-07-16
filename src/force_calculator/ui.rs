@@ -1,8 +1,8 @@
-use slint::{ SharedString, ModelRc, VecModel };
+use slint::{SharedString, ModelRc, VecModel, ComponentHandle};
 use crate::AppWindow;
 use strum::{EnumIter, IntoEnumIterator};
+use crate::force_calculator::force_calculator::DEFAULT_GRAVITY;
 
-pub const DEFAULT_GRAVITY: f64 = 9.80665;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, EnumIter)]
 pub enum ForceUnits{
@@ -18,6 +18,7 @@ impl ForceUnits{
         Self::iter().map(|unit| {unit.to_shared_string()}).collect()
     }
 
+    #[allow(unused)]
     pub fn to_newtons(&self, val: f64) -> f64 {
         match *self {
             ForceUnits::Newtons => val,
@@ -56,6 +57,7 @@ impl MassUnits {
         Self::iter().map(|unit| {unit.to_shared_string()}).collect()
     }
 
+    #[allow(unused)]
     pub fn to_kg(&self, val: f64) -> f64{
         match *self {
             MassUnits::Kilogram => val,
@@ -82,5 +84,8 @@ pub fn setup_ui_dropdowns(ui: &AppWindow){
     let mass_model = ModelRc::new(VecModel::from(mass_options));
 
     ui.set_mass_unit_options(mass_model);
+}
 
+pub fn setup_callback(ui: &AppWindow){
+    let ui_handler = ui.as_weak();
 }

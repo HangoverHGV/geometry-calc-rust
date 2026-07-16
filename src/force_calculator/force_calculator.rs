@@ -1,4 +1,5 @@
 use crate::force_calculator::ui::{ForceUnits, MassUnits};
+pub const DEFAULT_GRAVITY: f64 = 9.80665;
 
 pub fn calculate_newton(mass: f64, mass_unit: MassUnits, export_unit: ForceUnits, area: Option<f64>) -> (f64, f64){
     let mass_kg = mass_unit.to_kg(mass);

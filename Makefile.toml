@@ -9,7 +9,7 @@ skip_core_tasks = true
 description = "Clean up previous Arch Linux build artifacts"
 condition = { platforms = ["linux"] }
 script = [
-    "echo '🧹 Cleaning up old Arch packages...'",
+    "echo 'Cleaning up old Arch packages...'",
     "cd release/arch && rm -rf pkg/ src/ *.pkg.tar.zst"
 ]
 
@@ -20,7 +20,7 @@ dependencies = ["clean-arch"]
 script = [
     "echo '📦 Generating clean Arch Linux installer...'",
     "cd release/arch && makepkg -Cf",
-    "echo '✅ Arch Linux installer package created successfully in release/arch/'"
+    "echo 'Arch Linux installer package created successfully in release/arch/'"
 ]
 
 # ==========================================
@@ -47,26 +47,26 @@ script_extension = "ps1"
 script = [
     "Write-Host 'Compiling natively for Windows (Release Mode)...'",
     "cargo build --release",
-    
+
     "Write-Host 'Packaging assets for the installer...'",
     "Copy-Item 'target/release/inventor-math-calculator.exe' 'release/windows/'",
     "New-Item -ItemType Directory -Force -Path 'release/windows/ui/images' | Out-Null",
     "Copy-Item -Path 'ui/images/*' -Destination 'release/windows/ui/images/' -Recurse",
-    
+
     "Write-Host 'Copying installer configuration script...'",
     "Copy-Item 'build_assets/installer.iss' 'release/windows/'",
-    
+
     "Write-Host 'Checking for Inno Setup Compiler...'",
     "$iscc = \"C:\\Program Files (x86)\\Inno Setup 6\\ISCC.exe\"",
     "if (-not (Test-Path $iscc)) {",
-    "    Write-Warning 'Inno Setup compiler was not found at standard path!'",
-    "    Write-Warning 'Please install it or check your installation path.'",
+    "    Write-Warning 'Inno Setup compiler was not found at standard path!'" ,
+    "    Write-Warning 'Please install it or check your installation path.'" ,
     "    exit 1",
     "}",
 
     "Write-Host 'Compiling Inno Setup Installer executable...'",
     "& $iscc release/windows/installer.iss",
-    
+
     "Write-Host 'Windows Setup Wizard prepared successfully!'",
     "Write-Host 'Installer Output: release/windows/inventor-calculator-helper-setup.exe'"
 ]

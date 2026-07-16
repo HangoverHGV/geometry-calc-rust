@@ -87,5 +87,12 @@ pub fn setup_ui_dropdowns(ui: &AppWindow){
 }
 
 pub fn setup_callback(ui: &AppWindow){
-    let ui_handler = ui.as_weak();
+    let ui_handle = ui.as_weak();
+
+    ui.on_calculate_force(move |mass_str, mass_unit_str, export_unit_str, area_str| {
+        let ui = ui_handle.unwrap();
+
+        let mass: f64 = mass_str.parse().unwrap_or(0.0);
+    });
+
 }

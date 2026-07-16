@@ -104,14 +104,30 @@ export component ForceCalculator inherits Page {
             }
 
             HorizontalBox {
-                Text {
-                    text: "Convert Unit";
+                VerticalBox {
+                    Text {
+                        text: "Area (mm²)";
+                    }
+                    area := LineEdit{
+                        placeholder-text: "0.0";
+                        text: "";
+                        input-type: decimal;
+                        edited() => { root.do_calculate(); }
+                        accepted() => { root.do_calculate(); }
+
+                    }
                 }
 
-                export_unit := ComboBox {
-                    model: root.force-unit-options;
-                    selected(current-value) => {
-                        root.do_calculate()
+                VerticalBox {
+                    Text {
+                        text: "Convert Unit";
+                    }
+
+                    export_unit := ComboBox {
+                        model: root.force-unit-options;
+                        selected(current-value) => {
+                            root.do_calculate()
+                        }
                     }
                 }
             }
@@ -123,10 +139,11 @@ export component ForceCalculator inherits Page {
 
                     Text {
 
-                        text: root.computed-force + "N";
+                        text: root.computed-force + export_unit.current-value;
                         font-size: 18px;
                     }
                 }
+
                 Rectangle {
                     background: #3d3636;
                     border-radius: 2px;

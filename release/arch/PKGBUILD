@@ -8,6 +8,7 @@ url="https://github.com/HangoverHGV/geometry-calc-rust"
 license=('MIT')
 depends=('fontconfig' 'libxcb' 'libxkbcommon')
 makedepends=('rust' 'cargo')
+options=('!debug')
 
 source=()
 sha256sums=()

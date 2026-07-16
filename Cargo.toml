@@ -3,6 +3,25 @@ name = "inventor-math-calculator"
 version = "0.1.0"
 edition = "2024"
 
+[package.metadata.deb]
+name = "inventor-math-calculator"
+maintainer = "HangoverHGV"
+license = "MIT"
+# Automatically detect system dependencies (including fontconfig and libxkbcommon)
+depends = "$auto, libxkbcommon0, fontconfig"
+section = "utils"
+priority = "optional"
+
+# Map project files into the Linux target paths
+assets = [
+    # 1. Install the binary
+    ["target/release/inventor-math-calculator", "usr/bin/inventor-math-calculator", "755"],
+    # 2. Install the app icon
+    ["ui/images/ico.svg", "usr/share/icons/hicolor/scalable/apps/inventor-math-calculator.svg", "644"],
+    # 3. Create the Desktop file shortcut launcher
+    ["release/debian/inventor-math-calculator.desktop", "usr/share/applications/inventor-math-calculator.desktop", "644"]
+]
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

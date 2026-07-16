@@ -76,8 +76,39 @@ script = [
 # ==========================================
 
 [tasks.release-all]
-description = "Detects the OS platform and runs the correct build script"
+description = "Detects the OS platform and runs the correct build scripts"
 run_task = [
     { name = "build-windows", condition = { platforms = ["windows"] } },
-    { name = "build-arch", condition = { platforms = ["linux"] } }
+    # Runs BOTH Arch and Debian builds if compiled on Linux
+    { name = "build-linux-packages", condition = { platforms = ["linux"] } }
+]
+
+[tasks.build-linux-packages]
+dependencies = [
+    "build-arch",
+    "build-debian"
+]
+
+# ==========================================
+# 4. DEBIAN TASKS
+# ==========================================
+
+[tasks.clean-debian]
+description = "Clean up previous Debian packages"
+condition = { platforms = ["linux"] }
+script = [
+    "echo '🧹 Cleaning up old Debian packages...'",
+    "rm -rf target/debian/ release/debian/*.deb"
+]
+
+[tasks.build-debian]
+description = "Build a clean, production-ready Debian (.deb) package"
+condition = { platforms = ["linux"] }
+dependencies = ["clean-debian"]
+script = [
+    "echo 'Generating clean Debian package...'",
+    "cargo deb --no-build", # Uses your existing cargo build target
+    "mkdir -p release/debian",
+    "cp target/debian/*.deb release/debian/",
+    "echo 'Debian package created successfully in release/debian/'"
 ]

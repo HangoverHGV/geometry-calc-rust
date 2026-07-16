@@ -22,10 +22,10 @@ export component ForceCalculator inherits Page {
     in property <string> computed-mpa;
 
     // 3. Callback to execute the Rust calculation
-    callback calculate-force(string, string, string, string);
+    callback calculate-force(string, string, string, string, string);
     // Main calculation function
     function do_calculate() {
-        root.calculate-force(mass.text, mass_unit.current-value, export_unit.current-value, area.text);
+        root.calculate-force(mass.text, mass_unit.current-value, export_unit.current-value, area.text, area_unit.current-value);
     }
 
     GroupBox {

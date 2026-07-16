@@ -29,6 +29,7 @@ export component AppWindow inherits Window {
     //Force Calculator
     in property <[string]> force-unit-options;
     in property <[string]> mass-unit-options;
+    in property <[string]> area-unit-options;
     in-out property <string> computed-force;
     in-out property <string> computed-mpa;
 
@@ -36,7 +37,7 @@ export component AppWindow inherits Window {
 
     callback calculate-distance(string, string, string);
     callback calculate-triangle(string, string, string, string, string);
-    callback calculate-force(string, string, string, string);
+    callback calculate-force(string, string, string, string, string);
 
     HorizontalLayout {
         side-bar := SideBar {
@@ -60,7 +61,6 @@ export component AppWindow inherits Window {
                 }
             }
             if(side-bar.current-item == 1): Triangles {
-                // IMPORTANT: Folosim <=> pentru sincronizare în timp real în ambele sensuri
                 hypotenuse-text <=> root.computed-hypotenuse-text;
                 cathetus1-text <=> root.computed-cathetus1-text;
                 cathetus2-text <=> root.computed-cathetus2-text;
@@ -74,12 +74,13 @@ export component AppWindow inherits Window {
             if(side-bar.current-item ==2): ForceCalculator {
                 force-unit-options: root.force-unit-options;
                 mass-unit-options: root.mass-unit-options;
+                area-unit-options: root.area-unit-options;
 
                 computed-force <=> root.computed-force;
                 computed-mpa <=> root.computed-mpa;
 
-                calculate-force(mass, mass_unit, export_unit, area) => {
-                    root.calculate-force(mass, mass_unit, export_unit, area);
+                calculate-force(mass, mass_unit, export_unit, area, area_unit) => {
+                    root.calculate-force(mass, mass_unit, export_unit, area, area_unit);
                 }
             } 
         }

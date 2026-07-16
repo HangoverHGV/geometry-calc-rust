@@ -4,6 +4,46 @@ use crate::AppWindow;
 use strum::{EnumIter, IntoEnumIterator};
 use crate::force_calculator::force_calculator::{calculate_newton, DEFAULT_GRAVITY};
 
+#[derive(Debug, Clone, Copy, PartialEq, Eq, EnumIter)]
+pub enum AreaUnits{
+    SquareMeter,
+    SquareCentimeter,
+    SquareMillimeter,
+    SquareKilometer,
+}
+
+impl AreaUnits{
+    pub fn get_options_model() -> Vec<SharedString>{
+        Self::iter().map(|unit| {unit.to_shared_string()}).collect()
+    }
+
+    pub fn to_shared_string(&self) -> SharedString {
+        match *self {
+            AreaUnits::SquareMeter => SharedString::from("m²"),
+            AreaUnits::SquareCentimeter => SharedString::from("cm²"),
+            AreaUnits::SquareMillimeter => SharedString::from("mm²"),
+            AreaUnits::SquareKilometer => SharedString::from("km²"),
+        }
+    }
+
+    pub fn convert_to_mm2(&self, val: f64) -> f64{
+        match *self {
+            AreaUnits::SquareMeter => val,
+            AreaUnits::SquareCentimeter => val * 10000.0,
+            AreaUnits::SquareMillimeter => val * 1000000.0,
+            AreaUnits::SquareKilometer => val / 1000000.0,
+        }
+    }
+
+}
+
+impl FromStr for AreaUnits{
+    type Err = ();
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        Self::iter().find(|unit| unit.to_shared_string() == s).ok_or(())
+    }
+}
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, EnumIter)]
 pub enum ForceUnits{
@@ -100,12 +140,17 @@ pub fn setup_ui_dropdowns(ui: &AppWindow){
     let mass_model = ModelRc::new(VecModel::from(mass_options));
 
     ui.set_mass_unit_options(mass_model);
+
+    let area_option = AreaUnits::get_options_model();
+    let area_model = ModelRc::new(VecModel::from(area_option));
+
+    ui.set_area_unit_options(area_model);
 }
 
 pub fn setup_callback(ui: &AppWindow){
     let ui_handle = ui.as_weak();
 
-    ui.on_calculate_force(move |mass_str, mass_unit_str, export_unit_str, area_str| {
+    ui.on_calculate_force(move |mass_str, mass_unit_str, export_unit_str, area_str, area_unis_str| {
         let ui = ui_handle.unwrap();
 
         let mass: f64 = mass_str.parse().unwrap_or(0.0);
@@ -117,7 +162,9 @@ pub fn setup_callback(ui: &AppWindow){
             Some(area_str.parse().unwrap_or(0.0))
         };
 
-        let (force, mpa_val) = calculate_newton(mass, mass_unit, export_unit, area);
+        let area_units: AreaUnits = area_unis_str.parse().unwrap_or(AreaUnits::SquareMeter);
+
+        let (force, mpa_val) = calculate_newton(mass, mass_unit, export_unit, area, area_units);
 
         ui.set_computed_force(format!("{:.2}", force).into());
         ui.set_computed_mpa(format!("{:.9}", mpa_val).into());

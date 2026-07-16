@@ -6,7 +6,7 @@ pkgdesc="A sleek geometry and spacer calculator helper built with Rust and Slint
 arch=('x86_64')
 url="https://github.com/HangoverHGV/geometry-calc-rust"
 license=('MIT')
-depends=('fontconfig' 'libxcb')
+depends=('fontconfig' 'libxcb' 'libxkbcommon')
 makedepends=('rust' 'cargo')
 
 source=()

@@ -3,7 +3,6 @@ import {
     GroupBox,
     VerticalBox,
     LineEdit,
-    SpinBox,
     HorizontalBox,
     ComboBox,
 } from "std-widgets.slint";
@@ -90,12 +89,12 @@ export component ForceCalculator inherits Page {
             HorizontalBox {
                 VerticalBox {
                     Text {
-                        text: "Area (mm²) -> defaul 1000mm2";
+                        text: "Area (" + area_unit.current-value + ")";
                     }
 
                     area := LineEdit {
                         placeholder-text: "0.0";
-                        text: "1000.0";
+                        text: "1";
                         input-type: decimal;
                         edited => { root.do_calculate(); }
                         accepted => { root.do_calculate(); }
@@ -137,7 +136,7 @@ export component ForceCalculator inherits Page {
 
                     Text {
 
-                        text: root.computed-force + export_unit.current-value;
+                        text: root.computed-force + " " + export_unit.current-value;
                         font-size: 18px;
                     }
                 }
@@ -146,7 +145,7 @@ export component ForceCalculator inherits Page {
                     background: #3d3636;
                     border-radius: 2px;
                     Text {
-                        text: root.computed-mpa + "MPa";
+                        text: root.computed-mpa + " MPa";
                         font-size: 18px;
                     }
                 }

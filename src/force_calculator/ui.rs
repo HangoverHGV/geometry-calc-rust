@@ -28,10 +28,10 @@ impl AreaUnits{
 
     pub fn convert_to_mm2(&self, val: f64) -> f64{
         match *self {
-            AreaUnits::SquareMeter => val,
-            AreaUnits::SquareCentimeter => val * 10000.0,
-            AreaUnits::SquareMillimeter => val * 1000000.0,
-            AreaUnits::SquareKilometer => val / 1000000.0,
+            AreaUnits::SquareMeter => val * 1_000_000.0,
+            AreaUnits::SquareCentimeter => val * 100.0,
+            AreaUnits::SquareMillimeter => val,
+            AreaUnits::SquareKilometer => val * 1_000_000_000_000.0,
         }
     }
 

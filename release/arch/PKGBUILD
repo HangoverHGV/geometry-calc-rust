@@ -22,16 +22,15 @@ package() {
 
   echo "📦 Packaging the application for the system..."
   # 1. Install the compiled binary into the system binary path
-  install -Dm755 "target/release/inventor-math-calculator" "${pkgdir}/usr/bin/inventor-math-calculator"
+  install -Dm755 "target/release/cad-helper-3d" "${pkgdir}/usr/bin/cad-helper-3d"
 
-  # 2. Install your custom app icon
-  install -Dm644 "ui/images/ico.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/inventor-math-calculator.svg"
+  # 2. Install your custom app icon using the new name
+  install -Dm644 "ui/images/ico.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/cad-helper-3d.svg"
 
-  # 3. Generate and install the desktop launcher shortcut
-  # Fix: Escaped the backslash before 'Icon' to prevent string interpretation bugs
-  echo -e "[Desktop Entry]\nName=Inventor Calculator Helper\nExec=inventor-math-calculator\nIcon=inventor-math-calculator\nType=Application\nTerminal=false\nCategories=Utility;Math;Science;" > "inventor-math-calculator.desktop"
-  install -Dm644 "inventor-math-calculator.desktop" "${pkgdir}/usr/share/applications/inventor-math-calculator.desktop"
+  # 3. Generate and install the desktop launcher shortcut pointing to the new binary and icon
+  echo -e "[Desktop Entry]\nName=Inventor Calculator Helper\nExec=cad-helper-3d\nIcon=cad-helper-3d\nType=Application\nTerminal=false\nCategories=Utility;Math;Science;" > "cad-helper-3d.desktop"
+  install -Dm644 "cad-helper-3d.desktop" "${pkgdir}/usr/share/applications/cad-helper-3d.desktop"
 
   # Clean up the temporary local desktop file
-  rm "inventor-math-calculator.desktop"
+  rm "cad-helper-3d.desktop"
 }

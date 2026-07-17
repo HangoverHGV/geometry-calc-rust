@@ -6,8 +6,6 @@ edition = "2024"
 [package.metadata.deb]
 name = "inventor-math-calculator"
 maintainer = "HangoverHGV"
-license = "MIT"
-# Automatically detect system dependencies (including fontconfig and libxkbcommon)
 depends = "$auto, libxkbcommon0, fontconfig"
 section = "utils"
 priority = "optional"

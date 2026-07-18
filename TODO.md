@@ -1,0 +1,1 @@
+1. Improvements UI and scale down images

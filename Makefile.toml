@@ -15,7 +15,7 @@ echo "=== Switching to dev branch ==="
 git checkout dev
 
 echo "=== Pulling latest changes from remote master ==="
-git pull origin master
+git fetch origin master
 
 echo "=== Merging master into dev ==="
 git merge master --no-edit

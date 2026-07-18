@@ -1,4 +1,5 @@
 [Setup]
+AppId={{E3F8A2B1-6C4D-4A9E-9F0B-1D5C7E2A8B34}
 AppName=Cad Helper 3d
 AppVersion=1.0.0
 DefaultDirName={autopf}\CadHelper3d

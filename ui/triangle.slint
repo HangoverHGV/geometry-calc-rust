@@ -12,6 +12,8 @@ export component Triangles inherits Page {
     title: "Triangle Calculator";
 
     property <image> right-triangle-svg: @image-url("images/right-triangle.svg");
+    property <image> is-triangle-svg: @image-url("images/isosceles-triangle.svg");
+
     callback calculate_triangle(string, string, string, string, string);
     callback calculate-isiscelus-tringle(string, string, string, string);
 
@@ -228,21 +230,90 @@ export component Triangles inherits Page {
                                 }
                             }
                         }
+                    }
 
-                        HorizontalBox {
+                    HorizontalBox {
+                        alignment: start;
+                        VerticalBox {
                             alignment: start;
-                            VerticalBox {
-                                alignment: start;
-                                Text {
-                                    text: "AB:";
-                                }
+                            Text {
+                                text: "AB:";
+                            }
 
-                                LineEdit {
-                                    placeholder-text: "0.0";
-                                    text <=> root.input-ab-text;
-                                    input-type: decimal;
-                                    edited => { root.do_calculate_is(); }
-                                }
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.input-ab-text;
+                                input-type: decimal;
+                                edited => { root.do_calculate_is(); }
+                            }
+
+                            Text {
+                                text: "BC";
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.input-bc-text;
+                                input-type: decimal;
+                                edited => { root.do_calculate_is(); }
+                            }
+                        }
+
+                        VerticalBox {
+                            alignment: start;
+                            Text {
+                                text: "ABC";
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.input-abc-is-angle;
+                                input-type: decimal;
+                                edited => { root.do_calculate_is(); }
+                            }
+
+                            Text {
+                                text: "BAC";
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.input-bac-is-angle;
+                                input-type: decimal;
+                                edited => { root.do_calculate_is(); }
+                            }
+                        }
+
+                        Image {
+                            horizontal-alignment: ImageHorizontalAlignment.center;
+                            source: is-triangle-svg;
+                            height: 300px;
+                            width: 300px;
+                        }
+                    }
+
+                    HorizontalBox {
+                        VerticalBox {
+                            Text {
+                                text: "AB: " + root.ab-text + " mm";
+                                font-size: result-size;
+                            }
+
+                            Text {
+                                text: "BC: " + root.bc-text + " mm";
+                                font-size: result-size;
+                            }
+                        }
+
+                        VerticalBox {
+                            Text {
+                                text: "Angle ABC: " + root.abc-is-angle + "°";
+                                font-size: result-size;
+                            }
+
+                            Text {
+                                text: "Angle BAC: " + root.bac-is-angle + "°";
+                                font-size: result-size;
                             }
                         }
                     }

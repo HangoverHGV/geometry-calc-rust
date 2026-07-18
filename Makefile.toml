@@ -6,7 +6,27 @@ skip_core_tasks = true
 APP_VERSION = "${CARGO_MAKE_CRATE_VERSION}"
 
 # ==========================================
-# 0. AUTO-TAGGING & DEPLOYMENT AUTOMATION
+# 0.0 Sync DEV with the last master
+# ==========================================
+[tasks.sync]
+description = "Merges the latest master branch changes into the local and remote dev branch"
+script = '''
+echo "=== Switching to dev branch ==="
+git checkout dev
+
+echo "=== Pulling latest changes from remote master ==="
+git pull origin master
+
+echo "=== Merging master into dev ==="
+git merge master --no-edit
+
+echo "=== Pushing updated dev branch to remote ==="
+git push origin dev
+'''
+
+
+# ==========================================
+# 0.1 AUTO-TAGGING & DEPLOYMENT AUTOMATION
 # ==========================================
 
 [tasks.publish-version]

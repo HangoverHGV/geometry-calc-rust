@@ -2,6 +2,8 @@
 name = "cad-helper-3d"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
+description = "A sleek geometry and spacer calculator helper."
 
 [package.metadata.deb]
 # Let cargo-deb automatically inherit "cad-helper-3d" from the main package name

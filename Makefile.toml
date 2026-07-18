@@ -59,7 +59,6 @@ else
     git merge origin/master --no-edit
 
     git push origin dev
-    git checkout "$CURRENT_BRANCH"
     echo "=== Sync complete. Returned to $CURRENT_BRANCH ==="
 fi
 '''

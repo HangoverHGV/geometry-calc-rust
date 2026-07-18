@@ -42,10 +42,12 @@ export component ForceCalculator inherits Page {
                 // --- Removed the "Calculate" Button entirely ---
 
                 Rectangle {
-                    background: red;
+                    background: clear_btn.pressed ? gray : red;
                     border-radius: 3px;
-                    Button {
+                    max-height: 33px;
+                    clear_btn := Button {
                         text: "Clear";
+                        max-height: 33px;
                         clicked => {
                             mass.text = "";
                             area.text = "";

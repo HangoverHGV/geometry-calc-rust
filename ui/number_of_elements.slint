@@ -42,10 +42,12 @@ export component NumberOfElementsPage inherits Page {
                 // --- Removed the "Calculate" Button entirely ---
 
                 Rectangle {
-                    background: red;
                     border-radius: 3px;
-                    Button {
+                    background: clear_btn.pressed ? gray : red;
+                    max-height: 33px;
+                    clear_btn := Button {
                         text: "Clear";
+                        max-height: 33px;
                         clicked => {
                             total_distance.text = "";
                             thickness.text = "";

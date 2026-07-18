@@ -13,7 +13,7 @@ export component Triangles inherits Page {
 
     property <image> right-triangle-svg: @image-url("images/right-triangle.svg");
     callback calculate_triangle(string, string, string, string, string);
-    callback calculate-isiscelus-tringle(string, string, string, string, string);
+    callback calculate-isiscelus-tringle(string, string, string, string);
 
     // 1. INPUT PROPERTIES: Keep track of ONLY what the user types
     property <string> input-hypotenuse: "";
@@ -23,7 +23,6 @@ export component Triangles inherits Page {
     property <string> input-acb-angle: "";
 
     property <string> input-ab-text: "";
-    property <string> input-ac-text: "";
     property <string> input-bc-text: "";
     property <string> input-abc-is-angle: "";
     property <string> input-bac-is-angle: "";
@@ -36,7 +35,6 @@ export component Triangles inherits Page {
     in-out property <string> acb-angle: "";
 
     in-out property <string> ab-text: "";
-    in-out property <string> ac-text: "";
     in-out property <string> bc-text: "";
     in-out property <string> abc-is-angle: "";
     in-out property <string> bac-is-angle: "";
@@ -48,8 +46,8 @@ export component Triangles inherits Page {
         root.calculate_triangle(input-hypotenuse, input-cathetus1, input-cathetus2, input-abc-angle, input-acb-angle);
     }
 
-    function do_calculate_is(){
-        root.calculate-isiscelus-tringle(input-ab-text, input-ac-text, input-bc-text, input-abc-is-angle, input-bac-is-angle);
+    function do_calculate_is() {
+        root.calculate-isiscelus-tringle(input-ab-text, input-bc-text, input-abc-is-angle, input-bac-is-angle);
     }
 
     GroupBox {
@@ -216,24 +214,36 @@ export component Triangles inherits Page {
                                 clicked => {
                                     // Reset inputs
                                     root.input-ab-text = "";
-                                    root.input-ac-text = "";
                                     root.input-bc-text = "";
                                     root.input-abc-is-angle = "";
                                     root.input-bac-is-angle = "";
 
                                     // Reset results
                                     root.ab-text = "";
-                                    root.ac-text = "";
                                     root.bc-text = "";
                                     root.abc-is-angle = "";
                                     root.bac-is-angle = "";
 
-                                    root.do_calculate_right_angle();
+                                    root.do_calculate_is();
                                 }
                             }
                         }
+
                         HorizontalBox {
                             alignment: start;
+                            VerticalBox {
+                                alignment: start;
+                                Text {
+                                    text: "AB:";
+                                }
+
+                                LineEdit {
+                                    placeholder-text: "0.0";
+                                    text <=> root.input-ab-text;
+                                    input-type: decimal;
+                                    edited => { root.do_calculate_is(); }
+                                }
+                            }
                         }
                     }
                 }

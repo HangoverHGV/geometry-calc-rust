@@ -15,7 +15,7 @@ export component Triangles inherits Page {
     property <image> is-triangle-svg: @image-url("images/isosceles-triangle.svg");
 
     callback calculate_triangle(string, string, string, string, string);
-    callback calculate-isiscelus-tringle(string, string, string, string);
+    callback calculate-isoscelus-tringle(string, string, string, string);
 
     // 1. INPUT PROPERTIES: Keep track of ONLY what the user types
     property <string> input-hypotenuse: "";
@@ -49,7 +49,7 @@ export component Triangles inherits Page {
     }
 
     function do_calculate_is() {
-        root.calculate-isiscelus-tringle(input-ab-text, input-bc-text, input-abc-is-angle, input-bac-is-angle);
+        root.calculate-isoscelus-tringle(input-ab-text, input-bc-text, input-abc-is-angle, input-bac-is-angle);
     }
 
     GroupBox {
@@ -300,6 +300,11 @@ export component Triangles inherits Page {
                             }
 
                             Text {
+                                text: "AC: " + root.ab-text + " mm";
+                                font-size: result-size;
+                            }
+
+                            Text {
                                 text: "BC: " + root.bc-text + " mm";
                                 font-size: result-size;
                             }
@@ -308,6 +313,11 @@ export component Triangles inherits Page {
                         VerticalBox {
                             Text {
                                 text: "Angle ABC: " + root.abc-is-angle + "°";
+                                font-size: result-size;
+                            }
+
+                            Text {
+                                text: "Angle ACB: " + root.abc-is-angle + "°";
                                 font-size: result-size;
                             }
 

@@ -26,6 +26,12 @@ export component AppWindow inherits Window {
     in-out property <string> computed-abc-angle: "";
     in-out property <string> computed-acb-angle: "";
 
+    //Is Calculator
+    in-out property <string> computed-ab-text;
+    in-out property <string> computed-bc-text;
+    in-out property <string> computed-abc-is-angle;
+    in-out property <string> computed-bac-is-angle;
+
     //Force Calculator
     in property <[string]> force-unit-options;
     in property <[string]> mass-unit-options;
@@ -38,6 +44,7 @@ export component AppWindow inherits Window {
     callback calculate-distance(string, string, string);
     callback calculate-triangle(string, string, string, string, string);
     callback calculate-force(string, string, string, string, string);
+    callback calculate-isoscelus-tringle(string, string, string, string);
 
     HorizontalLayout {
         side-bar := SideBar {
@@ -69,6 +76,15 @@ export component AppWindow inherits Window {
                 
                 calculate_triangle(hypotenuse, cathetus1, cathetus2, abc, acb) => {
                     root.calculate-triangle(hypotenuse, cathetus1, cathetus2, abc, acb);
+                }
+
+                ab-text: root.computed-ab-text;
+                bc-text: root.computed-bc-text;
+                abc-is-angle: computed-abc-is-angle;
+                bac-is-angle: computed-bac-is-angle;
+
+                calculate-isoscelus-tringle(ab, bc, abc, bac) => {
+                    root.calculate-isoscelus-tringle(ab, bc, abc, bac);
                 }
             }
             if(side-bar.current-item ==2): ForceCalculator {

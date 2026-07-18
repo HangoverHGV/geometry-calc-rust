@@ -189,8 +189,11 @@ dependencies = ["clean-debian"]
 script_runner = "@shell"
 script = [
     '''
+    echo "Compiling release binary..."
+    cargo build --release
+
     echo "Generating clean Debian package..."
-    # Cargo-deb reads Cargo.toml automatically, meaning the dynamic version is natively used[cite: 2]
+    # We can keep --no-build now because we just built it manually above
     cargo deb --no-build
     mkdir -p release/debian
 

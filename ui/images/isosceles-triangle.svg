@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Isosceles Triangle Path -->
+  <!-- A is at top, B and C at base -->
+  <path d="M 200 50 L 50 350 L 350 350 Z" 
+        fill="none" 
+        stroke="#2563eb" 
+        stroke-width="6" 
+        stroke-linejoin="round" />
+  
+  <!-- Labels matching the font/style -->
+  <text x="200" y="35" font-family="sans-serif" font-size="40" text-anchor="middle" fill="#000000">A</text>
+  <text x="35" y="390" font-family="sans-serif" font-size="40" text-anchor="middle" fill="#000000">B</text>
+  <text x="365" y="390" font-family="sans-serif" font-size="40" text-anchor="middle" fill="#000000">C</text>
+</svg>

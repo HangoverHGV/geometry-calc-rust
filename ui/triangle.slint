@@ -13,6 +13,7 @@ export component Triangles inherits Page {
 
     property <image> right-triangle-svg: @image-url("images/right-triangle.svg");
     callback calculate_triangle(string, string, string, string, string);
+    callback calculate-isiscelus-tringle(string, string, string, string, string);
 
     // 1. INPUT PROPERTIES: Keep track of ONLY what the user types
     property <string> input-hypotenuse: "";
@@ -21,6 +22,12 @@ export component Triangles inherits Page {
     property <string> input-abc-angle: "";
     property <string> input-acb-angle: "";
 
+    property <string> input-ab-text: "";
+    property <string> input-ac-text: "";
+    property <string> input-bc-text: "";
+    property <string> input-abc-is-angle: "";
+    property <string> input-bac-is-angle: "";
+
     // 2. RESULT PROPERTIES: Updated exclusively by your Rust code
     in-out property <string> hypotenuse-text: "";
     in-out property <string> cathetus1-text: "";
@@ -28,17 +35,27 @@ export component Triangles inherits Page {
     in-out property <string> abc-angle: "";
     in-out property <string> acb-angle: "";
 
+    in-out property <string> ab-text: "";
+    in-out property <string> ac-text: "";
+    in-out property <string> bc-text: "";
+    in-out property <string> abc-is-angle: "";
+    in-out property <string> bac-is-angle: "";
+
     property <length> result-size: 16px;
 
     // Send what the user is typing to Rust
-    function do_calculate() {
+    function do_calculate_right_angle() {
         root.calculate_triangle(input-hypotenuse, input-cathetus1, input-cathetus2, input-abc-angle, input-acb-angle);
+    }
+
+    function do_calculate_is(){
+        root.calculate-isiscelus-tringle(input-ab-text, input-ac-text, input-bc-text, input-abc-is-angle, input-bac-is-angle);
     }
 
     GroupBox {
         TabWidget {
             Tab {
-                title: "Dreptunghic";
+                title: "Right angle";
 
                 VerticalBox {
                     HorizontalBox {
@@ -48,7 +65,7 @@ export component Triangles inherits Page {
 
                         Rectangle {
                             border-radius: 3px;
-                            background: clear_btn.pressed ? gray: red;
+                            background: clear_btn.pressed ? gray : red;
                             max-height: 33px;
                             clear_btn := Button {
                                 text: "Clear";
@@ -69,7 +86,7 @@ export component Triangles inherits Page {
                                     root.abc-angle = "";
                                     root.acb-angle = "";
 
-                                    root.do_calculate();
+                                    root.do_calculate_right_angle();
                                 }
                             }
                         }
@@ -87,7 +104,7 @@ export component Triangles inherits Page {
                                 placeholder-text: "0.0";
                                 text <=> root.input-hypotenuse;
                                 input-type: decimal;
-                                edited => { root.do_calculate(); }
+                                edited => { root.do_calculate_right_angle(); }
                             }
 
                             Text {
@@ -98,7 +115,7 @@ export component Triangles inherits Page {
                                 placeholder-text: "0.0";
                                 text <=> root.input-cathetus1;
                                 input-type: decimal;
-                                edited => { root.do_calculate(); }
+                                edited => { root.do_calculate_right_angle(); }
                             }
 
                             Text {
@@ -109,7 +126,7 @@ export component Triangles inherits Page {
                                 placeholder-text: "0.0";
                                 text <=> root.input-cathetus2;
                                 input-type: decimal;
-                                edited => { root.do_calculate(); }
+                                edited => { root.do_calculate_right_angle(); }
                             }
                         }
 
@@ -123,7 +140,7 @@ export component Triangles inherits Page {
                                 placeholder-text: "0.0";
                                 text <=> root.input-abc-angle;
                                 input-type: decimal;
-                                edited => { root.do_calculate(); }
+                                edited => { root.do_calculate_right_angle(); }
                             }
 
                             Text {
@@ -134,7 +151,7 @@ export component Triangles inherits Page {
                                 placeholder-text: "0.0";
                                 text <=> root.input-acb-angle;
                                 input-type: decimal;
-                                edited => { root.do_calculate(); }
+                                edited => { root.do_calculate_right_angle(); }
                             }
                         }
 
@@ -145,39 +162,80 @@ export component Triangles inherits Page {
                             width: 400px;
                         }
                     }
+
+                    HorizontalBox {
+                        VerticalBox {
+                            Text {
+                                text: "Hypotenuse BC: " + root.hypotenuse-text + " mm";
+                                font-size: result-size;
+                            }
+
+                            Text {
+                                text: "Cathetus 1 AB: " + root.cathetus1-text + " mm";
+                                font-size: result-size;
+                            }
+
+                            Text {
+                                text: "Cathetus 2 AC: " + root.cathetus2-text + " mm";
+                                font-size: result-size;
+                            }
+                        }
+
+                        VerticalBox {
+                            Text {
+                                text: "Angle ABC: " + root.abc-angle + "°";
+                                font-size: result-size;
+                            }
+
+                            Text {
+                                text: "Angle ACB: " + root.acb-angle + "°";
+                                font-size: result-size;
+                            }
+                        }
+                    }
                 }
             }
-        }
-    }
 
-    GroupBox {
-        HorizontalBox {
-            VerticalBox {
-                Text {
-                    text: "Hypotenuse BC: " + root.hypotenuse-text + " mm";
-                    font-size: result-size;
-                }
+            Tab {
+                title: "Isosceles";
 
-                Text {
-                    text: "Cathetus 1 AB: " + root.cathetus1-text + " mm";
-                    font-size: result-size;
-                }
+                VerticalBox {
+                    HorizontalBox {
+                        alignment: start;
+                        padding: 0px;
+                        spacing: 5px;
 
-                Text {
-                    text: "Cathetus 2 AC: " + root.cathetus2-text + " mm";
-                    font-size: result-size;
-                }
-            }
+                        Rectangle {
+                            border-radius: 3px;
+                            background: clear_btn_is.pressed ? gray : red;
+                            max-height: 33px;
+                            clear_btn_is := Button {
+                                text: "Clear";
+                                max-height: 33px;
 
-            VerticalBox {
-                Text {
-                    text: "Angle ABC: " + root.abc-angle + "°";
-                    font-size: result-size;
-                }
+                                clicked => {
+                                    // Reset inputs
+                                    root.input-ab-text = "";
+                                    root.input-ac-text = "";
+                                    root.input-bc-text = "";
+                                    root.input-abc-is-angle = "";
+                                    root.input-bac-is-angle = "";
 
-                Text {
-                    text: "Angle ACB: " + root.acb-angle + "°";
-                    font-size: result-size;
+                                    // Reset results
+                                    root.ab-text = "";
+                                    root.ac-text = "";
+                                    root.bc-text = "";
+                                    root.abc-is-angle = "";
+                                    root.bac-is-angle = "";
+
+                                    root.do_calculate_right_angle();
+                                }
+                            }
+                        }
+                        HorizontalBox {
+                            alignment: start;
+                        }
+                    }
                 }
             }
         }

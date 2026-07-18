@@ -44,7 +44,7 @@ export component AppWindow inherits Window {
     callback calculate-distance(string, string, string);
     callback calculate-triangle(string, string, string, string, string);
     callback calculate-force(string, string, string, string, string);
-    callback calculate-isoscelus-tringle(string, string, string, string);
+    callback calculate-isosceles-tringle(string, string, string, string);
 
     HorizontalLayout {
         side-bar := SideBar {
@@ -83,8 +83,8 @@ export component AppWindow inherits Window {
                 abc-is-angle: computed-abc-is-angle;
                 bac-is-angle: computed-bac-is-angle;
 
-                calculate-isoscelus-tringle(ab, bc, abc, bac) => {
-                    root.calculate-isoscelus-tringle(ab, bc, abc, bac);
+                calculate-isosceles-tringle(ab, bc, abc, bac) => {
+                    root.calculate-isosceles-tringle(ab, bc, abc, bac);
                 }
             }
             if(side-bar.current-item ==2): ForceCalculator {

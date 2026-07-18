@@ -82,7 +82,7 @@ if [ -z "$LAST_TAG" ]; then
     exit 1
 fi
 
-echo "⚠️ Found target tag to delete: $LAST_TAG"
+echo "Found target tag to delete: $LAST_TAG"
 
 echo "=== Deleting tag locally ==="
 git tag -d "$LAST_TAG"
@@ -90,7 +90,7 @@ git tag -d "$LAST_TAG"
 echo "=== Deleting tag from remote origin ==="
 git push origin --delete "$LAST_TAG"
 
-echo "✅ Successfully wiped $LAST_TAG from existence."
+echo "Successfully wiped $LAST_TAG from existence."
 '''
 
 # ==========================================

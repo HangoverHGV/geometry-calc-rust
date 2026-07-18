@@ -9,19 +9,60 @@ APP_VERSION = "${CARGO_MAKE_CRATE_VERSION}"
 # 0.0 Sync DEV with the last master
 # ==========================================
 [tasks.sync]
-description = "Merges the latest master branch changes into the local and remote dev branch"
+description = "Commits local changes, pushes to origin, and dynamically syncs master and dev"
 script = '''
-echo "=== Switching to dev branch ==="
-git checkout dev
+#!/usr/bin/env bash
 
-echo "=== Pulling latest changes from remote master ==="
-git fetch origin master
+# Get the name of the current active branch
+CURRENT_BRANCH=$(git branch --show-current)
 
-echo "=== Merging master into dev ==="
-git merge master --no-edit
+# 1. Check for uncommitted local changes
+if [ -n "$(git status --porcelain)" ]; then
+    echo "=== Uncommitted changes detected on '$CURRENT_BRANCH' ==="
+    read -r -p "Enter a commit message: " COMMIT_MSG
 
-echo "=== Pushing updated dev branch to remote ==="
-git push origin dev
+    # Abort if the message is left blank to prevent empty commits
+    if [ -z "$COMMIT_MSG" ]; then
+        echo "Error: Commit message cannot be empty. Aborting sync."
+        exit 1
+    fi
+
+    # Add and commit the changes
+    git add .
+    git commit -m "$COMMIT_MSG"
+fi
+
+# 2. Push the current branch to origin (captures both new and existing unpushed commits)
+echo "=== Pushing '$CURRENT_BRANCH' to remote ==="
+git push origin "$CURRENT_BRANCH"
+
+# 3. Execute dynamic merge logic
+if [ "$CURRENT_BRANCH" = "dev" ]; then
+    echo "=== Detected 'dev' branch. Merging dev into master ==="
+
+    git checkout master
+    git fetch origin master
+    git merge origin/master --no-edit
+
+    git merge dev --no-edit
+    git push origin master
+
+    git checkout dev
+    echo "=== Sync complete. Returned to dev ==="
+
+else
+    echo "=== Detected '$CURRENT_BRANCH' branch. Merging master into dev ==="
+
+    git checkout dev
+    git fetch origin master
+
+    # Brings in the master changes you just committed and pushed
+    git merge origin/master --no-edit
+
+    git push origin dev
+    git checkout "$CURRENT_BRANCH"
+    echo "=== Sync complete. Returned to $CURRENT_BRANCH ==="
+fi
 '''
 
 # ==========================================

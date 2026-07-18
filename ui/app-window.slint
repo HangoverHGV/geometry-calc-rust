@@ -1,4 +1,3 @@
-import { Button, VerticalBox } from "std-widgets.slint";
 import { SideBar } from "side_bar.slint";
 import { NumberOfElementsPage } from "number_of_elements.slint";
 import { Triangles } from "triangle.slint";
@@ -8,6 +7,7 @@ export component AppWindow inherits Window {
     title: "Inventor Calculator Helper";
 
     icon: @image-url("images/ico.svg");
+    maximized: true;
     
     preferred-width: 1000px;
     preferred-height: 500px;
@@ -16,8 +16,9 @@ export component AppWindow inherits Window {
     //                  ###
 
     // Object Distance Calculator
-    in-out property <string> computed-distance: "0";
-    in-out property <string> computed-center-distance: "0";
+    in-out property <string> computed-distance: "22";
+    computed-force: "213";
+    in-out property <string> computed-center-distance: "20";
 
     // Right Angle Calculator
     in-out property <string> computed-hypotenuse-text: "";

@@ -15,8 +15,12 @@ export component NumberOfElementsPage inherits Page {
     in-out property <string> distance: "0";
     callback submit_values(string, string, string);
 
-    property <image> center: @image-url("images/circle.svg");
-    property <image> edge: @image-url("images/edge.svg");
+    property <image> center-image: @image-url("images/circle.svg");
+    property <image> edge-image: @image-url("images/edge.svg");
+
+    property <length> max-image-wdth: 400px;
+    property <length> max-iamge-height: 200px;
+
 
     // Main calculation function
     function do_calculate() {
@@ -101,7 +105,10 @@ export component NumberOfElementsPage inherits Page {
         HorizontalLayout {
             VerticalBox {
                 Image {
-                    source: edge;
+                    source: edge-image;
+                    max-width: max-image-wdth;
+                    max-height: max-iamge-height;
+                    horizontal-alignment: center;
                 }
 
                 Text {
@@ -112,7 +119,10 @@ export component NumberOfElementsPage inherits Page {
 
             VerticalBox {
                 Image {
-                    source: center;
+                    source: center-image;
+                    max-width: max-image-wdth;
+                    max-height: max-iamge-height;
+                    horizontal-alignment: center;
                 }
 
                 Text {

@@ -1,13 +1,13 @@
 [Setup]
-AppName=Inventor Calculator Helper
+AppName=Cad Helper 3d
 AppVersion=1.0.0
-DefaultDirName={autopf}\InventorCalculatorHelper
-DefaultGroupName=Inventor Calculator Helper
+DefaultDirName={autopf}\CadHelper3d
+DefaultGroupName=Cad Helper 3d
 UninstallDisplayIcon={app}\cad-helper-3d.exe
 Compression=lzma2
 SolidCompression=yes
 OutputDir=.
-OutputBaseFilename=inventor-calculator-helper-setup
+OutputBaseFilename=cad-helper-3d-setup
 SetupIconFile=ui\images\ico.ico
 
 [Files]
@@ -17,5 +17,5 @@ Source: "cad-helper-3d.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ui\images\*"; DestDir: "{app}\ui\images"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
-Name: "{group}\Inventor Calculator Helper"; Filename: "{app}\cad-helper-3d.exe"
-Name: "{autodesktop}\Inventor Calculator Helper"; Filename: "{app}\cad-helper-3d.exe"
+Name: "{group}\Cad Helper 3d"; Filename: "{app}\cad-helper-3d.exe"
+Name: "{autodesktop}\Cad Helper 3d"; Filename: "{app}\cad-helper-3d.exe"

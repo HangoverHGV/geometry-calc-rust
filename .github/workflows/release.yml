@@ -42,7 +42,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: windows-installer
-          path: release/windows/inventor-calculator-helper-setup.exe
+          # Updated to target the new binary path setup dynamically or explicitly
+          path: release/windows/cad-helper-3d-setup.exe
           retention-days: 1
 
   # ==================== 2. ARCH LINUX PKG BUILD JOB ====================
@@ -101,7 +102,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Ubuntu needs standard GUI build systems
       - name: Install Linux dependencies
         run: |
           sudo apt-get update
@@ -137,7 +137,7 @@ jobs:
   # ==================== 4. UNIFIED PUBLISH JOB ====================
   publish-release:
     name: Create GitHub Release
-    needs: [build-windows, build-arch, build-debian] # Wait for all three platforms
+    needs: [build-windows, build-arch, build-debian]
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/tags/')
     permissions:
@@ -150,7 +150,6 @@ jobs:
       - name: Prepare release folder
         run: mkdir -p release-assets
 
-      # Download all three packages
       - name: Download Windows installer
         uses: actions/download-artifact@v4
         with:
@@ -174,7 +173,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            release-assets/inventor-calculator-helper-setup.exe
+            release-assets/cad-helper-3d-setup.exe
             release-assets/*.pkg.tar.zst
             release-assets/*.deb
         env:

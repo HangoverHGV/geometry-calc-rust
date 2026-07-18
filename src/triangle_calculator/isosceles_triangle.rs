@@ -6,6 +6,28 @@ pub fn calculate_all_isosceles_elements(ab_is: f64, bc_is: f64, abc_is: f64, bac
     let mut abc = abc_is;
     let mut bac = bac_is;
 
+    // 1. Check if the angles make physical sense for an isosceles triangle
+    let sum_of_angles = abc + abc + bac; // base_angle * 2 + vertex_angle
+    if (sum_of_angles - 180.0).abs() > 0.001 {
+        return None; // Invalid: Angles do not sum to 180 degrees
+    }
+
+    // 2. Ensure angles are within realistic bounds
+    if abc <= 0.0 || abc >= 90.0 || bac <= 0.0 || bac >= 180.0 {
+        return None; // Invalid: Geometric singularity
+    }
+
+    // Base Angle constraint
+    if abc >= 90.0 {
+        return None; // Impossible for a triangle
+    }
+
+    // Vertex Angle constraint
+    if bac >= 180.0 || bac <= 0.0 {
+        return None; // Impossible for a triangle
+    }
+
+
     // Use a small epsilon for float comparison to avoid issues with 0.0
     let eps = 1e-6;
 
@@ -37,6 +59,7 @@ pub fn calculate_all_isosceles_elements(ab_is: f64, bc_is: f64, abc_is: f64, bac
     else {
         return None; // Input insufficient or invalid
     }
+
 
     // Final sanity check: Triangle inequality
     if ab <= (bc / 2.0) + eps {

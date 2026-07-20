@@ -1,6 +1,6 @@
 [package]
 name = "cad-helper-3d"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2024"
 license = "MIT"
 description = "A sleek geometry and spacer calculator helper."
@@ -30,6 +30,7 @@ strum = { version = "0.28.0", features = ["derive"] }
 
 [build-dependencies]
 slint-build = "1.16.1"
+winres = "0.1.12"
 
 [profile.release]
 codegen-units = 1

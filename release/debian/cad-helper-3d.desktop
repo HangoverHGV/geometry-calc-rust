@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Inventor Calculator Helper
-Exec=inventor-math-calculator
-Icon=inventor-math-calculator
+Name=CAD Helper 3D
+Exec=cad-helper-3d
+Icon=cad-helper-3d
 Type=Application
 Terminal=false
 Categories=Utility;Math;Science;

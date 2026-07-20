@@ -1,5 +1,5 @@
 # Maintainer: HangoverHGV
-pkgname=inventor-math-calculator
+pkgname=cad-helper-3d
 pkgver=1.0.0
 pkgrel=1
 pkgdesc="A sleek geometry and spacer calculator helper built with Rust and Slint UI."

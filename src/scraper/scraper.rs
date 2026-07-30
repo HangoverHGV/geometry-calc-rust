@@ -1,10 +1,9 @@
 use std::fs;
-use std::path::Path;
 use std::collections::HashMap;
 use std::time::{SystemTime, UNIX_EPOCH};
 use reqwest;
 use scraper::{Html, Selector};
-use super::constants::{ BASE_URL };
+use super::constants::{BASE_URL, get_json_file_path};
 use serde::{Serialize, Deserialize};
 
 #[allow(dead_code)]
@@ -48,9 +47,6 @@ pub struct MetalData {
 }
 
 pub async fn run(url: &str) {
-    let folder_name = "scraped_data";
-    let file_path = format!("{}/metal_prices.json", folder_name);
-
     println!("Start Sync");
 
     let links = match get_links(url).await {
@@ -95,17 +91,20 @@ pub async fn run(url: &str) {
         final_output.insert(cat_name, serde_json::json!(products));
     }
 
-    if let Err(e) = fs::create_dir_all(folder_name) {
-        eprintln!("Failed to create directory: {}", e);
-        return;
-    }
+    let file_path = match get_json_file_path() {
+        Ok(path) => path,
+        Err(e) => {
+            eprintln!("Failed to resolve JSON file path: {}", e);
+            return;
+        }
+    };
 
     let json_string = serde_json::to_string_pretty(&final_output).unwrap();
 
     if let Err(e) = fs::write(&file_path, json_string) {
         eprintln!("Failed to write JSON file: {}", e);
     } else {
-        println!("Successfully saved scraped data to {}", file_path);
+        println!("Successfully saved scraped data to {}", file_path.display());
     }
 }
 

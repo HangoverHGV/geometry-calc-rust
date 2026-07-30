@@ -1,12 +1,12 @@
-import { SideBar } from "side_bar.slint";
-import { NumberOfElementsPage } from "number_of_elements.slint";
-import { Triangles } from "triangle.slint";
-import { ForceCalculator} from "force_calculator.slint";
+import { SideBar } from "components/side_bar.slint";
+import { NumberOfElementsPage } from "pages/number_of_elements.slint";
+import { Triangles } from "pages/triangle.slint";
+import { ForceCalculator} from "pages/force_calculator.slint";
 
 export component AppWindow inherits Window {
     title: "CAD Helper 3D";
 
-    icon: @image-url("images/ico.png");
+    icon: @image-url("assets/images/ico.png");
     maximized: false;
     
     preferred-width: 1000px;

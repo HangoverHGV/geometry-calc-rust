@@ -6,7 +6,7 @@ import {
     HorizontalBox,
 } from "std-widgets.slint";
 
-import { Page } from "page.slint";
+import { Page } from "../components/page.slint";
 
 export component NumberOfElementsPage inherits Page {
     title: "Number Of Elements";
@@ -15,8 +15,8 @@ export component NumberOfElementsPage inherits Page {
     in-out property <string> distance: "0";
     callback submit_values(string, string, string);
 
-    property <image> center-image: @image-url("images/circle.svg");
-    property <image> edge-image: @image-url("images/edge.svg");
+    property <image> center-image: @image-url("../assets/images/circle.svg");
+    property <image> edge-image: @image-url("../assets/images/edge.svg");
 
     property <length> max-image-wdth: 400px;
     property <length> max-iamge-height: 200px;

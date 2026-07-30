@@ -1,4 +1,4 @@
-import { Page } from "page.slint";
+import { Page } from "../components/page.slint";
 import {
     GroupBox,
     TabWidget,
@@ -11,8 +11,8 @@ import {
 export component Triangles inherits Page {
     title: "Triangle Calculator";
 
-    property <image> right-triangle-svg: @image-url("images/right-triangle.svg");
-    property <image> is-triangle-svg: @image-url("images/isosceles-triangle.svg");
+    property <image> right-triangle-svg: @image-url("../assets/images/right-triangle.svg");
+    property <image> is-triangle-svg: @image-url("../assets/images/isosceles-triangle.svg");
 
     callback calculate_triangle(string, string, string, string, string);
     callback calculate-isosceles-tringle(string, string, string, string);

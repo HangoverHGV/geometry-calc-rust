@@ -6,6 +6,7 @@ use std::error::Error;
 mod object_calculator;
 mod triangle_calculator;
 mod force_calculator;
+mod scraper;
 
 slint::include_modules!();
 

@@ -42,6 +42,7 @@ pub struct CategoryLinks {
 pub struct MetalData {
     pub name: String,
     pub price: f32,
+    pub um: String,
     #[serde(skip)]
     pub category: Category,
 }
@@ -169,7 +170,6 @@ pub async fn get_links(url: &str) -> Result<Vec<CategoryLinks>, Box<dyn std::err
     }
     Ok(links)
 }
-
 pub async fn get_all_category_products(
     base_category_url: &str,
     category: Category,
@@ -184,6 +184,7 @@ pub async fn get_all_category_products(
         let product_selector = Selector::parse("div.product")?;
         let name_selector = Selector::parse("h2.product-name a")?;
         let price_selector = Selector::parse(".price.t-call-to-action-background-to-text")?;
+        let um_selector = Selector::parse(".product-um")?; // Selector for Unit of Measure
 
         for product_el in document.select(&product_selector) {
             let product_name = if let Some(name_el) = product_el.select(&name_selector).next() {
@@ -204,9 +205,17 @@ pub async fn get_all_category_products(
                 0.0
             };
 
+            // Extract Unit of Measure (e.g., "Pret / KG" or "Pret / ML")
+            let um = if let Some(um_el) = product_el.select(&um_selector).next() {
+                um_el.text().collect::<String>().trim().to_string()
+            } else {
+                "".to_string()
+            };
+
             all_products.push(MetalData {
                 name: product_name,
                 price,
+                um,
                 category,
             });
         }

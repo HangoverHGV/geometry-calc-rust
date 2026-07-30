@@ -2,4900 +2,6122 @@
   "MetalPlate": [
     {
       "name": "29040366 TABLA TIP CORTEN 3000X1500MM, GR. 2.0MM, S355J0WP",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2000X1000MM, GR. 0.50MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040206 TABLA NEAGRA 6000X2050MM, GR. 6.0MM, S355",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2000X1000MM, GR. 1.0MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2000X1000MM, GR. 0.45MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2500X1250MM, GR. 0.45MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040210 TABLA NEAGRA 6000X2000MM, GR. 10.0MM, S355J2",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040212 TABLA NEAGRA 6000X2000MM, GR. 12.0MM, S355J2",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040220 TABLA NEAGRA 6000X2000MM, GR. 20MM, S355J2",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "54136 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.0 MM",
-      "price": 28682.0
+      "price": 28682.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54145 TABLA AMBUTISATA MODEL ROTUND H 2000MM, L 1000MM, GR. 1.5MM",
-      "price": 40145.0
+      "price": 40145.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54144 TABLA AMBUTISATA MODEL ROTUND H 2000MM, L 1000MM, GR. 1.0MM",
-      "price": 30110.0
+      "price": 30110.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29040230 TABLA NEAGRA 6000X2000MM, GR. 30.0MM, S355J2",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040235 TABLA NEAGRA 6000X2000MM, GR. 35.0MM, S355J2",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040365 TABLA TIP CORTEN 3000X1500MM, GR. 1.5MM, ARCORF",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2000X1000MM, GR. 3.0MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2500X1250MM, GR. 0.50MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2500X1250MM, GR. 1.0MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2500X1250MM, GR. 2.0MM DX51D+Z100",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040368 TABLA TIP CORTEN 2500X1250MM, GR. 2.0MM, S355J0WP",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2500X1250MM, GR. 1.5MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2500X1250MM, GR. 3.0MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29011200 TABLA NEAGRA 6000X2000MM, GR. 20.0MM",
-      "price": 734.0
+      "price": 734.0,
+      "um": "Pret / KG"
     },
     {
       "name": "54139 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.0MM",
-      "price": 37113.0
+      "price": 37113.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54120 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.2MM",
-      "price": 29261.0
+      "price": 29261.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "2901060 TABLA NEAGRA 6000X1500MM, GR. 6.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "54127 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.2MM",
-      "price": 20224.0
+      "price": 20224.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "2901050 TABLA NEAGRA 6000X1500MM, GR. 5.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2901045 TABLA NEAGRA 2500X1250MM, GR. 4.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "54134 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.0MM",
-      "price": 25693.0
+      "price": 25693.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54128 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.2MM",
-      "price": 20224.0
+      "price": 20224.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54152 TABLA ANTIDERAPANTA OTEL 2000X1000MM, GR. 3MM",
-      "price": 54353.0
+      "price": 54353.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54161 TABLA PERFORATA CU GAURI ALUNGITE OTEL, 2000X1000MM, GR. 1MM",
-      "price": 19610.0
+      "price": 19610.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "5430020 TABLA STRIATA ALUMINIU 5 BARE 2000X1000MM, GR. 2.0MM",
-      "price": 51281.0
+      "price": 51281.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "5417010 TABLA EXPANDATA OTEL 45X18MM, 2000X1000MM, GR. 1.0MM",
-      "price": 10857.0
+      "price": 10857.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29032530 TABLA STRIATA NEAGRA 2500X1250 MM, GR. 3.0 MM",
-      "price": 880.0
+      "price": 880.0,
+      "um": "Pret / KG"
     },
     {
       "name": "5430030 TABLA STRIATA ALUMINIU 5 BARE 2000X1000MM, GR. 3.0MM",
-      "price": 84088.0
+      "price": 84088.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "5417005 TABLA EXPANDATA OTEL 6X3MM, 2000X1000MM, GR. 0.5MM",
-      "price": 7337.0
+      "price": 7337.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "5431015 TABLA PERFORATA ALUMINIU FI 10MM, 2000X1000MM, GR. 1MM",
-      "price": 25346.0
+      "price": 25346.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54150 TABLA PERFORATA OTEL FI 10MM, 2000X1000MM, GR. 1.0MM",
-      "price": 17609.0
+      "price": 17609.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29032140 TABLA STRIATA NEAGRA 2000X1000 MM, GR. 4.0 MM",
-      "price": 909.0
+      "price": 909.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29032130 TABLA STRIATA NEAGRA 2000X1000 MM, GR. 3.0 MM",
-      "price": 880.0
+      "price": 880.0,
+      "um": "Pret / KG"
     },
     {
       "name": "5431020 TABLA PERFORATA ALUMINIU FI 15MM, 2000X1000MM, GR. 1MM",
-      "price": 22945.0
+      "price": 22945.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29032150 TABLA STRIATA NEAGRA 2000X1000 MM, GR. 5.0 MM",
-      "price": 880.0
+      "price": 880.0,
+      "um": "Pret / KG"
     },
     {
       "name": "5413901 TABLA AMBUTISATA H 2000 MM, L 1000 MM, GR. 1 MM",
-      "price": 35102.0
+      "price": 35102.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54162 TABLA PERFORATA OTEL 20X20MM, 2000X1000MM, GR. 1.5MM",
-      "price": 24679.0
+      "price": 24679.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "5430015 TABLA STRIATA ALUMINIU 5 BARE 2000X1000MM, GR. 1.5MM",
-      "price": 37064.0
+      "price": 37064.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "2901030 TABLA NEAGRA 6000X1500MM, GR. 3.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900620 TABLA NEAGRA 2500X1250MM, GR. 2.0MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900540 TABLA NEAGRA 2000X1000MM, GR. 4.0MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900531 TABLA NEAGRA 2500X1250MM, GR. 3.0MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900530 TABLA NEAGRA 2000X1000MM, GR. 3.0MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900520 TABLA NEAGRA 2000X1000MM, GR. 2.0MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "54100 TABLA AMBUTISATA CU MODEL H 2000MM, L 1000MM, GR. 1MM",
-      "price": 27121.0
+      "price": 27121.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "2900220 TABLA DECAPATA 2500X1250MM, GR. 2.0MM",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900215 TABLA DECAPATA 2500X1250MM, GR. 1.5MM",
-      "price": 785.0
+      "price": 785.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900210 TABLA DECAPATA 2500X1250MM, GR. 1.0MM",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900208 TABLA DECAPATA 2500X1250MM, GR. 0.8MM",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900120 TABLA DECAPATA 2000X1000MM, GR. 2.0MM",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900117 TABLA DECAPATA 2000X1200MM, GR. 0.7MM",
-      "price": 785.0
+      "price": 785.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900115 TABLA DECAPATA 2000X1000MM, GR. 1.5MM",
-      "price": 785.0
+      "price": 785.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900112 TABLA DECAPATA 2000X1000MM, GR. 1.2MM",
-      "price": 785.0
+      "price": 785.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900109 TABLA DECAPATA 2000X1000MM, GR. 0.9MM",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900107 TABLA DECAPATA 2000X1000MM, GR. 0.7MM",
-      "price": 785.0
+      "price": 785.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900625 TABLA NEAGRA 2500X1250MM, GR. 2.5MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29010120 TABLA NEAGRA 6000X1500MM, GR. 12.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900880 TABLA NEAGRA 3000X1500MM, GR. 8.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900860 TABLA NEAGRA 3000X1500MM, GR. 6.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900850 TABLA NEAGRA 3000X1500MM, GR. 5.0MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900840 TABLA NEAGRA 3000X1500MM, GR. 4.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900750 TABLA NEAGRA 4000x2000MM, GR. 5.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "54153 TABLA DECAPATA PERFORATA MODEL BUBBLE SOAP, 2000X1000MM, GR. 1.5MM",
-      "price": 48763.0
+      "price": 48763.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29040369 TABLA TIP CORTEN 2500X1250MM, GR. 3.0MM, S355J0WP",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040364 TABLA TIP CORTEN 2000X1000MM, GR. 3.0MM, S355J0WP",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040363 TABLA TIP CORTEN 2000X1000MM, GR. 2.0MM, S355J0WP",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040362 TABLA TIP CORTEN 2000X1000MM, GR. 1.5MM, S355J0WP",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900207 - TABLA DECAPATA 2500X1250MM, GR. 0.7MM",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040225 TABLA NEAGRA 6000X2000MM, GR. 25.0MM, S355J2",
-      "price": 800.0
+      "price": 800.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2000X1000MM, GR. 2.0MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040367 TABLA TIP CORTEN 3000X1500MM, GR. 3.0MM, S355J0WP",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040215 TABLA NEAGRA 6000X2000MM, GR. 15.0MM, S355J2",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040208 TABLA NEAGRA 6000X2000MM, GR. 8.0MM, S355J2",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "TABLA ZINCATA 2000X1000MM, GR. 1.5MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "5415002 TABLA PERFORATA OTEL FI 10 MM, 2000X1000MM, GR. 2.0MM",
-      "price": 32670.0
+      "price": 32670.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "5417025 TABLA EXPANDATA OTEL 45X18MM, 2000X1000MM, GR. 2.5MM",
-      "price": 21611.0
+      "price": 21611.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "TABLA ZINCATA 3000X1500MM, GR. 3.0MM DX51D+Z100",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29040361 TABLA TIP CORTEN 6000X1500MM, GR. 2.5MM, S355",
-      "price": 755.0
+      "price": 755.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29010150 TABLA NEAGRA 6000X1500MM, GR. 15.0MM",
-      "price": 764.0
+      "price": 764.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900515 TABLA NEAGRA 2000X1000MM, GR. 1.5MM",
-      "price": 785.0
+      "price": 785.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29010160 TABLA NEAGRA 6000X1500MM, GR. 16.0MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29010180 TABLA NEAGRA 6000X1500MM, GR. 18.0MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29010200 TABLA NEAGRA 6000X1500MM, GR. 20.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29010220 TABLA NEAGRA 6000X1500MM, GR. 22.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29010250 TABLA NEAGRA 6000X1500MM, GR. 25.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29010300 TABLA NEAGRA 6000X1500MM, GR. 30.0MM",
-      "price": 570.0
+      "price": 570.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2901040 TABLA NEAGRA 6000X1500MM, GR. 4.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2901080 TABLA NEAGRA 6000X1500MM, GR. 8.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29011100 TABLA NEAGRA 6000X2000MM, GR. 10.0MM",
-      "price": 570.0
+      "price": 570.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29011150 TABLA NEAGRA 6000X2000MM, GR. 15.0MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29011180 TABLA NEAGRA 6000X2000MM, GR. 18.0MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29011250 TABLA NEAGRA 6000X2000MM, GR. 25.0MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29011300 TABLA NEAGRA 6000X2000MM, GR. 30.0MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29012150 TABLA NEAGRA 3000X2000MM, GR. 15.0MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "5417020 TABLA EXPANDATA OTEL 45X18MM, 2000X1000MM, GR. 2.0MM",
-      "price": 18629.0
+      "price": 18629.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29010140 TABLA NEAGRA 6000X1500MM, GR. 14.0MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900105 TABLA DECAPATA 2000X1000MM, GR. 0.5MM",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900108 TABLA DECAPATA 2000X1000MM, GR. 0.8MM",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900110 TABLA DECAPATA 2000X1000MM, GR. 1.0MM",
-      "price": 785.0
+      "price": 785.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900111 TABLA DECAPATA 2000X1200MM, GR. 1.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900113 TABLA DECAPATA 2000X1200MM, GR. 1.2MM",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900125 TABLA DECAPATA 2000X1000MM, GR. 2.5MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900140 TABLA DECAPATA 2000X1000MM, GR. 4.0MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900225 TABLA DECAPATA 2500X1250MM, GR. 2.5MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900525 TABLA NEAGRA 2000X1000MM, GR. 2.5MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900550 TABLA NEAGRA 2000X1000MM, GR. 5.0MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900730 TABLA NEAGRA 4000X2000MM, GR. 3.0MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29008120 TABLA NEAGRA 3000X1500MM, GR. 12.0MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900830 TABLA NEAGRA 3000X1500MM, GR. 3.0MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2900930 TABLA NEAGRA 2000X1500MM, GR. 3.0MM",
-      "price": 570.0
+      "price": 570.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29010100 TABLA NEAGRA 6000X1500MM, GR. 10.0MM",
-      "price": 598.0
+      "price": 598.0,
+      "um": "Pret / KG"
     },
     {
       "name": "54132 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.0MM",
-      "price": 29261.0
+      "price": 29261.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29012200 TABLA NEAGRA 3000X2000MM, GR. 20.0MM",
-      "price": 570.0
+      "price": 570.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29013150 TABLA NEAGRA 2000X2000MM, GR. 15.0MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "54143 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.0MM",
-      "price": 25894.0
+      "price": 25894.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54142 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.0MM",
-      "price": 25894.0
+      "price": 25894.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54141 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.0MM",
-      "price": 28549.0
+      "price": 28549.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54140 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.0MM",
-      "price": 25894.0
+      "price": 25894.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29012100 TABLA NEAGRA 3000X2000MM, GR. 10.0MM",
-      "price": 570.0
+      "price": 570.0,
+      "um": "Pret / KG"
     },
     {
       "name": "54101 TABLA AMBUTISATA CU MODEL H 2000MM, L 1000MM, GR. 1MM",
-      "price": 22839.0
+      "price": 22839.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54121 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.2MM",
-      "price": 20224.0
+      "price": 20224.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54133 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.0MM",
-      "price": 22010.0
+      "price": 22010.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54131 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.2MM",
-      "price": 22029.0
+      "price": 22029.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54129 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.2MM",
-      "price": 27347.0
+      "price": 27347.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54122 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.2MM",
-      "price": 18344.0
+      "price": 18344.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54123 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.2MM",
-      "price": 29261.0
+      "price": 29261.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54126 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.2MM",
-      "price": 20224.0
+      "price": 20224.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "5412501 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.2MM",
-      "price": 29261.0
+      "price": 29261.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54125 TABLA AMBUTISATA H 2500MM, L 1250MM, GR. 1.2MM",
-      "price": 27903.0
+      "price": 27903.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "5410015 TABLA AMBUTISATA CU MODEL H 2000MM, L 1000MM, GR. 1,5MM",
-      "price": 27836.0
+      "price": 27836.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "5410012 TABLA AMBUTISATA CU MODEL H 2000MM, L 1000MM, GR. 1,2MM",
-      "price": 28549.0
+      "price": 28549.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54163 TABLA PERFORATA MODEL PATRAT IN PATRAT OTEL, 2000X1000MM, GR. 0.75MM",
-      "price": 16675.0
+      "price": 16675.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "2902030 TABLA ZINCATA 2500X1250MM, GR. 3.0 MM",
-      "price": 877.0
+      "price": 877.0,
+      "um": "Pret / KG"
     },
     {
       "name": "5417030 TABLA EXPANDATA OTEL 45X18MM, 2000X1000MM, GR. 3.0MM",
-      "price": 27347.0
+      "price": 27347.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29032120 TABLA STRIATA NEAGRA 2000X1000 MM, GR. 2.0 MM",
-      "price": 693.0
+      "price": 693.0,
+      "um": "Pret / KG"
     },
     {
       "name": "5417015 TABLA EXPANDATA OTEL 45X18MM, 2000X1200MM, GR. 1.5MM",
-      "price": 18737.0
+      "price": 18737.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54169 TABLA PERFORATA OTEL TIP CRUCE 10X10MM, 2000X1000MM, GR. 1.0 MM",
-      "price": 17609.0
+      "price": 17609.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29032125 TABLA STRIATA NEAGRA 2000X1000 MM, GR. 2.5 MM",
-      "price": 693.0
+      "price": 693.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29032520 TABLA STRIATA NEAGRA 2500X1250 MM, GR. 2.0 MM",
-      "price": 693.0
+      "price": 693.0,
+      "um": "Pret / KG"
     },
     {
       "name": "5431005 TABLA PERFORATA ALUMINIU FI 5MM, 2000X1000MM, GR. 1MM",
-      "price": 22679.0
+      "price": 22679.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29032525 TABLA STRIATA NEAGRA 2500X1250 MM, GR. 2.5 MM",
-      "price": 693.0
+      "price": 693.0,
+      "um": "Pret / KG"
     },
     {
       "name": "5430025 TABLA STRIATA ALUMINIU 5 BARE 2000X1000MM, GR. 2.5MM",
-      "price": 50599.0
+      "price": 50599.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "29032540 TABLA STRIATA NEAGRA 2500X1250 MM, GR. 4.0 MM",
-      "price": 693.0
+      "price": 693.0,
+      "um": "Pret / KG"
     },
     {
       "name": "29032550 TABLA STRIATA NEAGRA 2500X1250 MM, GR. 5.0 MM",
-      "price": 693.0
+      "price": 693.0,
+      "um": "Pret / KG"
     },
     {
       "name": "5417016 TABLA EXPANDATA OTEL 16X8, 2000X1000MM, GR. 1MM",
-      "price": 9071.0
+      "price": 9071.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54160 TABLA PERFORATA OTEL 10X10MM, 2000X1000MM, GR. 1.0MM",
-      "price": 18010.0
+      "price": 18010.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54151 TABLA PERFORATA OTEL FI 5MM, 2000X1000MM, GR. 1.0MM",
-      "price": 18010.0
+      "price": 18010.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "54124 TABLA AMBUTISATA H 2000MM, L 1000MM, GR. 1.2MM",
-      "price": 24265.0
+      "price": 24265.0,
+      "um": "Pret / BUC"
     }
   ],
   "Profiles": [
     {
       "name": "28451160 PROFIL HEB 160MM, L 12100MM, S275JO",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27431180 PROFIL HEA 180MM, L 12100MM, S355J2",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27421270 PROFIL IPE 270MM, L 12000MM, S355",
-      "price": 742.0
+      "price": 742.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27421240 PROFIL IPE 240MM, L 12000MM, S355",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27432260 PROFIL HEB 260MM, L 12100MM, S355J2",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27432220 PROFIL HEB 220MM, L 12100MM, S355J2",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27432200 PROFIL HEB 200MM, L 12100MM, S355J2",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27431140 PROFIL HEA 140MM, L 12100MM, S355J2",
-      "price": 17066.0
+      "price": 17066.0,
+      "um": "Pret / ML"
     },
     {
       "name": "27431100 PROFIL HEA 100MM, L 12100MM, S355J2",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2825006 OTEL LAT 50X6.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821506 OTEL LAT 150X6.0MM",
-      "price": 713.0
+      "price": 713.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822006 OTEL LAT 20X6.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822506 OTEL LAT 25X6.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2831212 CORNIER 120X120X12.0MM, L 12000MM",
-      "price": 732.0
+      "price": 732.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3212010 OTEL LAT AMPRENTAT PE MARGINI 20x10",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3212503 OTEL LAT AMPRENTAT PE MARGINI 25X3",
-      "price": 471.0
+      "price": 471.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3212504 OTEL LAT AMPRENTAT PE MARGINI 25x4",
-      "price": 542.0
+      "price": 542.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3212505 OTEL LAT AMPRENTAT PE MARGINI 25x5",
-      "price": 715.0
+      "price": 715.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3212008 OTEL LAT AMPRENTAT PE MARGINI 20x8",
-      "price": 934.0
+      "price": 934.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3212005 OTEL LAT AMPRENTAT PE MARGINI 20x5",
-      "price": 554.0
+      "price": 554.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3212003 OTEL LAT AMPRENTAT PE MARGINI 20x3",
-      "price": 443.0
+      "price": 443.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211608 OTEL LAT AMPRENTAT PE MARGINI 16x8",
-      "price": 748.0
+      "price": 748.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3203008 OTEL LAT AMPRENTAT 2 DUNGI 30x8",
-      "price": 1382.0
+      "price": 1382.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3203010 OTEL LAT AMPRENTAT 2 DUNGI 30x10",
-      "price": 1756.0
+      "price": 1756.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3204004 OTEL LAT AMPRENTAT 2 DUNGI 40x4",
-      "price": 905.0
+      "price": 905.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3204005 OTEL LAT AMPRENTAT 2 DUNGI 40X5",
-      "price": 1124.0
+      "price": 1124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3204008 OTEL LAT AMPRENTAT 2 DUNGI 40X8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3205004 OTEL LAT AMPRENTAT 2 DUNGI 50x4",
-      "price": 1146.0
+      "price": 1146.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3205005 OTEL LAT AMPRENTAT 2 DUNGI 50x5",
-      "price": 1430.0
+      "price": 1430.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211203 OTEL LAT AMPRENTAT PE MARGINI 12x3",
-      "price": 232.0
+      "price": 232.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211204 OTEL LAT AMPRENTAT PE MARGINI 12x4",
-      "price": 385.0
+      "price": 385.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211205 OTEL LAT AMPRENTAT  LA CALD 12x5 MM",
-      "price": 347.0
+      "price": 347.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211206 OTEL LAT AMPRENTAT PE MARGINI 12x6",
-      "price": 409.0
+      "price": 409.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211405 OTEL LAT AMPRENTAT PE MARGINI 14X5",
-      "price": 430.0
+      "price": 430.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211406 OTEL LAT AMPRENTAT PE MARGINI 14x6",
-      "price": 588.0
+      "price": 588.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211408 OTEL LAT AMPRENTAT PE MARGINI 14x8",
-      "price": 657.0
+      "price": 657.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211603 OTEL LAT AMPRENTAT PE MARGINI 16x3",
-      "price": 299.0
+      "price": 299.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211605 OTEL LAT AMPRENTAT PE MARGINI 16X5",
-      "price": 525.0
+      "price": 525.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211606 OTEL LAT AMPRENTAT PE MARGINI 16x6",
-      "price": 590.0
+      "price": 590.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3212508 OTEL LAT AMPRENTAT PE MARGINI 25x8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3213004 OTEL LAT AMPRENTAT PE MARGINI 30x4",
-      "price": 686.0
+      "price": 686.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3222508 OTEL LAT AMPRENTAT TRANSVERSAL 25x8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3223004 OTEL LAT AMPRENTAT TRANSVERSAL 30x4",
-      "price": 686.0
+      "price": 686.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3223005 OTEL LAT AMPRENTAT TRANSVERSAL 30x5",
-      "price": 853.0
+      "price": 853.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3223010 OTEL LAT AMPRENTAT TRANSVERSAL 30x10",
-      "price": 1756.0
+      "price": 1756.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3224005 OTEL LAT AMPRENTAT TRANSVERSAL 40x5",
-      "price": 1124.0
+      "price": 1124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3232005 OTEL LAT AMPRENTAT SCOARTA 20x5",
-      "price": 554.0
+      "price": 554.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3232504 OTEL LAT AMPRENTAT SCOARTA 25x4",
-      "price": 569.0
+      "price": 569.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3232508 OTEL LAT AMPRENTAT SCOARTA 25x8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3232515 OTEL LAT AMPRENTAT SCOARTA AMBELE FETE 25X5",
-      "price": 715.0
+      "price": 715.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3233004 OTEL LAT AMPRENTAT SCOARTA 30x4",
-      "price": 751.0
+      "price": 751.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3233005 OTEL LAT AMPRENTAT SCOARTA 30X5",
-      "price": 846.0
+      "price": 846.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3222505 OTEL LAT AMPRENTAT TRANSVERSAL 25x5",
-      "price": 715.0
+      "price": 715.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3222504 OTEL LAT AMPRENTAT TRANSVERSAL 25x4",
-      "price": 569.0
+      "price": 569.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3213005 OTEL LAT AMPRENTAT PE MARGINI 30x5",
-      "price": 846.0
+      "price": 846.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3213008 OTEL LAT AMPRENTAT PE MARGINI 30x8",
-      "price": 1382.0
+      "price": 1382.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3224008 OTEL LAT AMPRENTAT TRANSVERSAL 40X8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3214004 OTEL LAT AMPRENTAT PE MARGINI 40x4",
-      "price": 906.0
+      "price": 906.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3214005 OTEL LAT AMPRENTAT PE MARGINI 40x5",
-      "price": 1163.0
+      "price": 1163.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3214008 OTEL LAT AMPRENTAT PE MARGINI 40x8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3221406 OTEL LAT AMPRENTAT TRANSVERSAL 14x6",
-      "price": 517.0
+      "price": 517.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3221608 OTEL LAT AMPRENTAT TRANSVERSAL 16x8",
-      "price": 748.0
+      "price": 748.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3222005 OTEL LAT AMPRENTAT TRANSVERSAL 20x5",
-      "price": 572.0
+      "price": 572.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3222008 OTEL LAT AMPRENTAT TRANSVERSAL 20x8",
-      "price": 934.0
+      "price": 934.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3222010 OTEL LAT AMPRENTAT TRANSVERSAL 20x10",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3233008 OTEL LAT AMPRENTAT SCOARTA 30x8",
-      "price": 1382.0
+      "price": 1382.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3203005 OTEL LAT AMPRENTAT 2 DUNGI 30X5",
-      "price": 846.0
+      "price": 846.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30011 OTEL PATRAT AMPRENTAT CANT 11X11MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30225 OTEL PATRAT AMPRENTAT SCOARTA 25X25MM",
-      "price": 3833.0
+      "price": 3833.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30312 OTEL PATRAT AMPRENTAT BATUT 12X12MM",
-      "price": 824.0
+      "price": 824.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30314 OTEL PATRAT AMPRENTAT BATUT 14X14MM",
-      "price": 1202.0
+      "price": 1202.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30316 OTEL PATRAT AMPRENTAT BATUT 16X16MM",
-      "price": 1437.0
+      "price": 1437.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30318 OTEL PATRAT AMPRENTAT BATUT 18X18MM",
-      "price": 2442.0
+      "price": 2442.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30320 OTEL PATRAT AMPRENTAT BATUT 20X20MM",
-      "price": 2346.0
+      "price": 2346.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30412 OTEL PATRAT CANELAT 12X12MM",
-      "price": 824.0
+      "price": 824.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30414 OTEL PATRAT CANELAT 14X14MM",
-      "price": 1117.0
+      "price": 1117.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30610 OTEL PATRAT RASUCIT 10X10MM, L 6000MM",
-      "price": 576.0
+      "price": 576.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30612 OTEL PATRAT RASUCIT 12X12MM, L 6000MM",
-      "price": 824.0
+      "price": 824.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3061202 OTEL PATRAT RASUCIT 12X12MM, L 2000MM",
-      "price": 1571.0
+      "price": 1571.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "30220 OTEL PATRAT AMPRENTAT SCOARTA 20X20MM",
-      "price": 2346.0
+      "price": 2346.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30214 OTEL PATRAT AMPRENTAT SCOARTA 14X14MM",
-      "price": 1117.0
+      "price": 1117.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30012 OTEL PATRAT AMPRENTAT LA CALD 12X12MM",
-      "price": 824.0
+      "price": 824.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30014 OTEL PATRAT AMPRENTAT CANT 14X14MM",
-      "price": 1117.0
+      "price": 1117.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30016 OTEL PATRAT AMPRENTAT CANT 16X16MM",
-      "price": 1437.0
+      "price": 1437.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30020 OTEL PATRAT AMPRENTAT CANT 20X20MM",
-      "price": 2346.0
+      "price": 2346.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30110 OTEL PATRAT AMPRENTAT TRANSVERSAL 10X10MM",
-      "price": 576.0
+      "price": 576.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3011002 OTEL PATRAT AMPRENTAT TRANSVERSAL 2 FETE 10X10MM",
-      "price": 576.0
+      "price": 576.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30112 OTEL PATRAT AMPRENTAT TRANSVERSAL 12X12MM",
-      "price": 824.0
+      "price": 824.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30114 OTEL PATRAT AMPRENTAT TRANSVERSAL 14X14MM",
-      "price": 1117.0
+      "price": 1117.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30116 OTEL PATRAT AMPRENTAT TRANSVERSAL 16X16MM",
-      "price": 1437.0
+      "price": 1437.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30120 OTEL PATRAT AMPRENTAT TRANSVERSAL 20X20MM",
-      "price": 2346.0
+      "price": 2346.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30212 OTEL PATRAT AMPRENTAT SCOARTA 12X12MM",
-      "price": 824.0
+      "price": 824.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30613 OTEL PATRAT RASUCIT 11.5X11.5MM, L 6000MM",
-      "price": 679.0
+      "price": 679.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30614 OTEL PATRAT RASUCIT 14X14MM, L 6000MM",
-      "price": 1117.0
+      "price": 1117.0,
+      "um": "Pret / ML"
     },
     {
       "name": "31180 PROFIL \"T\" 30X60X34MM, GR. 1.4MM",
-      "price": 2420.0
+      "price": 2420.0,
+      "um": "Pret / ML"
     },
     {
       "name": "31190 PROFIL \"Z\" 45X45X34MM, GR. 1.4MM",
-      "price": 2003.0
+      "price": 2003.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3202003 OTEL LAT AMPRENTAT 2 DUNGI 20x3",
-      "price": 486.0
+      "price": 486.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3202004 OTEL LAT AMPRENTAT 2 DUNGI 20x4",
-      "price": 484.0
+      "price": 484.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3202005 OTEL LAT AMPRENTAT 2 DUNGI 20x5",
-      "price": 554.0
+      "price": 554.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3202008 OTEL LAT AMPRENTAT 2 DUNGI 20x8",
-      "price": 934.0
+      "price": 934.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3202503 OTEL LAT AMPRENTAT 2 DUNGI 25x3",
-      "price": 522.0
+      "price": 522.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3202504 OTEL LAT AMPRENTAT 2 DUNGI 25x4",
-      "price": 569.0
+      "price": 569.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3202505 OTEL LAT AMPRENTAT 2 DUNGI 25x5",
-      "price": 715.0
+      "price": 715.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3202508 OTEL LAT AMPRENTAT 2 DUNGI 25x8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3203003 OTEL LAT AMPRENTAT 2 DUNGI 30x3",
-      "price": 505.0
+      "price": 505.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30912 OTEL ROTUND AMPRENTAT RAMURA FI 12MM",
-      "price": 650.0
+      "price": 650.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30816 OTEL ROTUND AMPRENTAT GAURI FI 16MM",
-      "price": 1153.0
+      "price": 1153.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30616 OTEL PATRAT RASUCIT 16X16MM, L 6000MM",
-      "price": 1437.0
+      "price": 1437.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30625 OTEL PATRAT RASUCIT 25X25MM, L 6000MM",
-      "price": 3833.0
+      "price": 3833.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30710 OTEL ROTUND AMPRENTAT SCOARTA FI 10MM",
-      "price": 459.0
+      "price": 459.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30712 OTEL ROTUND AMPRENTAT SCOARTA FI 12MM",
-      "price": 650.0
+      "price": 650.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30714 OTEL ROTUND AMPRENTAT SCOARTA FI 14MM",
-      "price": 883.0
+      "price": 883.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30716 OTEL ROTUND AMPRENTAT SCOARTA FI 16MM",
-      "price": 1153.0
+      "price": 1153.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30722 OTEL ROTUND AMPRENTAT SCOARTA  FI 22 MM",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30730 OTEL ROTUND AMPRENTAT SCOARTA FI 30MM",
-      "price": 4350.0
+      "price": 4350.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30810 OTEL ROTUND AMPRENTAT GAURI FI 10MM",
-      "price": 456.0
+      "price": 456.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30812 OTEL ROTUND AMPRENTAT GAURI FI 12MM",
-      "price": 650.0
+      "price": 650.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30814 OTEL ROTUND AMPRENTAT GAURI FI 14MM",
-      "price": 883.0
+      "price": 883.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3203004 OTEL LAT AMPRENTAT 2 DUNGI 30x4",
-      "price": 686.0
+      "price": 686.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3352004 OTEL LAT AMPRENTAT BRAU GRECESC  20X4 MM",
-      "price": 488.0
+      "price": 488.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35171 MANA CURENTA PVC ROSU, L 4000 MM, 65x40",
-      "price": 19583.0
+      "price": 19583.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "35408 MANA CURENTA PLINA LAMINATA LA CALD SECT. 40X8MM, L 1000MM",
-      "price": 1800.0
+      "price": 1800.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35514 MANA CURENTA PLINA LAMINATA LA CALD SECT. 50X14MM, L 6000MM",
-      "price": 3478.0
+      "price": 3478.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35539 MANA CURENTA PLINA LAMINATA LA CALD SECT. 53X9MM, L 6000MM",
-      "price": 4871.0
+      "price": 4871.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35641 MANA CURENTA  LAMINATA LA CALD SECT. 41X11X6MM, L 1000MM",
-      "price": 2368.0
+      "price": 2368.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35643 MANA CURENTA  LAMINATA LA CALD SECT. 43X15X8MM, L 6000MM",
-      "price": 3254.0
+      "price": 3254.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35710 MANA CURENTA RASUCITA SECT. 4X10MM, L 6000MM",
-      "price": 4746.0
+      "price": 4746.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35712 MANA CURENTA RASUCITA SECT. 4X12MM, L 1000MM",
-      "price": 4856.0
+      "price": 4856.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35714 MANA CURENTA RASUCITA SECT. 4X14MM, L 6000MM",
-      "price": 6075.0
+      "price": 6075.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3701616 BARA FORATA SECT. 16X16MM, GAURA 16X16MM, L 2000MM",
-      "price": 5438.0
+      "price": 5438.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3711414 BARA FORATA SECT. FI 14MM, GAURA FI 14MM, L 2000MM",
-      "price": 7069.0
+      "price": 7069.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "35170 MANA CURENTA PVC VISINIU, L4000 MM, 65x40",
-      "price": 19583.0
+      "price": 19583.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "35038 MANA CURENTA SEMIROTUNDA AMPRENTAT FLOARE DIM. 14X50X1.5MM, L 6000MM",
-      "price": 1261.0
+      "price": 1261.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3353005 OTEL LAT AMPRENTAT BRAU GRECESC 30X5",
-      "price": 853.0
+      "price": 853.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3353008 OTEL LAT AMPRENTAT BRAU GRECESC 30X8",
-      "price": 1405.0
+      "price": 1405.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3354005 OTEL LAT AMPRENTAT BRAU GRECESC 40X5",
-      "price": 1146.0
+      "price": 1146.0,
+      "um": "Pret / ML"
     },
     {
       "name": "34002 PROFIL PT. COLIER SECT. 17X1.2MM, L 1000MM",
-      "price": 266.0
+      "price": 266.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35001 MANA CURENTA TEAVA SEMIROTUNDA AMPRENTAT FLOARE DIM. 45X21X1.5MM, L 6000MM",
-      "price": 1220.0
+      "price": 1220.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35002 MANA CURENTA TEAVA SEMIROTUNDA AMPRENTAT FLOARE DIM. 60X30X1.5MM, L 6000MM",
-      "price": 1601.0
+      "price": 1601.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35011 MANA CURENTA TEAVA SEMIROTUNDA AMPRENTAT SCOARTA DIM. 45X21X1.5MM, L 6000MM",
-      "price": 1164.0
+      "price": 1164.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35012 MANA CURENTA TEAVA SEMIROTUNDA AMPRENTAT SCOARTA DIM. 60X30X1.5MM, L 6000MM",
-      "price": 1640.0
+      "price": 1640.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35021 MANA CURENTA TEAVA SEMIROTUNDA AMPRENTAT FLOARE DIM. 55X48X1.5MM, L 6000MM",
-      "price": 2074.0
+      "price": 2074.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35031 MANA CURENTA SEMIROTUNDA LISA DIM. 45X21X1.5MM, L 6000MM",
-      "price": 1220.0
+      "price": 1220.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35032 MANA CURENTA SEMIROTUNDA LISA DIM. 60X30X1.5MM, L 6000MM",
-      "price": 1638.0
+      "price": 1638.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3711616 BARA FORATA SECT. FI 16MM, GAURA FI 16MM, L 2000MM",
-      "price": 4287.0
+      "price": 4287.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3801206 BARA MODELATA SECT. 12X6MM, H 2000MM, L 110MM",
-      "price": 2529.0
+      "price": 2529.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "PROFIL INP 100MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL INP 180MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL INP 200MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL INP 220MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL INP 240MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL IPE 100MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL IPE 120MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL IPE 140MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL IPE 80MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL IPE 220MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL IPE 330MM",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL INP 80MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL HEA 340MM",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3801210 BARA MODELATA SECT. 10X10MM, H 2000MM, L 110MM",
-      "price": 3993.0
+      "price": 3993.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3701418 BARA FORATA SECT. 14x14 MM, GAURA FI 14 MM, L 2000MM",
-      "price": 3387.0
+      "price": 3387.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "PROFIL IPE 400MM",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL IPE 330MM",
-      "price": 756.0
+      "price": 756.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL HEA 100MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL HEA 220MM",
-      "price": 705.0
+      "price": 705.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL HEA 260MM",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL HEA 280MM",
-      "price": 705.0
+      "price": 705.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL HEA 300MM",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL HEA 360MM",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL HEA 220MM",
-      "price": 734.0
+      "price": 734.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL IPE 360MM",
-      "price": 742.0
+      "price": 742.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3334004 OTEL LAT AMPRENTAT SCOARTA \"B\" 40x4",
-      "price": 905.0
+      "price": 905.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3234004 OTEL LAT AMPRENTAT SCOARTA 40x4",
-      "price": 905.0
+      "price": 905.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3245005 OTEL LAT AMPRENTAT FLOARE 50x5",
-      "price": 1430.0
+      "price": 1430.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3253005 OTEL LAT AMPRENTAT ZEBRA 30x5",
-      "price": 846.0
+      "price": 846.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3254005 OTEL LAT AMPRENTAT ZEBRA 40x5",
-      "price": 1124.0
+      "price": 1124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3262508 OTEL LAT AMPRENTAT SPIC 25x8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3263004 OTEL LAT AMPRENTAT SPIC 30x4",
-      "price": 686.0
+      "price": 686.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3264005 OTEL LAT AMPRENTAT SPIC 40x5",
-      "price": 1124.0
+      "price": 1124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3272505 OTEL LAT AMPRENTAT PIATRA 25X5",
-      "price": 715.0
+      "price": 715.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3274005 OTEL LAT AMPRENTAT PIATRA 40x5",
-      "price": 1124.0
+      "price": 1124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3281205 OTEL LAT AMPRENTAT CANT 12x5",
-      "price": 392.0
+      "price": 392.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3281206 OTEL LAT AMPRENTAT CANT 12x6",
-      "price": 409.0
+      "price": 409.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3281408 OTEL LAT AMPRENTAT CANT 14x8",
-      "price": 657.0
+      "price": 657.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3244008 OTEL LAT AMPRENTAT FLOARE 40x8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3244005 OTEL LAT AMPRENTAT FLOARE 40X5",
-      "price": 1124.0
+      "price": 1124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3234005 OTEL LAT AMPRENTAT SCOARTA 40X5",
-      "price": 1174.0
+      "price": 1174.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3234008 OTEL LAT AMPRENTAT SCOARTA 40x8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3234010 OTEL LAT AMPRENTAT SCOARTA 40x10",
-      "price": 2346.0
+      "price": 2346.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3234015 OTEL LAT AMPRENTAT SCOARTA AMBELE FETE 40X5",
-      "price": 1154.0
+      "price": 1154.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3234018 OTEL LAT AMPRENTAT SCOARTA AMBELE FETE 40X8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3235005 OTEL LAT AMPRENTAT SCOARTA 50x5",
-      "price": 1430.0
+      "price": 1430.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3242505 OTEL LAT AMPRENTAT FLOARE 25X5",
-      "price": 715.0
+      "price": 715.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3242508 OTEL LAT AMPRENTAT FLOARE 25x8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3243004 OTEL LAT AMPRENTAT FLOARE 30X4",
-      "price": 682.0
+      "price": 682.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3243005 OTEL LAT AMPRENTAT FLOARE 30X5",
-      "price": 846.0
+      "price": 846.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3243008 OTEL LAT AMPRENTAT FLOARE 30x8",
-      "price": 1382.0
+      "price": 1382.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3281606 OTEL LAT AMPRENTAT CANT 16x6",
-      "price": 564.0
+      "price": 564.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3282005 OTEL LAT AMPRENTAT CANT 20x5",
-      "price": 574.0
+      "price": 574.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3311203 OTEL LAT CANELAT 2 DUNGI 12x3",
-      "price": 219.0
+      "price": 219.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3311205 OTEL LAT CANELAT 2 DUNGI 12x5",
-      "price": 330.0
+      "price": 330.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3311603 OTEL LAT CANELAT 2 DUNGI 16x3",
-      "price": 282.0
+      "price": 282.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3312004 OTEL LAT CANELAT 2 DUNGI 20x4",
-      "price": 453.0
+      "price": 453.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3312508 OTEL LAT CANELAT 2 DUNGI 25x8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3323005 OTEL LAT AMPRENTAT 4 DUNGI 30X5",
-      "price": 853.0
+      "price": 853.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3324004 OTEL LAT AMPRENTAT 4 DUNGI 40X4",
-      "price": 862.0
+      "price": 862.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3324005 OTEL LAT AMPRENTAT 4 DUNGI 40X5",
-      "price": 1124.0
+      "price": 1124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3324008 OTEL LAT AMPRENTAT 4 DUNGI 40X8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3332505 OTEL LAT AMPRENTAT SCOARTA \"B\" 25x5",
-      "price": 681.0
+      "price": 681.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3332508 OTEL LAT AMPRENTAT SCOARTA \"B\" 25x8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3305008 OTEL LAT AMPRENTAT BATUT 50x8",
-      "price": 2346.0
+      "price": 2346.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3304010 OTEL LAT AMPRENTAT BATUT 40x10",
-      "price": 2346.0
+      "price": 2346.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3283008 OTEL LAT AMPRENTAT CANT 30X8",
-      "price": 1382.0
+      "price": 1382.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3292508 OTEL LAT AMPRENTAT GRECESC 25X8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3294005 OTEL LAT AMPRENTAT GRECESC 40x5",
-      "price": 1124.0
+      "price": 1124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3301608 OTEL LAT CANELAT 16x8",
-      "price": 748.0
+      "price": 748.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3302008 OTEL LAT AMPRENTAT BATUT 20x8",
-      "price": 934.0
+      "price": 934.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3302010 OTEL LAT AMPRENTAT BATUT 20x10",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3303005 OTEL LAT AMPRENTAT BATUT 30x5",
-      "price": 846.0
+      "price": 846.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3303008 OTEL LAT AMPRENTAT BATUT 30x8",
-      "price": 1382.0
+      "price": 1382.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3303010 OTEL LAT AMPRENTAT BATUT 30x10",
-      "price": 1756.0
+      "price": 1756.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3304005 OTEL LAT AMPRENTAT BATUT 40x5",
-      "price": 1124.0
+      "price": 1124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3304008 OTEL LAT AMPRENTAT BATUT 40x8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3333005 OTEL LAT AMPRENTAT SCOARTA \"B\" 30x5",
-      "price": 846.0
+      "price": 846.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2832525 CORNIER 25X25X2.5MM",
-      "price": 716.0
+      "price": 716.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2836005 CORNIER 60X60X5.0MM",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821203 OTEL LAT 12X3.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821112 OTEL LAT 100X12.0",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2836006 CORNIER 60X60X6.0MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821110 OTEL LAT 100X10.0",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2837007 CORNIER 70X70X7.0MM",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821108 OTEL LAT 100X8.0",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2824010 OTEL LAT 40X10.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2838008 CORNIER 80X80X8.0MM",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28400100 PROFIL UNP 100MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2835006 CORNIER 50X50X6.0MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821204 OTEL LAT 12X4.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2835005 CORNIER 50X50X5.0MM",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2833003 CORNIER 30X30X3.0MM",
-      "price": 732.0
+      "price": 732.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2833004 CORNIER 30X30X4.0MM",
-      "price": 716.0
+      "price": 716.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821210 OTEL LAT 120X10.0",
-      "price": 658.0
+      "price": 658.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2833503 CORNIER 35X35X3.0MM",
-      "price": 737.0
+      "price": 737.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821208 OTEL LAT 120X8.0",
-      "price": 658.0
+      "price": 658.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2834003 CORNIER 40X40X3.0MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2834004 CORNIER 40X40X4.0MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821206 OTEL LAT 12X6.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810024 OTEL ROTUND FI 24MM",
-      "price": 713.0
+      "price": 713.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2835004 CORNIER 50X50X4.0MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28400120 PROFIL UNP 120MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2835003 CORNIER 50X50X3.0MM",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810048 OTEL ROTUND FI 48MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840525 PROFIL \"T\" 25X25X3.0MM",
-      "price": 598.0
+      "price": 598.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840533 PROFIL \"T\" 30X30X3.0MM",
-      "price": 598.0
+      "price": 598.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840534 PROFIL \"T\" 30X30X4.0MM",
-      "price": 543.0
+      "price": 543.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840544 PROFIL \"T\" 40X40X4.0MM",
-      "price": 598.0
+      "price": 598.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840545 PROFIL \"T\" 40X40X5.0MM",
-      "price": 598.0
+      "price": 598.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810045 OTEL ROTUND FI 45MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840556 PROFIL \"T\" 50X50X6.0MM",
-      "price": 598.0
+      "price": 598.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28410100 PROFIL INP 100MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28410120 PROFIL INP 120MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840523 PROFIL \"T\" 20X20X3.0MM",
-      "price": 598.0
+      "price": 598.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840263 PROFIL UPS 60X30X6MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810050 OTEL ROTUND FI 50MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28400140 PROFIL UNP 140MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28400160 PROFIL UNP 160MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821106 OTEL LAT 100X6.0",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821005 OTEL LAT 10X5.0",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810062 OTEL ROTUND FI 62MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840040 PROFIL UNP 40 x 20 x 3.5 mm x 4mm",
-      "price": 698.0
+      "price": 698.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840050 PROFIL UNP 50 x 25 x 3.5 mm x 4.5mm",
-      "price": 698.0
+      "price": 698.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840065 PROFIL UNP 65MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840080 PROFIL UNP 80MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840180 PROFIL UNP 80MM, L 12000 MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28410140 PROFIL INP 140MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822508 OTEL LAT 25X8.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2824008 OTEL LAT 40X8.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822008 OTEL LAT 20X8.0",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822005 OTEL LAT 20X5.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822004 OTEL LAT 20X4.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822003 OTEL LAT 20X3.0",
-      "price": 666.0
+      "price": 666.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821660 OTEL LAT 160X6.0",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821608 OTEL LAT 16X8.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2825003 OTEL LAT 50X3.0",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821606 OTEL LAT 16X6.0",
-      "price": 673.0
+      "price": 673.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821605 OTEL LAT 16X5.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2824005 OTEL LAT 40X5.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL IPE 400MM",
-      "price": 764.0
+      "price": 764.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2824004 OTEL LAT 40X4.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822505 OTEL LAT 25X5.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822510 OTEL LAT 25X10.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2823003 OTEL LAT 30X3.0",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2823004 OTEL LAT 30X4.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2823005 OTEL LAT 30X5.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2823008 OTEL LAT 30X8.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822504 OTEL LAT 25X4.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2823010 OTEL LAT 30X10.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2824003 OTEL LAT 40X3.0",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822503 OTEL LAT 25X3.0",
-      "price": 666.0
+      "price": 666.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2825005 OTEL LAT 50X5.0",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2825008 OTEL LAT 50X8.0",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2831108 CORNIER 100X100X8.0MM, L 12000MM",
-      "price": 765.0
+      "price": 765.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2831110 CORNIER 100X100X10MM, L 12000MM",
-      "price": 732.0
+      "price": 732.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821408 OTEL LAT 14X8.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2832001 CORNIER 20X20X2.0MM",
-      "price": 728.0
+      "price": 728.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2832002 CORNIER 20X20X2.5MM",
-      "price": 732.0
+      "price": 732.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2832003 CORNIER 20X20X3.0MM",
-      "price": 716.0
+      "price": 716.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821406 OTEL LAT 14X6.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2832503 CORNIER 25X25X3.0MM",
-      "price": 716.0
+      "price": 716.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821405 OTEL LAT 14X5.0",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821404 OTEL LAT 14X4.0",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2831010 CORNIER 100X100X10MM",
-      "price": 765.0
+      "price": 765.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2828010 OTEL LAT 80X10.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2828008 OTEL LAT 80X8.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821604 OTEL LAT 16X4.0",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2825010 OTEL LAT 50X10.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2826004 OTEL LAT 60X4.0",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2826005 OTEL LAT 60X5.0",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2826006 OTEL LAT 60X6.0",
-      "price": 647.0
+      "price": 647.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2826008 OTEL LAT 60X8.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821603 OTEL LAT 16X3.0",
-      "price": 666.0
+      "price": 666.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2826010 OTEL LAT 60X10.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821510 OTEL LAT 150X10.0",
-      "price": 713.0
+      "price": 713.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2828006 OTEL LAT 80X6.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2821403 OTEL LAT 14X3.0",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810006 OTEL ROTUND FI 6MM",
-      "price": 698.0
+      "price": 698.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810022 OTEL ROTUND FI 22MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2842080 PROFIL IPE 80MM",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810025 OTEL ROTUND FI 25MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420160 PROFIL IPE 160MM",
-      "price": 705.0
+      "price": 705.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420140 PROFIL IPE 140MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420120 PROFIL IPE 120MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420100 PROFIL IPE 100MM",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800050 OTEL PATRAT 50X50MM",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800040 OTEL PATRAT 40X40MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2841080 PROFIL INP 80MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810028 OTEL ROTUND FI 28MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810030 OTEL ROTUND FI 30MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810020 OTEL ROTUND FI 20MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420180 PROFIL IPE 180MM",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420220 PROFIL IPE 220MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810011 OTEL ROTUND FI 11.5MM",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2825004 OTEL LAT 50X4.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420240 PROFIL IPE 240MM",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420270 PROFIL IPE 270MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810010 OTEL ROTUND FI 10MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810008 OTEL ROTUND FI 8MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810012 OTEL ROTUND FI 12MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810014 OTEL ROTUND FI 14MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810016 OTEL ROTUND FI 16MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2801557 OTEL PATRAT 15.7X15.7MM, L 5700 MM",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810018 OTEL ROTUND FI 18MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800030 OTEL PATRAT 30X30MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800025 OTEL PATRAT 25X25MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28430140 PROFIL HEA 140MM",
-      "price": 698.0
+      "price": 698.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28430220 PROFIL HEA 220MM",
-      "price": 705.0
+      "price": 705.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800008 OTEL PATRAT 8X8MM",
-      "price": 662.0
+      "price": 662.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810035 OTEL ROTUND FI 35MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28430240 PROFIL HEA 240MM",
-      "price": 705.0
+      "price": 705.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810036 OTEL ROTUND FI 36MM",
-      "price": 698.0
+      "price": 698.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2676005 PLATBANDA INOX SS304 60X5MM",
-      "price": 8770.0
+      "price": 8770.0,
+      "um": "Pret / ML"
     },
     {
       "name": "PLATBANDA INOX AISI304 30X5MM",
-      "price": 4321.0
+      "price": 4321.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2810038 OTEL ROTUND FI 38MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "BARA ROTUNDA INOX AISI304 FI 12MM",
-      "price": 1831.0
+      "price": 1831.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2810040 OTEL ROTUND FI 40MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810042 OTEL ROTUND FI 42MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28410160 PROFIL INP 160MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822010 OTEL LAT 20X10.0",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "30010 OTEL PATRAT AMPRENTAT CANT 10X10MM",
-      "price": 576.0
+      "price": 576.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2800010 OTEL PATRAT 10X10MM",
-      "price": 647.0
+      "price": 647.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800013 OTEL PATRAT 11.5X11.5MM",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28410240 PROFIL INP 240MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28410220 PROFIL INP 220MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800006 OTEL PATRAT 6X6MM",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800012 OTEL PATRAT 12X12MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800016 OTEL PATRAT 16X16MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810032 OTEL ROTUND FI 32MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800011 OTEL PATRAT 11X11MM",
-      "price": 651.0
+      "price": 651.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800018 OTEL PATRAT 18X18MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28430200 PROFIL HEA 200MM",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800020 OTEL PATRAT 20X20MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800014 OTEL PATRAT 14X14MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27432160 PROFIL HEB 160MM, L 12100MM, S355J2",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27432180 PROFIL HEB 180MM, L 12100MM, S355J2",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28451100 PROFIL HEB 100MM, L 12100MM, S275JO",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27421300 PROFIL IPE 300MM, L 12000MM, S355",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28451200 PROFIL HEB 200MM, L 12100MM, S275JO",
-      "price": 600.0
+      "price": 600.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27432100 PROFIL HEB 100MM, L 12100MM, S355J2",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28431500 PROFIL HEA 500MM, L 12000MM",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27432240 PROFIL HEB 240MM, L 12100MM, S355J2",
-      "price": 600.0
+      "price": 600.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27432320 PROFIL HEB 320MM, L 12100MM, S355J2",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27431200 PROFIL HEA 200MM, L 12100MM, S355J2",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27432140 PROFIL HEB 140MM, L 12100MM, S355J2",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2823006 OTEL LAT 30X6.0",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "27431120 PROFIL HEA 120MM, L 12100MM, S355J2",
-      "price": 554.0
+      "price": 554.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2839109 CORNIER 90X90X9.0MM, L12000MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL HEA 200MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810055 OTEL ROTUND FI 55MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "35164 MANA CURENTA DIN LEMN OMEGA 60X40MM",
-      "price": 12738.0
+      "price": 12738.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3401206 OTEL LAT CANELAT 12x6",
-      "price": 390.0
+      "price": 390.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2660006 BARA ROTUNDA INOX SS304 FI 6MM",
-      "price": 496.0
+      "price": 496.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3701414 BARA FORATA SECT. 14X14MM, GAURA 14X14MM, L 2000MM",
-      "price": 6797.0
+      "price": 6797.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3701413 BARA FORATA SECT. 14X14MM AMPRENTAT, GAURA 12X12MM, L 2000MM",
-      "price": 7884.0
+      "price": 7884.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3701412 BARA FORATA SECT. 14X14MM, GAURA 12X12MM, L 2000MM",
-      "price": 6797.0
+      "price": 6797.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3302510 OTEL LAT AMPRENTAT BATUT 25x10",
-      "price": 1395.0
+      "price": 1395.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2810034 OTEL ROTUND FI 34MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / KG"
     },
     {
       "name": "35033 MANA CURENTA SEMIROTUNDA LISA DIM. 55X48X1.5MM, L 6000MM",
-      "price": 2127.0
+      "price": 2127.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3305005 OTEL LAT AMPRENTAT BATUT 50x5",
-      "price": 1430.0
+      "price": 1430.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2800015 OTEL PATRAT 15.7X15.7MM",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3311403 OTEL LAT CANELAT 2 DUNGI 14x3",
-      "price": 281.0
+      "price": 281.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2810090 OTEL ROTUND FI 90MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3711412 BARA FORATA SECT. FI 14MM, GAURA FI 12MM, L 2000MM",
-      "price": 6797.0
+      "price": 6797.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "35022 MANA CURENTA TEAVA SEMIROTUNDA AMPRENTAT SCOARTA DIM. 55X48X1.5MM, L 6000MM",
-      "price": 2180.0
+      "price": 2180.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3311206 OTEL LAT CANELAT 2 DUNGI 12x6",
-      "price": 390.0
+      "price": 390.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2800022 OTEL PATRAT 22X22MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2810060 OTEL ROTUND FI 60MM",
-      "price": 530.0
+      "price": 530.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3701617 BARA FORATA SECT. 16X16MM, GAURA 16X16MM, L 2000MM",
-      "price": 4488.0
+      "price": 4488.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3311204 OTEL LAT CANELAT 2 DUNGI 12x4",
-      "price": 309.0
+      "price": 309.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2810058 OTEL ROTUND FI 58MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3305010 OTEL LAT AMPRENTAT BATUT 50X10",
-      "price": 2796.0
+      "price": 2796.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3302508 OTEL LAT AMPRENTAT BATUT 25x8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35172 MANA CURENTA PVC MARO, L 4000 MM, 65x40",
-      "price": 19583.0
+      "price": 19583.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3302505 OTEL LAT AMPRENTAT BATUT 25x5",
-      "price": 681.0
+      "price": 681.0,
+      "um": "Pret / ML"
     },
     {
       "name": "PROFIL IPE 270MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3294004 OTEL LAT AMPRENTAT GREGESC 40x4",
-      "price": 912.0
+      "price": 912.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2660010 BARA ROTUNDA INOX SS304 FI 10MM",
-      "price": 1296.0
+      "price": 1296.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2660008 BARA ROTUNDA INOX SS304 FI 8MM",
-      "price": 839.0
+      "price": 839.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3293008 OTEL LAT AMPRENTAT GRECESC 30X8",
-      "price": 1382.0
+      "price": 1382.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35437 MANA CURENTA PLINA LAMINATA LA CALD SECT. 43X7MM, L 6000MM",
-      "price": 2193.0
+      "price": 2193.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3293005 OTEL LAT AMPRENTAT GRECESC 30X5",
-      "price": 806.0
+      "price": 806.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3293004 OTEL LAT AMPRENTAT GRECESC 30X4",
-      "price": 686.0
+      "price": 686.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3516401 TERMINATIE MELC MANA CURENTA DIN LEMN OMEGA 60X40MM",
-      "price": 17370.0
+      "price": 17370.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3284008 OTEL LAT AMPRENTAT CANT 40X8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3284005 OTEL LAT AMPRENTAT CANT 40X5",
-      "price": 1124.0
+      "price": 1124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2810039 OTEL ROTUND FI 39MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "PROFIL IPE 200MM",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2800007 OTEL PATRAT 7X7MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2822095 OTEL LAT 20X9.5",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3701415 BARA FORATA SECT. 14X14MM AMPRENTAT, GAURA 14X14MM, L 2000MM",
-      "price": 4031.0
+      "price": 4031.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3302005 OTEL LAT AMPRENTAT BATUT 20x5",
-      "price": 554.0
+      "price": 554.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35659 MANA CURENTA  LAMINATA LA CALD SECT. 59X16.5X11MM, L 1000MM",
-      "price": 3017.0
+      "price": 3017.0,
+      "um": "Pret / ML"
     },
     {
       "name": "PROFIL IPE 160MM",
-      "price": 705.0
+      "price": 705.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3301606 OTEL LAT CANELAT 16X6",
-      "price": 537.0
+      "price": 537.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3301408 OTEL LAT CANELAT 14x8",
-      "price": 657.0
+      "price": 657.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3295005 OTEL LAT AMPRENTAT GRECESC 50x5",
-      "price": 1430.0
+      "price": 1430.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35651 MANA CURENTA  LAMINATA LA CALD SECT. 50X14X7MM, L 1000MM",
-      "price": 3060.0
+      "price": 3060.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3294008 OTEL LAT AMPRENTAT GRECESC 40x8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "35411 MANA CURENTA PLINA LAMINATA LA CALD SECT. 40X11MM, L 6000MM",
-      "price": 2444.0
+      "price": 2444.0,
+      "um": "Pret / ML"
     },
     {
       "name": "PROFIL HEA 180MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3332510 OTEL LAT AMPRENTAT SCOARTA \"B\" 25x10",
-      "price": 1395.0
+      "price": 1395.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3334010 OTEL LAT AMPRENTAT SCOARTA \"B\" 40X10",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3335005 OTEL LAT AMPRENTAT SCOARTA \"B\" 50X5",
-      "price": 1361.0
+      "price": 1361.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3324003 OTEL LAT AMPRENTAT 4 DUNGI 40X3",
-      "price": 673.0
+      "price": 673.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3335008 OTEL LAT AMPRENTAT SCOARTA \"B\" 50X8",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3323008 OTEL LAT AMPRENTAT 4 DUNGI 30X8",
-      "price": 1338.0
+      "price": 1338.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3323004 OTEL LAT AMPRENTAT 4 DUNGI 30X4",
-      "price": 653.0
+      "price": 653.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3323003 OTEL LAT AMPRENTAT 4 DUNGI 30X3",
-      "price": 495.0
+      "price": 495.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3353004 OTEL LAT AMPRENTAT BRAU GRECESC 30X4",
-      "price": 653.0
+      "price": 653.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3313008 OTEL LAT CANELAT 2 DUNGI 30x8",
-      "price": 1316.0
+      "price": 1316.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2810004 OTEL ROTUND FI 4MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3313005 OTEL LAT CANELAT 2 DUNGI 30x5",
-      "price": 806.0
+      "price": 806.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3334008 OTEL LAT AMPRENTAT SCOARTA \"B\" 40x8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3324010 OTEL LAT AMPRENTAT 4 DUNGI 40X10",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3333004 OTEL LAT AMPRENTAT SCOARTA \"B\" 30x4",
-      "price": 653.0
+      "price": 653.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3332504 OTEL LAT AMPRENTAT SCOARTA \"B\" 25x4",
-      "price": 542.0
+      "price": 542.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3332010 OTEL LAT AMPRENTAT SCOARTA \"B\" 20x10",
-      "price": 1117.0
+      "price": 1117.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3333010 OTEL LAT AMPRENTAT SCOARTA \"B\" 30x10",
-      "price": 1672.0
+      "price": 1672.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2821205 OTEL LAT 12X5.0",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3332008 OTEL LAT AMPRENTAT SCOARTA \"B\" 20x8",
-      "price": 934.0
+      "price": 934.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3334005 OTEL LAT AMPRENTAT SCOARTA \"B\" 40x5",
-      "price": 1097.0
+      "price": 1097.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3332005 OTEL LAT AMPRENTAT SCOARTA \"B\" 20x5",
-      "price": 528.0
+      "price": 528.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3332004 OTEL LAT AMPRENTAT SCOARTA \"B\" 20x4",
-      "price": 488.0
+      "price": 488.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3325008 OTEL LAT AMPRENTAT 4 DUNGI 50x8",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3325005 OTEL LAT AMPRENTAT 4 DUNGI 50x5",
-      "price": 1361.0
+      "price": 1361.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2801757 OTEL PATRAT  11.7X11.7MM, L 5700 MM 2801757",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3313004 OTEL LAT CANELAT 2 DUNGI 30x4",
-      "price": 653.0
+      "price": 653.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3801207 BARA MODELATA SECT. 12X6MM AMPRENTAT, H 2000MM, L 110MM",
-      "price": 2529.0
+      "price": 2529.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "2810026 OTEL ROTUND FI 26MM",
-      "price": 713.0
+      "price": 713.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3312003 OTEL LAT CANELAT 2 DUNGI 20x3",
-      "price": 424.0
+      "price": 424.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3311608 OTEL LAT CANELAT 2 DUNGI 16x8",
-      "price": 711.0
+      "price": 711.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3311606 OTEL LAT CANELAT 2 DUNGI 16x6",
-      "price": 537.0
+      "price": 537.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3311605 OTEL LAT CANELAT 2 DUNGI 16x5",
-      "price": 439.0
+      "price": 439.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3311604 OTEL LAT CANELAT 2 DUNGI 16x4",
-      "price": 362.0
+      "price": 362.0,
+      "um": "Pret / ML"
     },
     {
       "name": "PROFIL HEA 160MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3311408 OTEL LAT CANELAT 2 DUNGI 14x8",
-      "price": 627.0
+      "price": 627.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3311406 OTEL LAT CANELAT 2 DUNGI 14x6",
-      "price": 501.0
+      "price": 501.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3311405 OTEL LAT CANELAT 2 DUNGI 14x5",
-      "price": 410.0
+      "price": 410.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3312005 OTEL LAT CANELAT 2 DUNGI 20x5",
-      "price": 528.0
+      "price": 528.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3354010 OTEL LAT AMPRENTAT BRAU GRECESC 40X10",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3313003 OTEL LAT CANELAT 2 DUNGI 30X3",
-      "price": 502.0
+      "price": 502.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3312505 OTEL LAT CANELAT 2 DUNGI 25x5",
-      "price": 681.0
+      "price": 681.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3353010 OTEL LAT AMPRENTAT BRAU GRECESC 30X10",
-      "price": 1672.0
+      "price": 1672.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3312504 OTEL LAT CANELAT 2 DUNGI 25x4",
-      "price": 542.0
+      "price": 542.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3312503 OTEL LAT CANELAT 2 DUNGI 25X3 MM",
-      "price": 446.0
+      "price": 446.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3312010 OTEL LAT CANELAT 2 DUNGI 20x10",
-      "price": 1117.0
+      "price": 1117.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2800112 OTEL PATRAT LIS LA CALD 12X12MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3354004 OTEL LAT AMPRENTAT BRAU GRECESC 40X4",
-      "price": 869.0
+      "price": 869.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3312008 OTEL LAT CANELAT 2 DUNGI 20x8",
-      "price": 889.0
+      "price": 889.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3333008 OTEL LAT AMPRENTAT SCOARTA \"B\" 30x8",
-      "price": 1316.0
+      "price": 1316.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3354008 OTEL LAT AMPRENTAT BRAU GRECESC 40X8",
-      "price": 1876.0
+      "price": 1876.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3311404 OTEL LAT CANELAT 2 DUNGI 14x4",
-      "price": 311.0
+      "price": 311.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3061403 OTEL PATRAT RASUCIT 14X14MM, L 3000MM",
-      "price": 3190.0
+      "price": 3190.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "30720 OTEL ROTUND AMPRENTAT SCOARTA FI 20MM",
-      "price": 1794.0
+      "price": 1794.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30728 OTEL ROTUND AMPRENTAT SCOARTA FI 28MM",
-      "price": 3599.0
+      "price": 3599.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28410300 PROFIL INP 300MM",
-      "price": 564.0
+      "price": 564.0,
+      "um": "Pret / KG"
     },
     {
       "name": "30734 OTEL ROTUND AMPRENTAT SCOARTA FI 34 MM",
-      "price": 11759.0
+      "price": 11759.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30808 OTEL ROTUND AMPRENTAT GAURI FI 8MM",
-      "price": 281.0
+      "price": 281.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28410280 PROFIL INP 280MM",
-      "price": 552.0
+      "price": 552.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28410260 PROFIL INP 260MM",
-      "price": 552.0
+      "price": 552.0,
+      "um": "Pret / KG"
     },
     {
       "name": "30818 OTEL ROTUND AMPRENTAT GAURI FI 18MM",
-      "price": 1452.0
+      "price": 1452.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30820 OTEL ROTUND AMPRENTAT GAURI FI 20MM",
-      "price": 1710.0
+      "price": 1710.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30910 OTEL ROTUND AMPRENTAT RAMURA FI 10MM",
-      "price": 456.0
+      "price": 456.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30718 OTEL ROTUND AMPRENTAT SCOARTA FI 18MM",
-      "price": 1452.0
+      "price": 1452.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30708 OTEL ROTUND AMPRENTAT SCOARTA FI 8MM",
-      "price": 295.0
+      "price": 295.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3061601 OTEL PATRAT RASUCIT 16X16MM, L 1000MM",
-      "price": 1369.0
+      "price": 1369.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3061602 OTEL PATRAT RASUCIT 16X16MM, L 2000MM",
-      "price": 2737.0
+      "price": 2737.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3061603 OTEL PATRAT RASUCIT 16X16MM, L 3000MM",
-      "price": 4107.0
+      "price": 4107.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "30620 OTEL PATRAT RASUCIT 20X20MM, L 6000MM",
-      "price": 2773.0
+      "price": 2773.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3062001 OTEL PATRAT RASUCIT 20X20MM, L 1000MM",
-      "price": 2511.0
+      "price": 2511.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3062002 OTEL PATRAT RASUCIT 20X20MM, L 2000MM",
-      "price": 4534.0
+      "price": 4534.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3062003 OTEL PATRAT RASUCIT 20X20MM, L 3000MM",
-      "price": 6703.0
+      "price": 6703.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3062501 OTEL PATRAT RASUCIT 25X25MM, L 1000MM",
-      "price": 3651.0
+      "price": 3651.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3062502 OTEL PATRAT RASUCIT 25X25MM, L 2000MM",
-      "price": 7301.0
+      "price": 7301.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3062503 OTEL PATRAT RASUCIT 25X25MM, L 3000MM",
-      "price": 10952.0
+      "price": 10952.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "28410200 PROFIL INP 200MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "30914 OTEL ROTUND AMPRENTAT RAMURA FI 14MM",
-      "price": 883.0
+      "price": 883.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2840253 PROFIL UPS 50X38X5MM",
-      "price": 552.0
+      "price": 552.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3203015 OTEL LAT AMPRENTAT 2 DUNGI AMBELE FETE 30X5",
-      "price": 846.0
+      "price": 846.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2840252 PROFIL UPS 50X25X5MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2840142 PROFIL UPS 40X20X5MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3204010 OTEL LAT AMPRENTAT 2 DUNGI 40x10",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3205008 OTEL LAT AMPRENTAT 2 DUNGI 50X8",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28400300 PROFIL UNP 300MM",
-      "price": 564.0
+      "price": 564.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28400240 PROFIL UNP 240MM",
-      "price": 552.0
+      "price": 552.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3211403 OTEL LAT AMPRENTAT PE MARGINI 14X3",
-      "price": 306.0
+      "price": 306.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211404 OTEL LAT AMPRENTAT PE MARGINI 14X4",
-      "price": 311.0
+      "price": 311.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2840524 PROFIL \"T\" 20X20X4.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3202510 OTEL LAT AMPRENTAT 2 DUNGI 25x10",
-      "price": 1395.0
+      "price": 1395.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30916 OTEL ROTUND AMPRENTAT RAMURA FI 16MM",
-      "price": 1153.0
+      "price": 1153.0,
+      "um": "Pret / ML"
     },
     {
       "name": "31170 PROFIL \"L\" 30X45X34MM, GR. 1.4MM",
-      "price": 1872.0
+      "price": 1872.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3117001 PROFIL \"L\" AMPRENTAT FLOARE 30X45X34MM, GR. 1.4MM",
-      "price": 1704.0
+      "price": 1704.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3117002 PROFIL \"L\" AMPRENTAT SCOARTA 30X45X34MM, GR. 1.4MM",
-      "price": 2211.0
+      "price": 2211.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28410180 PROFIL INP 180MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3118001 PROFIL \"T\" AMPRENTAT FLOARE 30X60X34MM, GR. 1.4MM",
-      "price": 2373.0
+      "price": 2373.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3118002 PROFIL \"T\" AMPRENTAT SCOARTA 30X60X34MM, GR. 1.4MM",
-      "price": 2579.0
+      "price": 2579.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3119001 PROFIL \"Z\" AMPRENTAT FLOARE 45X45X34MM, GR. 1.4MM",
-      "price": 2241.0
+      "price": 2241.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3119002 PROFIL \"Z\" AMPRENTAT SCOARTA 45X45X34MM, GR. 1.4MM",
-      "price": 2579.0
+      "price": 2579.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3202010 OTEL LAT AMPRENTAT 2 DUNGI 20x10",
-      "price": 1117.0
+      "price": 1117.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28400200 PROFIL UNP 200MM",
-      "price": 552.0
+      "price": 552.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28431240 PROFIL HEA 240MM, L 12000 MM",
-      "price": 734.0
+      "price": 734.0,
+      "um": "Pret / KG"
     },
     {
       "name": "35176 MANA CURENTA PVC FILDES, L4000 MM, 65x40",
-      "price": 19583.0
+      "price": 19583.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "30118 OTEL PATRAT AMPRENTAT TRANSVERSAL 18X18MM",
-      "price": 2435.0
+      "price": 2435.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28430180 PROFIL HEA 180MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / KG"
     },
     {
       "name": "30125 OTEL PATRAT AMPRENTAT TRANSVERSAL 25X25MM",
-      "price": 3651.0
+      "price": 3651.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30130 OTEL PATRAT AMPRENTAT TRANSVERSAL 30X30MM",
-      "price": 5547.0
+      "price": 5547.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30140 OTEL PATRAT AMPRENTAT TRANSVERSAL 40X40MM",
-      "price": 9358.0
+      "price": 9358.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30210 OTEL PATRAT AMPRENTAT SCOARTA 10X10MM",
-      "price": 622.0
+      "price": 622.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30211 OTEL PATRAT AMPRENTAT SCOARTA 11X11MM",
-      "price": 672.0
+      "price": 672.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28430160 PROFIL HEA 160MM",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3021201 OTEL PATRAT AMPRENTAT SCOARTA 11.5X11.5MM",
-      "price": 714.0
+      "price": 714.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3011201 OTEL PATRAT AMPRENTAT TRANSVERSAL 11.5X11.5MM",
-      "price": 764.0
+      "price": 764.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30111 OTEL PATRAT AMPRENTAT TRANSVERSAL 11X11MM",
-      "price": 691.0
+      "price": 691.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3001201 OTEL PATRAT AMPRENTAT CANT 11.5X11.5MM",
-      "price": 582.0
+      "price": 582.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28430360 PROFIL HEA 360MM",
-      "price": 600.0
+      "price": 600.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28430340 PROFIL HEA 340MM",
-      "price": 600.0
+      "price": 600.0,
+      "um": "Pret / KG"
     },
     {
       "name": "30018 OTEL PATRAT AMPRENTAT CANT 18X18MM",
-      "price": 2368.0
+      "price": 2368.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28430300 PROFIL HEA 300MM",
-      "price": 727.0
+      "price": 727.0,
+      "um": "Pret / KG"
     },
     {
       "name": "30025 OTEL PATRAT AMPRENTAT CANT 25X25MM",
-      "price": 3833.0
+      "price": 3833.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30030 OTEL PATRAT AMPRENTAT CANT 30X30MM",
-      "price": 5283.0
+      "price": 5283.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30040 OTEL PATRAT AMPRENTAT CANT 40X40MM",
-      "price": 9825.0
+      "price": 9825.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28430280 PROFIL HEA 280MM",
-      "price": 564.0
+      "price": 564.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28430260 PROFIL HEA 260MM",
-      "price": 564.0
+      "price": 564.0,
+      "um": "Pret / KG"
     },
     {
       "name": "30216 OTEL PATRAT AMPRENTAT SCOARTA 16X16MM",
-      "price": 1437.0
+      "price": 1437.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30218 OTEL PATRAT AMPRENTAT SCOARTA 18X18MM",
-      "price": 2453.0
+      "price": 2453.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30330 OTEL PATRAT AMPRENTAT BATUT 30X30MM",
-      "price": 5547.0
+      "price": 5547.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30340 OTEL PATRAT AMPRENTAT BATUT 40X40MM",
-      "price": 9358.0
+      "price": 9358.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28420400 PROFIL IPE 400MM",
-      "price": 570.0
+      "price": 570.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420360 PROFIL IPE 360MM",
-      "price": 564.0
+      "price": 564.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420330 PROFIL IPE 330MM",
-      "price": 564.0
+      "price": 564.0,
+      "um": "Pret / KG"
     },
     {
       "name": "30611 OTEL PATRAT RASUCIT 11X11MM, L 6000MM",
-      "price": 672.0
+      "price": 672.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28420300 PROFIL IPE 300MM",
-      "price": 564.0
+      "price": 564.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3061201 OTEL PATRAT RASUCIT 12X12MM, L 1000MM",
-      "price": 785.0
+      "price": 785.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3061203 OTEL PATRAT RASUCIT 12X12MM, L 3000MM",
-      "price": 2356.0
+      "price": 2356.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3061401 OTEL PATRAT RASUCIT 14X14MM, L 1000MM",
-      "price": 1064.0
+      "price": 1064.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "30325 OTEL PATRAT AMPRENTAT BATUT 25X25MM",
-      "price": 3833.0
+      "price": 3833.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28420450 PROFIL IPE 450MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28430120 PROFIL HEA 120MM",
-      "price": 684.0
+      "price": 684.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28430100 PROFIL HEA 100MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "30230 OTEL PATRAT AMPRENTAT SCOARTA 30X30MM",
-      "price": 5547.0
+      "price": 5547.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30240 OTEL PATRAT AMPRENTAT SCOARTA 40X40MM",
-      "price": 9358.0
+      "price": 9358.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30310 OTEL PATRAT AMPRENTAT BATUT 10X10MM",
-      "price": 580.0
+      "price": 580.0,
+      "um": "Pret / ML"
     },
     {
       "name": "30311 OTEL PATRAT AMPRENTAT BATUT 11X11MM",
-      "price": 702.0
+      "price": 702.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3031201 OTEL PATRAT AMPRENTAT BATUT 11.5X11.5MM",
-      "price": 733.0
+      "price": 733.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28420600 PROFIL IPE 600MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420550 PROFIL IPE 550MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "28420500 PROFIL IPE 500MM",
-      "price": 632.0
+      "price": 632.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3061402 OTEL PATRAT RASUCIT 14X14MM, L 2000MM",
-      "price": 2126.0
+      "price": 2126.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "28400180 PROFIL UNP 180MM",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3233015 OTEL LAT AMPRENTAT SCOARTA AMBELE FETE 30X5",
-      "price": 846.0
+      "price": 846.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3242503 OTEL LAT AMPRENTAT FLOARE 25x3",
-      "price": 471.0
+      "price": 471.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3242504 OTEL LAT AMPRENTAT FLOARE 25x4",
-      "price": 569.0
+      "price": 569.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3243003 OTEL LAT AMPRENTAT FLOARE 30x3",
-      "price": 503.0
+      "price": 503.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3243010 OTEL LAT AMPRENTAT FLOARE 30X10",
-      "price": 1672.0
+      "price": 1672.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3244004 OTEL LAT AMPRENTAT FLOARE 40X4",
-      "price": 905.0
+      "price": 905.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3244010 OTEL LAT AMPRENTAT FLOARE 40x10",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28420200 PROFIL IPE 200 MM",
-      "price": 720.0
+      "price": 720.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3252005 OTEL LAT AMPRENTAT ZEBRA 20x5",
-      "price": 528.0
+      "price": 528.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3252505 OTEL LAT AMPRENTAT ZEBRA 25x5",
-      "price": 681.0
+      "price": 681.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3252508 OTEL LAT AMPRENTAT ZEBRA 25x8",
-      "price": 1117.0
+      "price": 1117.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3236018 OTEL LAT AMPRENTAT SCOARTA AMBELE FETE 60X8",
-      "price": 2063.0
+      "price": 2063.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3236015 OTEL LAT AMPRENTAT SCOARTA AMBELE FETE 60X5",
-      "price": 1944.0
+      "price": 1944.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3234003 OTEL LAT AMPRENTAT SCOARTA 40x3",
-      "price": 698.0
+      "price": 698.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2831008 CORNIER 100X100X8.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3235003 OTEL LAT AMPRENTAT SCOARTA 50X3",
-      "price": 869.0
+      "price": 869.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3235004 OTEL LAT AMPRENTAT SCOARTA 50X4",
-      "price": 991.0
+      "price": 991.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3235010 OTEL LAT AMPRENTAT SCOARTA 50X10 MM",
-      "price": 2796.0
+      "price": 2796.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3235015 OTEL LAT AMPRENTAT SCOARTA AMBELE FETE 50X5",
-      "price": 1361.0
+      "price": 1361.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3235018 OTEL LAT AMPRENTAT SCOARTA AMBELE FETE 50X8 MM",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3236005 OTEL LAT AMPRENTAT SCOARTA 60X5",
-      "price": 1944.0
+      "price": 1944.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3236006 OTEL LAT AMPRENTAT SCOARTA 60x6",
-      "price": 2082.0
+      "price": 2082.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3236008 OTEL LAT AMPRENTAT SCOARTA 60X8",
-      "price": 2373.0
+      "price": 2373.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3253008 OTEL LAT AMPRENTAT ZEBRA 30x8",
-      "price": 1316.0
+      "price": 1316.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3253010 OTEL LAT AMPRENTAT ZEBRA 30x10",
-      "price": 1672.0
+      "price": 1672.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3273005 OTEL LAT AMPRENTAT PIATRA 30x5",
-      "price": 806.0
+      "price": 806.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3273008 OTEL LAT AMPRENTAT PIATRA 30x8",
-      "price": 1316.0
+      "price": 1316.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3274008 OTEL LAT AMPRENTAT PIATRA 40x8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3275005 OTEL LAT AMPRENTAT PIATRA 50x5",
-      "price": 1361.0
+      "price": 1361.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3281406 OTEL LAT AMPRENTAT CANT 14x6",
-      "price": 505.0
+      "price": 505.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3281608 OTEL LAT AMPRENTAT CANT 16x8",
-      "price": 748.0
+      "price": 748.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3282006 OTEL LAT AMPRENTAT CANT 20x6",
-      "price": 676.0
+      "price": 676.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3282008 OTEL LAT AMPRENTAT CANT 20x8",
-      "price": 934.0
+      "price": 934.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3282505 OTEL LAT AMPRENTAT CANT 25x5",
-      "price": 681.0
+      "price": 681.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3282508 OTEL LAT AMPRENTAT CANT 25x8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3272508 OTEL LAT AMPRENTAT PIATRA 25X8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3265005 OTEL LAT AMPRENTAT SPIC 50x5",
-      "price": 1430.0
+      "price": 1430.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3254008 OTEL LAT AMPRENTAT ZEBRA 40x8",
-      "price": 1736.0
+      "price": 1736.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3255005 OTEL LAT AMPRENTAT ZEBRA 50x5",
-      "price": 1430.0
+      "price": 1430.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3262005 OTEL LAT AMPRENTAT SPIC 20x5",
-      "price": 528.0
+      "price": 528.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3262008 OTEL LAT AMPRENTAT SPIC 20x8",
-      "price": 934.0
+      "price": 934.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3262505 OTEL LAT AMPRENTAT SPIC 25x5",
-      "price": 681.0
+      "price": 681.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3262510 OTEL LAT AMPRENTAT SPIC 25x10",
-      "price": 1395.0
+      "price": 1395.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3263005 OTEL LAT AMPRENTAT SPIC 30x5",
-      "price": 846.0
+      "price": 846.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3263008 OTEL LAT AMPRENTAT SPIC 30x8",
-      "price": 1316.0
+      "price": 1316.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3263010 OTEL LAT AMPRENTAT SPIC 30x10",
-      "price": 1672.0
+      "price": 1672.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3264008 OTEL LAT AMPRENTAT SPIC 40x8",
-      "price": 1736.0
+      "price": 1736.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3283005 OTEL LAT AMPRENTAT CANT 30X5",
-      "price": 806.0
+      "price": 806.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3211604 OTEL LAT AMPRENTAT PE MARGINI 16x4",
-      "price": 388.0
+      "price": 388.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3214010 OTEL LAT AMPRENTAT PE MARGINI 40x10",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3214018 OTEL LAT AMPRENTAT PE MARGINI AMBELE FETE 40X8",
-      "price": 1823.0
+      "price": 1823.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3221205 OTEL LAT AMPRENTAT TRANSVERSAL 12x5",
-      "price": 347.0
+      "price": 347.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3221206 OTEL LAT AMPRENTAT TRANSVERSAL 12x6",
-      "price": 409.0
+      "price": 409.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3221405 OTEL LAT AMPRENTAT TRANSVERSAL 14X5",
-      "price": 419.0
+      "price": 419.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2834005 CORNIER 40X40X5.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3221408 OTEL LAT AMPRENTAT TRANSVERSAL 14x8",
-      "price": 627.0
+      "price": 627.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3221606 OTEL LAT AMPRENTAT TRANSVERSAL 16x6",
-      "price": 537.0
+      "price": 537.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3222004 OTEL LAT AMPRENTAT TRANSVERSAL 20x4",
-      "price": 490.0
+      "price": 490.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2834002 CORNIER 40X40X2.5MM",
-      "price": 655.0
+      "price": 655.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2834504 CORNIER 45X45X4.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3213010 OTEL LAT AMPRENTAT PE MARGINI 30x10",
-      "price": 1756.0
+      "price": 1756.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2838006 CORNIER 80X80X6.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3212004 OTEL LAT AMPRENTAT PE MARGINI 20x4",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2838005 CORNIER 80X80X5.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2837008 CORNIER 70X70X8.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2837006 CORNIER 70X70X6.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2837005 CORNIER 70X70X5.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2836008 CORNIER 60X60X8.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3212510 OTEL LAT AMPRENTAT PE MARGINI 25x10",
-      "price": 1395.0
+      "price": 1395.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3213003 OTEL LAT AMPRENTAT PE MARGINI 30X3",
-      "price": 503.0
+      "price": 503.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2836004 CORNIER 60X60X4.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2833504 CORNIER 35X35X4.0MM",
-      "price": 716.0
+      "price": 716.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2833025 CORNIER 30X30X2.5MM",
-      "price": 716.0
+      "price": 716.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3232008 OTEL LAT AMPRENTAT SCOARTA 20x8",
-      "price": 934.0
+      "price": 934.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3232010 OTEL LAT AMPRENTAT SCOARTA 20x10",
-      "price": 1117.0
+      "price": 1117.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3232015 OTEL LAT AMPRENTAT SCOARTA AMBELE FETE 20X5",
-      "price": 528.0
+      "price": 528.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3232503 OTEL LAT AMPRENTAT SCOARTA 25x3",
-      "price": 477.0
+      "price": 477.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3232505 OTEL LAT AMPRENTAT SCOARTA 25X5",
-      "price": 715.0
+      "price": 715.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3232510 OTEL LAT AMPRENTAT SCOARTA 25x10",
-      "price": 1395.0
+      "price": 1395.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3232518 OTEL LAT AMPRENTAT SCOARTA AMBELE FETE 25X8",
-      "price": 1172.0
+      "price": 1172.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3233003 OTEL LAT AMPRENTAT SCOARTA 30x3",
-      "price": 505.0
+      "price": 505.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2831512 CORNIER 150X150X12.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2831210 CORNIER 120X120X10MM, L 12000MM",
-      "price": 732.0
+      "price": 732.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3232004 OTEL LAT AMPRENTAT SCOARTA 20x4",
-      "price": 500.0
+      "price": 500.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3232003 OTEL LAT AMPRENTAT SCOARTA 20X3",
-      "price": 333.0
+      "price": 333.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2833005 CORNIER 30X30X5.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3222510 OTEL LAT AMPRENTAT TRANSVERSAL 25x10",
-      "price": 1395.0
+      "price": 1395.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3223008 OTEL LAT AMPRENTAT TRANSVERSAL 30x8",
-      "price": 1382.0
+      "price": 1382.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3224004 OTEL LAT AMPRENTAT TRANSVERSAL 40x4",
-      "price": 905.0
+      "price": 905.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2832505 CORNIER 25X25X5.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "2832504 CORNIER 25X25X4.0MM",
-      "price": 492.0
+      "price": 492.0,
+      "um": "Pret / KG"
     },
     {
       "name": "3224010 OTEL LAT AMPRENTAT TRANSVERSAL 40x10",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3225005 OTEL LAT AMPRENTAT TRANSVERSAL 50x5",
-      "price": 1430.0
+      "price": 1430.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3225008 OTEL LAT AMPRENTAT TRANSVERSAL 50x8",
-      "price": 2235.0
+      "price": 2235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3225010 OTEL LAT AMPRENTAT TRANSVERSAL 50X10",
-      "price": 2811.0
+      "price": 2811.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3233010 OTEL LAT AMPRENTAT SCOARTA 30x10",
-      "price": 1672.0
+      "price": 1672.0,
+      "um": "Pret / ML"
     }
   ],
   "RectangleTube": [
     {
       "name": "28964127 TEAVA RECTANGULARA ZINCATA 60X40X1.2, L 7000MM",
-      "price": 1520.0
+      "price": 1520.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28964124 TEAVA RECTANGULARA ZINCATA 60X40X1.2, L 4500MM",
-      "price": 1520.0
+      "price": 1520.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878215 TEAVA RECTANGULARA 80X20X1.5",
-      "price": 1567.0
+      "price": 1567.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878420 TEAVA RECTANGULARA 80X40X2.0",
-      "price": 2356.0
+      "price": 2356.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878430 TEAVA RECTANGULARA 80X40X3.0",
-      "price": 3511.0
+      "price": 3511.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878440 TEAVA RECTANGULARA 80X40X4.0",
-      "price": 4588.0
+      "price": 4588.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878520 TEAVA RECTANGULARA 80X50X2.0",
-      "price": 2618.0
+      "price": 2618.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878530 TEAVA RECTANGULARA 80X50X3.0",
-      "price": 3822.0
+      "price": 3822.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878630 TEAVA RECTANGULARA 80X60X3.0",
-      "price": 4147.0
+      "price": 4147.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878640 TEAVA RECTANGULARA 80X60X4.0",
-      "price": 5334.0
+      "price": 5334.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2894315 TEAVA RECTANGULARA ZINCATA 40x30x1.5",
-      "price": 1313.0
+      "price": 1313.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878330 TEAVA RECTANGULARA 80X30X3.0",
-      "price": 3283.0
+      "price": 3283.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878320 TEAVA RECTANGULARA 80X30X2.0",
-      "price": 2197.0
+      "price": 2197.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878230 TEAVA RECTANGULARA 80X20X3.0",
-      "price": 2931.0
+      "price": 2931.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2876415 TEAVA RECTANGULARA 60X40X1.5",
-      "price": 1565.0
+      "price": 1565.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2876420 TEAVA RECTANGULARA 60X40X2.0",
-      "price": 1940.0
+      "price": 1940.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2876430 TEAVA RECTANGULARA 60X40X3.0",
-      "price": 2875.0
+      "price": 2875.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3104303 TEAVA RECTANGULARA AMPRENTATA 40x30x3.0",
-      "price": 2064.0
+      "price": 2064.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2877320 TEAVA RECTANGULARA 70X30X2.0",
-      "price": 1940.0
+      "price": 1940.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2877420 TEAVA RECTANGULARA 70X40X2.0",
-      "price": 2197.0
+      "price": 2197.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2877430 TEAVA RECTANGULARA 70X40X3.0",
-      "price": 3144.0
+      "price": 3144.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878220 TEAVA RECTANGULARA 80X20X2.0",
-      "price": 1982.0
+      "price": 1982.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3103115 TEAVA RECTANGULARA AMPRENTATA 30X10X1.5",
-      "price": 650.0
+      "price": 650.0,
+      "um": "Pret / ML"
     },
     {
       "name": "31032 TEAVA RECTANGULARA AMPRENTATA 30x20x2.0",
-      "price": 1113.0
+      "price": 1113.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3103215 TEAVA RECTANGULARA AMPRENTATA 30x20x1.5",
-      "price": 864.0
+      "price": 864.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106403 TEAVA RECTANGULARA AMPRENTATA 60x40x3.0",
-      "price": 3335.0
+      "price": 3335.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871541 TEAVA RECTANGULARA 100x50x4.0 L 12000 MM",
-      "price": 5998.0
+      "price": 5998.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2874212 TEAVA RECTANGULARA 40X20X1.2MM",
-      "price": 785.0
+      "price": 785.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2872850 TEAVA RECTANGULARA 120x80x5.0MM",
-      "price": 10055.0
+      "price": 10055.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2872840 TEAVA RECTANGULARA 120x80x4.0MM",
-      "price": 7744.0
+      "price": 7744.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871551 TEAVA RECTANGULARA 100x50x5.0 L 12000 MM",
-      "price": 7331.0
+      "price": 7331.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2633215 TEAVA RECTANGULARA 30X20X1.5MM, DIN TABLA DECAPATA DC01",
-      "price": 679.0
+      "price": 679.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871230 TEAVA RECTANGULARA 100X20X3.0",
-      "price": 3554.0
+      "price": 3554.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106402 TEAVA RECTANGULARA AMPRENTATA 60x40x2.0",
-      "price": 2138.0
+      "price": 2138.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106202 TEAVA RECTANGULARA AMPRENTATA 60X20X2.0",
-      "price": 1686.0
+      "price": 1686.0,
+      "um": "Pret / ML"
     },
     {
       "name": "31042 TEAVA RECTANGULARA AMPRENTATA 40x20x2.0",
-      "price": 1557.0
+      "price": 1557.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3104203 TEAVA RECTANGULARA AMPRENTATA 40x20x3.0",
-      "price": 1722.0
+      "price": 1722.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3104215 TEAVA RECTANGULARA AMPRENTATA 40x20x1.5",
-      "price": 1099.0
+      "price": 1099.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3104302 TEAVA RECTANGULARA AMPRENTATA 40x30x2.0",
-      "price": 1753.0
+      "price": 1753.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3104315 TEAVA RECTANGULARA AMPRENTATA 40x30x1.5",
-      "price": 1183.0
+      "price": 1183.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3105302 TEAVA RECTANGULARA AMPRENTATA 50x30x2.0",
-      "price": 1686.0
+      "price": 1686.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3105303 TEAVA RECTANGULARA AMPRENTATA 50x30x3.0",
-      "price": 2629.0
+      "price": 2629.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3105315 TEAVA RECTANGULARA AMPRENTATA 50X30X1.5",
-      "price": 1369.0
+      "price": 1369.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871640 TEAVA RECTANGULARA 100x60x4.0MM",
-      "price": 6103.0
+      "price": 6103.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2872115 TEAVA RECTANGULARA 20X10X1.5",
-      "price": 442.0
+      "price": 442.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871420 TEAVA RECTANGULARA 100X40X2.0",
-      "price": 2896.0
+      "price": 2896.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2874230 TEAVA RECTANGULARA 40X20X3.0",
-      "price": 1631.0
+      "price": 1631.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2874220 TEAVA RECTANGULARA 40X20X2.0",
-      "price": 1112.0
+      "price": 1112.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2874215 TEAVA RECTANGULARA 40X20X1.5",
-      "price": 908.0
+      "price": 908.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871430 TEAVA RECTANGULARA 100X40X3.0",
-      "price": 4236.0
+      "price": 4236.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2874115 TEAVA RECTANGULARA 40X10X1.5",
-      "price": 787.0
+      "price": 787.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2873515 TEAVA RECTANGULARA 30X15X1.5",
-      "price": 670.0
+      "price": 670.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871530 TEAVA RECTANGULARA 100X50X3.0",
-      "price": 4465.0
+      "price": 4465.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2873220 TEAVA RECTANGULARA 30X20X2.0",
-      "price": 920.0
+      "price": 920.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871540 TEAVA RECTANGULARA 100X50X4.0",
-      "price": 5686.0
+      "price": 5686.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2873215 TEAVA RECTANGULARA 30X20X1.5",
-      "price": 741.0
+      "price": 741.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2875115 TEAVA RECTANGULARA 50X10X1.5",
-      "price": 995.0
+      "price": 995.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2872830 TEAVA RECTANGULARA 120X80X3.0",
-      "price": 6192.0
+      "price": 6192.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871660 TEAVA RECTANGULARA 100X60X6.0",
-      "price": 8833.0
+      "price": 8833.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2872640 TEAVA RECTANGULARA 120x60x4.0MM",
-      "price": 6950.0
+      "price": 6950.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871550 TEAVA RECTANGULARA 100X50X5.0",
-      "price": 7103.0
+      "price": 7103.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2872630 TEAVA RECTANGULARA 120X60X3.0",
-      "price": 5652.0
+      "price": 5652.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871330 TEAVA RECTANGULARA 100X30X3.0",
-      "price": 3746.0
+      "price": 3746.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871320 TEAVA RECTANGULARA 100X30X2.0",
-      "price": 2624.0
+      "price": 2624.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2874315 TEAVA RECTANGULARA 40X30X1.5",
-      "price": 1113.0
+      "price": 1113.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2875320 TEAVA RECTANGULARA 50X30X2.0",
-      "price": 1562.0
+      "price": 1562.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2875330 TEAVA RECTANGULARA 50X30X3.0",
-      "price": 2281.0
+      "price": 2281.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2875420 TEAVA RECTANGULARA 50X40X2.0",
-      "price": 1773.0
+      "price": 1773.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2875430 TEAVA RECTANGULARA 50X40X3.0",
-      "price": 2495.0
+      "price": 2495.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2876215 TEAVA RECTANGULARA 60X20X1.5",
-      "price": 1287.0
+      "price": 1287.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2876220 TEAVA RECTANGULARA 60X20X2.0",
-      "price": 1529.0
+      "price": 1529.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871220 TEAVA RECTANGULARA 100X20X2.0",
-      "price": 2516.0
+      "price": 2516.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2876320 TEAVA RECTANGULARA 60X30X2.0",
-      "price": 1734.0
+      "price": 1734.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2876330 TEAVA RECTANGULARA 60X30X3.0",
-      "price": 2551.0
+      "price": 2551.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2875315 TEAVA RECTANGULARA 50X30X1.5",
-      "price": 1235.0
+      "price": 1235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2874330 TEAVA RECTANGULARA 40X30X3.0",
-      "price": 1914.0
+      "price": 1914.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2875220 TEAVA RECTANGULARA 50X20X2.0",
-      "price": 1400.0
+      "price": 1400.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2875215 TEAVA RECTANGULARA 50X20X1.5",
-      "price": 1090.0
+      "price": 1090.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2874320 TEAVA RECTANGULARA 40X30X2.0",
-      "price": 1400.0
+      "price": 1400.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28964126 TEAVA RECTANGULARA ZINCATA 60X40X1.2, L 6000MM",
-      "price": 1520.0
+      "price": 1520.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28964154 TEAVA RECTANGULARA ZINCATA 60X40X1.5, L 4500MM",
-      "price": 1709.0
+      "price": 1709.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28964157 TEAVA RECTANGULARA ZINCATA 60X40X1.5, L 7000MM",
-      "price": 1709.0
+      "price": 1709.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2872631 TEAVA RECTANGULARA 120X60X3.0 L 12000 MM",
-      "price": 4143.0
+      "price": 4143.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28964125 TEAVA RECTANGULARA ZINCATA 60X40X1.2, L 5000MM",
-      "price": 1520.0
+      "price": 1520.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2876425 TEAVA RECTANGULARA 60X40X2.5",
-      "price": 1895.0
+      "price": 1895.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871650 TEAVA RECTANGULARA 100x60x5.0MM",
-      "price": 7561.0
+      "price": 7561.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2875141 TEAVA RECTANGULARA 150x100x4.0 L 12000 MM",
-      "price": 8106.0
+      "price": 8106.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2742181 TEAVA RECTANGULARA 200x100x8.0 L 12000 MM, S355",
-      "price": 23671.0
+      "price": 23671.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871630 TEAVA RECTANGULARA 100X60X3.0",
-      "price": 4886.0
+      "price": 4886.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2872841 TEAVA RECTANGULARA 120x80x4.0 L 12000 MM",
-      "price": 8510.0
+      "price": 8510.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106415 TEAVA RECTANGULARA AMPRENTATA 60x40x1.5",
-      "price": 1733.0
+      "price": 1733.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2633220 TEAVA RECTANGULARA 30X20X2MM, DIN TABLA DECAPATA DC01",
-      "price": 807.0
+      "price": 807.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2872151 TEAVA RECTANGULARA 200x100x5.0 L 12000 MM",
-      "price": 15571.0
+      "price": 15571.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2872650 TEAVA RECTANGULARA 120x60x5.0MM",
-      "price": 8566.0
+      "price": 8566.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2872851 TEAVA RECTANGULARA 120x80x5.0 L 12000 MM",
-      "price": 7834.0
+      "price": 7834.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2634215 TEAVA RECTANGULARA 40X20X1.5MM, DIN TABLA DECAPATA DC01",
-      "price": 807.0
+      "price": 807.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2742161 TEAVA RECTANGULARA 200x100x6.0 L 12000 MM, S355",
-      "price": 14538.0
+      "price": 14538.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2745161 TEAVA RECTANGULARA 150x100x6.0 L 12000 MM, S355",
-      "price": 12620.0
+      "price": 12620.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2745151 TEAVA RECTANGULARA 150x100x5.0 L 12000 MM, S355",
-      "price": 13311.0
+      "price": 13311.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3103520 TEAVA RECTANGULARA AMPRENTATA 30X15X2.0",
-      "price": 1246.0
+      "price": 1246.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3103515 TEAVA RECTANGULARA AMPRENTATA 30X15X1.5",
-      "price": 669.0
+      "price": 669.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3103203 TEAVA RECTANGULARA AMPRENTATA 30X20X3.0",
-      "price": 1313.0
+      "price": 1313.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3102115 TEAVA RECTANGULARA AMPRENTATA 20X10X1.5",
-      "price": 479.0
+      "price": 479.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2874255 TEAVA RECTANGULARA 40X25X2.0",
-      "price": 928.0
+      "price": 928.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2879530 TEAVA RECTANGULARA 90X50X3.0",
-      "price": 3259.0
+      "price": 3259.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2878850 TEAVA RECTANGULARA 180X80X5.0",
-      "price": 10401.0
+      "price": 10401.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2874850 TEAVA RECTANGULARA 140X80X6.0",
-      "price": 13197.0
+      "price": 13197.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2873115 TEAVA RECTANGULARA 30X10X1.5",
-      "price": 645.0
+      "price": 645.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2877220 TEAVA RECTANGULARA 70X20X2.0",
-      "price": 1396.0
+      "price": 1396.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2876230 TEAVA RECTANGULARA 60X20X3.0",
-      "price": 2281.0
+      "price": 2281.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2873520 TEAVA RECTANGULARA 30X15X2.0",
-      "price": 649.0
+      "price": 649.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2873230 TEAVA RECTANGULARA 30X20X3.0",
-      "price": 1347.0
+      "price": 1347.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2876440 TEAVA RECTANGULARA 60X40X4.0",
-      "price": 3805.0
+      "price": 3805.0,
+      "um": "Pret / ML"
     },
     {
       "name": "31142 TEAVA RECTANGULARA AMPRENTATA CU FLOARE 40X20X2.0MM",
-      "price": 1191.0
+      "price": 1191.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2871830 TEAVA RECTANGULARA 100X80X3.0",
-      "price": 5418.0
+      "price": 5418.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106404 TEAVA RECTANGULARA AMPRENTATA 60X40X4.0",
-      "price": 4334.0
+      "price": 4334.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106303 TEAVA RECTANGULARA AMPRENTATA 60X30X3.0",
-      "price": 2620.0
+      "price": 2620.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106302 TEAVA RECTANGULARA AMPRENTATA 60x30x2.0",
-      "price": 1820.0
+      "price": 1820.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106215 TEAVA RECTANGULARA AMPRENTATA 60X20X1.5",
-      "price": 1304.0
+      "price": 1304.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106203 TEAVA RECTANGULARA AMPRENTATA 60X20X3.0",
-      "price": 2293.0
+      "price": 2293.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3105403 TEAVA RECTANGULARA AMPRENTATA 50X40X3.0",
-      "price": 2750.0
+      "price": 2750.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3105402 TEAVA RECTANGULARA AMPRENTATA 50x40x2.0",
-      "price": 1912.0
+      "price": 1912.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3105215 TEAVA RECTANGULARA AMPRENTATA 50X20X1.5",
-      "price": 1127.0
+      "price": 1127.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3105202 TEAVA RECTANGULARA AMPRENTATA 50X20X2.0",
-      "price": 1510.0
+      "price": 1510.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2876315 TEAVA RECTANGULARA 60X30X1.5",
-      "price": 1430.0
+      "price": 1430.0,
+      "um": "Pret / ML"
     }
   ],
   "RoundTube": [
     {
       "name": "TEAVA ROTUNDA 26.9X2.5",
-      "price": 563.0
+      "price": 563.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2891126 TEAVA DE INSTALATII ZINCATA 1/2\"X2.6MM (21.3x2.6)",
-      "price": 1150.0
+      "price": 1150.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2890520 TEAVA DE INSTALATII 1\"1/2X2.0MM (48.3x2.0)",
-      "price": 1532.0
+      "price": 1532.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2886030 TEAVA ROTUNDA 60.3X3.0",
-      "price": 2929.0
+      "price": 2929.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2886026 TEAVA ROTUNDA 60.3X2.6",
-      "price": 2449.0
+      "price": 2449.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2886020 TEAVA ROTUNDA 60.3X2.0",
-      "price": 1906.0
+      "price": 1906.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884830 TEAVA ROTUNDA 48.3X3.0",
-      "price": 2218.0
+      "price": 2218.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884825 TEAVA ROTUNDA 48.3X2.5",
-      "price": 1867.0
+      "price": 1867.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884820 TEAVA ROTUNDA 48.3X2.0",
-      "price": 1509.0
+      "price": 1509.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884815 TEAVA ROTUNDA 48.3X1.5",
-      "price": 1208.0
+      "price": 1208.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884230 TEAVA ROTUNDA 42.4X3.0",
-      "price": 1926.0
+      "price": 1926.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884220 TEAVA ROTUNDA 42.4X2.0",
-      "price": 1375.0
+      "price": 1375.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884215 TEAVA ROTUNDA 42.4X1.5",
-      "price": 1054.0
+      "price": 1054.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883330 TEAVA ROTUNDA 33.7X3.0",
-      "price": 1503.0
+      "price": 1503.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883320 TEAVA ROTUNDA 33.7X2.0",
-      "price": 1032.0
+      "price": 1032.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883315 TEAVA ROTUNDA 33.7X1.5",
-      "price": 831.0
+      "price": 831.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2887620 TEAVA ROTUNDA 76.1X2.0",
-      "price": 2416.0
+      "price": 2416.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2887630 TEAVA ROTUNDA 76.1X3.0",
-      "price": 3580.0
+      "price": 3580.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2888930 TEAVA ROTUNDA 88.9X3.0",
-      "price": 4210.0
+      "price": 4210.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881450 TEAVA ROTUNDA 114.3x5.0MM",
-      "price": 9021.0
+      "price": 9021.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883230 TEAVA ROTUNDA 32X3.0",
-      "price": 1423.0
+      "price": 1423.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2891520 TEAVA DE INSTALATII ZINCATA 1.5X2.0MM (48.3x2.0)",
-      "price": 1948.0
+      "price": 1948.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2612515 TEAVA ROTUNDA 25X1.5MM DIN TABLA DECAPATA DC01",
-      "price": 807.0
+      "price": 807.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881640 TEAVA ROTUNDA 168.3x4.0MM",
-      "price": 10729.0
+      "price": 10729.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881650 TEAVA ROTUNDA 168.3x5.0MM",
-      "price": 12165.0
+      "price": 12165.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882940 TEAVA ROTUNDA 219.1x4.0MM",
-      "price": 14201.0
+      "price": 14201.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884225 TEAVA ROTUNDA 42.4x2.5MM",
-      "price": 1629.0
+      "price": 1629.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2896130 TEAVA ROTUNDA ZINCATA 60.3X3.0",
-      "price": 3640.0
+      "price": 3640.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2894830 TEAVA ROTUNDA ZINCATA 48.3X3.0",
-      "price": 2875.0
+      "price": 2875.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2894230 TEAVA ROTUNDA ZINCATA 42.4X3.0",
-      "price": 2497.0
+      "price": 2497.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2894220 TEAVA ROTUNDA ZINCATA 42.4X2.0",
-      "price": 1765.0
+      "price": 1765.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2890945 TEAVA DE INSTALATII 4X4.5MM (114.3x4.5)",
-      "price": 8342.0
+      "price": 8342.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883220 TEAVA ROTUNDA 32X2.0",
-      "price": 980.0
+      "price": 980.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883215 TEAVA ROTUNDA 32X1.5",
-      "price": 789.0
+      "price": 789.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883010 TEAVA ROTUNDA 30X1.0",
-      "price": 500.0
+      "price": 500.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882115 TEAVA ROTUNDA 21.3X1.5",
-      "price": 531.0
+      "price": 531.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881440 TEAVA ROTUNDA 114.3X4.0",
-      "price": 7281.0
+      "price": 7281.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882620 TEAVA ROTUNDA 26.9X2.0",
-      "price": 832.0
+      "price": 832.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882510 TEAVA ROTUNDA 25X1.0",
-      "price": 411.0
+      "price": 411.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882615 TEAVA ROTUNDA 26.9X1.5",
-      "price": 656.0
+      "price": 656.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882525 TEAVA ROTUNDA 25X2.5",
-      "price": 914.0
+      "price": 914.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882520 TEAVA ROTUNDA 25X2.0",
-      "price": 780.0
+      "price": 780.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881430 TEAVA ROTUNDA 114.3X3.0",
-      "price": 5447.0
+      "price": 5447.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881040 TEAVA ROTUNDA 101.6X4.0",
-      "price": 6444.0
+      "price": 6444.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881715 TEAVA ROTUNDA 17.1X1.5",
-      "price": 403.0
+      "price": 403.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883015 TEAVA ROTUNDA 30X1.5",
-      "price": 733.0
+      "price": 733.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883020 TEAVA ROTUNDA 30X2.0",
-      "price": 914.0
+      "price": 914.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881815 TEAVA ROTUNDA 18X1.5",
-      "price": 426.0
+      "price": 426.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882015 TEAVA ROTUNDA 20X1.5",
-      "price": 474.0
+      "price": 474.0,
+      "um": "Pret / ML"
     },
     {
       "name": "TEAVA ROTUNDA INOX AISI304 FI 9.5MM, GR. 1.0MM",
-      "price": 807.0
+      "price": 807.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881915 TEAVA ROTUNDA 19X1.5",
-      "price": 473.0
+      "price": 473.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882515 TEAVA ROTUNDA 25X1.5",
-      "price": 607.0
+      "price": 607.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881441 TEAVA ROTUNDA 114.3X4.0, L 12000MM",
-      "price": 7598.0
+      "price": 7598.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2890840 TEAVA DE INSTALATII 3\"X4MM (88.9x4)",
-      "price": 5974.0
+      "price": 5974.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3131603 TEAVA ROTUNDA RASUCITA 60X3.0MM",
-      "price": 3465.0
+      "price": 3465.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130230 TEAVA ROTUNDA AMPRENTATA FI 30X1.0MM",
-      "price": 530.0
+      "price": 530.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130225 TEAVA ROTUNDA AMPRENTATA FI 25X1.0MM",
-      "price": 434.0
+      "price": 434.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881030 TEAVA ROTUNDA 101.6X3.0",
-      "price": 5037.0
+      "price": 5037.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2604215 TEAVA ROTUNDA INOX SS304 FI 42.4MM, GR. 1.5MM",
-      "price": 3321.0
+      "price": 3321.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130220 TEAVA ROTUNDA AMPRENTATA FI 20X1.0MM",
-      "price": 369.0
+      "price": 369.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881620 TEAVA ROTUNDA 16X2.0",
-      "price": 373.0
+      "price": 373.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130148 TEAVA ROTUNDA AMPRENTATA FI 48.3X1.0MM",
-      "price": 854.0
+      "price": 854.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130142 TEAVA ROTUNDA AMPRENTATA FI 42.4X1.0MM",
-      "price": 1031.0
+      "price": 1031.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130130 TEAVA ROTUNDA AMPRENTATA FI 30X1.0MM",
-      "price": 557.0
+      "price": 557.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130216 TEAVA ROTUNDA AMPRENTATA FI 16X1.0MM",
-      "price": 371.0
+      "price": 371.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130125 TEAVA ROTUNDA AMPRENTATA FI 25X1.0MM",
-      "price": 456.0
+      "price": 456.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130242 TEAVA ROTUNDA AMPRENTATA FI 42.4X1.0MM",
-      "price": 1031.0
+      "price": 1031.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130248 TEAVA ROTUNDA AMPRENTATA FI 48.3X1.0MM",
-      "price": 854.0
+      "price": 854.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130316 TEAVA ROTUNDA AMPRENTATA FI 16X1.0MM",
-      "price": 371.0
+      "price": 371.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881615 TEAVA ROTUNDA 16X1.5",
-      "price": 393.0
+      "price": 393.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881610 TEAVA ROTUNDA 16X1.0",
-      "price": 198.0
+      "price": 198.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130325 TEAVA ROTUNDA AMPRENTATA FI 25X1.0MM",
-      "price": 434.0
+      "price": 434.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3131423 TEAVA ROTUNDA RASUCITA 42X3.0MM",
-      "price": 2542.0
+      "price": 2542.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881205 TEAVA ROTUNDA 127X5.0",
-      "price": 7779.0
+      "price": 7779.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130348 TEAVA ROTUNDA AMPRENTATA FI 48.3X1.0MM",
-      "price": 854.0
+      "price": 854.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130342 TEAVA ROTUNDA AMPRENTATA FI 42.4X1.0MM",
-      "price": 981.0
+      "price": 981.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130330 TEAVA ROTUNDA AMPRENTATA FI 30X1.0MM",
-      "price": 1117.0
+      "price": 1117.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3131483 TEAVA ROTUNDA RASUCITA 48X3.0MM",
-      "price": 2850.0
+      "price": 2850.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2614015 TEAVA ROTUNDA 40X1.5MM, DIN TABLA DECAPATA DC01",
-      "price": 1001.0
+      "price": 1001.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130320 TEAVA ROTUNDA AMPRENTATA FI 20X1.0MM",
-      "price": 369.0
+      "price": 369.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130120 TEAVA ROTUNDA AMPRENTATA FI 20X1.0MM",
-      "price": 387.0
+      "price": 387.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3130116 TEAVA ROTUNDA AMPRENTATA FI 16X1.0MM",
-      "price": 391.0
+      "price": 391.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2896220 TEAVA OVALA 60X20X2.0",
-      "price": 1838.0
+      "price": 1838.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2886028 TEAVA ROTUNDA 60.3X2.8",
-      "price": 2053.0
+      "price": 2053.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2885120 TEAVA ROTUNDA 51X2.0",
-      "price": 1251.0
+      "price": 1251.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2885115 TEAVA ROTUNDA 51X1.5",
-      "price": 1008.0
+      "price": 1008.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884818 TEAVA ROTUNDA 48.3X1.8",
-      "price": 1073.0
+      "price": 1073.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884810 TEAVA ROTUNDA 48.3X1.0",
-      "price": 635.0
+      "price": 635.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882950 TEAVA ROTUNDA 219.1X5.0",
-      "price": 17858.0
+      "price": 17858.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884228 TEAVA ROTUNDA 42.4X2.8",
-      "price": 1405.0
+      "price": 1405.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2604015 TEAVA ROTUNDA INOX SS304 FI 40MM, GR. 1.5MM",
-      "price": 3186.0
+      "price": 3186.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2884210 TEAVA ROTUNDA 42.4X1.0",
-      "price": 554.0
+      "price": 554.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883820 TEAVA ROTUNDA 38X2.0",
-      "price": 921.0
+      "price": 921.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883815 TEAVA ROTUNDA 38X1.5",
-      "price": 943.0
+      "price": 943.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883520 TEAVA ROTUNDA 35X2.0",
-      "price": 837.0
+      "price": 837.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883515 TEAVA ROTUNDA 35X1.5",
-      "price": 678.0
+      "price": 678.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883030 TEAVA ROTUNDA 30X3.0",
-      "price": 1071.0
+      "price": 1071.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883318 TEAVA ROTUNDA 33.7X1.8",
-      "price": 716.0
+      "price": 716.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882120 TEAVA ROTUNDA 21.3X2.0",
-      "price": 657.0
+      "price": 657.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2887625 TEAVA ROTUNDA 76.1X2.5",
-      "price": 2349.0
+      "price": 2349.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2896215 TEAVA OVALA 60X20X1.5",
-      "price": 1398.0
+      "price": 1398.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2896120 TEAVA ROTUNDA ZINCATA 60.3X2.0",
-      "price": 2556.0
+      "price": 2556.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2894920 TEAVA OVALA 48X18X2.0",
-      "price": 1498.0
+      "price": 1498.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2894915 TEAVA OVALA 48X18X1.5",
-      "price": 1143.0
+      "price": 1143.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2881720 TEAVA ROTUNDA 17.1X2.0",
-      "price": 512.0
+      "price": 512.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2894820 TEAVA ROTUNDA ZINCATA 48.3X2.0",
-      "price": 2023.0
+      "price": 2023.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2893820 TEAVA OVALA 38X20X2.0",
-      "price": 1313.0
+      "price": 1313.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2893815 TEAVA OVALA 38X20X1.5",
-      "price": 1004.0
+      "price": 1004.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2893330 TEAVA ROTUNDA ZINCATA 33.7X3.0",
-      "price": 2036.0
+      "price": 2036.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2893320 TEAVA ROTUNDA ZINCATA 33.7X2.0",
-      "price": 1384.0
+      "price": 1384.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2893120 TEAVA OVALA 30X15X2.0",
-      "price": 997.0
+      "price": 997.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2893115 TEAVA OVALA 30X15X1.5",
-      "price": 843.0
+      "price": 843.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882010 TEAVA ROTUNDA 20X1.0",
-      "price": 249.0
+      "price": 249.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2888920 TEAVA ROTUNDA 88.9X2.0",
-      "price": 2219.0
+      "price": 2219.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2882020 TEAVA ROTUNDA 20X2.0",
-      "price": 615.0
+      "price": 615.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2883208 TEAVA ROTUNDA 323.9X8.0",
-      "price": 35152.0
+      "price": 35152.0,
+      "um": "Pret / ML"
     }
   ],
   "SquareTube": [
     {
       "name": "2896020 TEAVA PATRATA ZINCATA 60X60X2.0",
-      "price": 3124.0
+      "price": 3124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861251 TEAVA PATRATA 120x120x5.0 L 12000 MM",
-      "price": 12220.0
+      "price": 12220.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3101502 TEAVA PATRATA AMPRENTATA 15X15X2.0",
-      "price": 595.0
+      "price": 595.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3101515 TEAVA PATRATA AMPRENTATA PRIN LAMINARE 15X15X1.5",
-      "price": 613.0
+      "price": 613.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3102002 TEAVA PATRATA AMPRENTATA 20x20x2.0",
-      "price": 947.0
+      "price": 947.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3102015 TEAVA PATRATA AMPRENTATA 20x20x1.5",
-      "price": 785.0
+      "price": 785.0,
+      "um": "Pret / ML"
     },
     {
       "name": "31025 TEAVA PATRATA AMPRENTATA 25x25x2.0",
-      "price": 992.0
+      "price": 992.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3102515 TEAVA PATRATA AMPRENTATA 25x25x1.5",
-      "price": 820.0
+      "price": 820.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3103002 TEAVA PATRATA AMPRENTATA 30x30x2.0",
-      "price": 1424.0
+      "price": 1424.0,
+      "um": "Pret / ML"
     },
     {
       "name": "31015 TEAVA PATRATA AMPRENTATA 15X15X1.5",
-      "price": 639.0
+      "price": 639.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2868060 TEAVA PATRATA 80X80X6.0",
-      "price": 9025.0
+      "price": 9025.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2868050 TEAVA PATRATA 80X80X5.0",
-      "price": 7644.0
+      "price": 7644.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2868040 TEAVA PATRATA 80X80X4.0",
-      "price": 6170.0
+      "price": 6170.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2868030 TEAVA PATRATA 80X80X3.0",
-      "price": 4680.0
+      "price": 4680.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2868020 TEAVA PATRATA 80X80X2.0",
-      "price": 3401.0
+      "price": 3401.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2867030 TEAVA PATRATA 70X70X3.0",
-      "price": 4191.0
+      "price": 4191.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2867020 TEAVA PATRATA 70X70X2.0",
-      "price": 2986.0
+      "price": 2986.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2866050 TEAVA PATRATA 60X60X5.0",
-      "price": 5381.0
+      "price": 5381.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2866040 TEAVA PATRATA 60X60X4.0",
-      "price": 4490.0
+      "price": 4490.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3103003 TEAVA PATRATA AMPRENTATA 30x30x3.0",
-      "price": 2180.0
+      "price": 2180.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3103015 TEAVA PATRATA AMPRENTATA 30x30x1.5",
-      "price": 1006.0
+      "price": 1006.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3104002 TEAVA PATRATA AMPRENTATA 40x40x2.0",
-      "price": 2023.0
+      "price": 2023.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2865051 TEAVA PATRATA 50x50x5.0 L 12000 MM",
-      "price": 4581.0
+      "price": 4581.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861281 TEAVA PATRATA 120x120x8.0 L 12000 MM",
-      "price": 19203.0
+      "price": 19203.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861541 TEAVA PATRATA 150x150x4.0 L 12000 MM",
-      "price": 13092.0
+      "price": 13092.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2868041 TEAVA PATRATA 80x80x4.0 L 12000 MM",
-      "price": 6438.0
+      "price": 6438.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2741551 TEAVA PATRATA 150x150x5.0 L 12000 MM, S355",
-      "price": 15571.0
+      "price": 15571.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861041 TEAVA PATRATA 100x100x4.0 L 12000 MM",
-      "price": 8170.0
+      "price": 8170.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3124120 TEAVA PATRATA AMPRENTATA CU GAURI PT. BROASCA 40X40X2.0MM, L 2000 MM",
-      "price": 6741.0
+      "price": 6741.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3124020 TEAVA PATRATA CU GAURI PT. BROASCA 40X40X2.0MM, L 2000 MM",
-      "price": 4840.0
+      "price": 4840.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "31130 TEAVA PATRATA AMPRENTATA CU FLOARE 30X30X2.0MM",
-      "price": 1545.0
+      "price": 1545.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3108003 TEAVA PATRATA AMPRENTATA 80X80X3.0",
-      "price": 5572.0
+      "price": 5572.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3108002 TEAVA PATRATA AMPRENTATA 80X80X2.0",
-      "price": 3601.0
+      "price": 3601.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106003 TEAVA PATRATA AMPRENTATA 60x60x3.0",
-      "price": 3786.0
+      "price": 3786.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106002 TEAVA PATRATA AMPRENTATA 60x60x2.0",
-      "price": 3124.0
+      "price": 3124.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3105003 TEAVA PATRATA AMPRENTATA 50x50x3.0",
-      "price": 3933.0
+      "price": 3933.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3105002 TEAVA PATRATA AMPRENTATA 50x50x2.0",
-      "price": 2638.0
+      "price": 2638.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3104015 TEAVA PATRATA AMPRENTATA 40x40x1.5",
-      "price": 1369.0
+      "price": 1369.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3104003 TEAVA PATRATA AMPRENTATA 40x40x3.0",
-      "price": 2628.0
+      "price": 2628.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2866030 TEAVA PATRATA 60X60X3.0",
-      "price": 3435.0
+      "price": 3435.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2866020 TEAVA PATRATA 60X60X2.0",
-      "price": 2408.0
+      "price": 2408.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861240 TEAVA PATRATA 120X120X4.0",
-      "price": 9502.0
+      "price": 9502.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2863515 TEAVA PATRATA 35X35X1.5",
-      "price": 1068.0
+      "price": 1068.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2863030 TEAVA PATRATA 30X30X3.0",
-      "price": 1596.0
+      "price": 1596.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2863020 TEAVA PATRATA 30X30X2.0",
-      "price": 1136.0
+      "price": 1136.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2863015 TEAVA PATRATA 30X30X1.5",
-      "price": 927.0
+      "price": 927.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2862515 TEAVA PATRATA 25X25X1.5",
-      "price": 771.0
+      "price": 771.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2862020 TEAVA PATRATA 20X20X2.0",
-      "price": 726.0
+      "price": 726.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2862015 TEAVA PATRATA 20X20X1.5",
-      "price": 621.0
+      "price": 621.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2864030 TEAVA PATRATA 40X40X3.0",
-      "price": 2232.0
+      "price": 2232.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861030 TEAVA PATRATA 100X100X3.0",
-      "price": 6192.0
+      "price": 6192.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861040 TEAVA PATRATA 100X100X4.0",
-      "price": 7999.0
+      "price": 7999.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861520 TEAVA PATRATA 15X15X2.0",
-      "price": 512.0
+      "price": 512.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861080 TEAVA PATRATA 100X100X8.0",
-      "price": 14787.0
+      "price": 14787.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861250 TEAVA PATRATA 120X120X5.0",
-      "price": 11839.0
+      "price": 11839.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2864015 TEAVA PATRATA 40X40X1.5",
-      "price": 1235.0
+      "price": 1235.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861020 TEAVA PATRATA 100X100X2.0",
-      "price": 4341.0
+      "price": 4341.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2865040 TEAVA PATRATA 50X50X4.0",
-      "price": 3647.0
+      "price": 3647.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2865030 TEAVA PATRATA 50X50X3.0",
-      "price": 2875.0
+      "price": 2875.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2865020 TEAVA PATRATA 50X50X2.0",
-      "price": 1982.0
+      "price": 1982.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861515 TEAVA PATRATA 15X15X1.5",
-      "price": 474.0
+      "price": 474.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2864040 TEAVA PATRATA 40X40X4.0",
-      "price": 2871.0
+      "price": 2871.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2862520 TEAVA PATRATA 25X25X2.0",
-      "price": 900.0
+      "price": 900.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2864020 TEAVA PATRATA 40X40X2.0",
-      "price": 1562.0
+      "price": 1562.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2864025 TEAVA PATRATA 40X40X2.5",
-      "price": 1946.0
+      "price": 1946.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2741481 TEAVA PATRATA 140x140x8.0 L 12000 MM, S355",
-      "price": 21926.0
+      "price": 21926.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28925156L TEAVA PATRATA ZINCATA 25X25X1.5MM, L 6000MM",
-      "price": 927.0
+      "price": 927.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2892020L TEAVA PATRATA ZINCATA 20X20X2.0MM, L 6000MM",
-      "price": 893.0
+      "price": 893.0,
+      "um": "Pret / ML"
     },
     {
       "name": "28620125L TEAVA PATRATA ZINCATA 20X20X1.25MM, L 6000MM",
-      "price": 640.0
+      "price": 640.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861050 TEAVA PATRATA 100X100X5.0",
-      "price": 9951.0
+      "price": 9951.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861081 TEAVA PATRATA 100x100x8.0 L 12000 MM",
-      "price": 14944.0
+      "price": 14944.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2869051 TEAVA PATRATA 90x90x5.0 L 12000 MM",
-      "price": 8938.0
+      "price": 8938.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3125120 TEAVA PATRATA AMPRENTATA CU GAURI PT. BROASCA 50x50x2.0",
-      "price": 4680.0
+      "price": 4680.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "2741241 TEAVA PATRATA 120x120x4.0 L 12000 MM, S355",
-      "price": 8295.0
+      "price": 8295.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861051 TEAVA PATRATA 100x100x5.0 L 12000 MM",
-      "price": 7641.0
+      "price": 7641.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2741081 TEAVA PATRATA 100x100x8.0 L 12000 MM, S355",
-      "price": 14944.0
+      "price": 14944.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2741451 TEAVA PATRATA 140x140x5.0 L 12000 MM, S355",
-      "price": 14455.0
+      "price": 14455.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2868051 TEAVA PATRATA 80x80x5.0 L 12000 MM",
-      "price": 7890.0
+      "price": 7890.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861230 TEAVA PATRATA 120X120X3.0",
-      "price": 7463.0
+      "price": 7463.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2741251 TEAVA PATRATA 120x120x5.0 L 12000 MM, S355",
-      "price": 12220.0
+      "price": 12220.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2868031 TEAVA PATRATA 80x80x3.0 L 12000 MM",
-      "price": 4034.0
+      "price": 4034.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2867041 TEAVA PATRATA 70x70x4.0 L 12000 MM",
-      "price": 5565.0
+      "price": 5565.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861241 TEAVA PATRATA 120x120x4.0 L 12000 MM",
-      "price": 7817.0
+      "price": 7817.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861025 TEAVA PATRATA 100X100X2.5",
-      "price": 3976.0
+      "price": 3976.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2867051 TEAVA PATRATA 70x70x5.0 L 12000 MM",
-      "price": 5277.0
+      "price": 5277.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2869041 TEAVA PATRATA 90x90x4.0 L 12000 MM",
-      "price": 7331.0
+      "price": 7331.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2741061 TEAVA PATRATA 100x100x6.0 L 12000 MM, S355",
-      "price": 10044.0
+      "price": 10044.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2741051 TEAVA PATRATA 100x100x5.0 L 12000 MM, S355",
-      "price": 8412.0
+      "price": 8412.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2741041 TEAVA PATRATA 100x100x4.0 L 12000 MM, S355",
-      "price": 8510.0
+      "price": 8510.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861031 TEAVA PATRATA 100x100x3.0 L 12000 MM",
-      "price": 6517.0
+      "price": 6517.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861261 TEAVA PATRATA 120x120x6.0 L 12000 MM",
-      "price": 15057.0
+      "price": 15057.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861451 TEAVA PATRATA 140x140x5.0 L 12000 MM",
-      "price": 11260.0
+      "price": 11260.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2866041 TEAVA PATRATA 60x60x4.0 L 12000 MM",
-      "price": 4881.0
+      "price": 4881.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2866051 TEAVA PATRATA 60x60x5.0 L 12000 MM",
-      "price": 5677.0
+      "price": 5677.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861061 TEAVA PATRATA 100x100x6.0 L 12000 MM",
-      "price": 9134.0
+      "price": 9134.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3125115 TEAVA PATRATA AMPRENTATA CU GAURI PT. BROASCA 50x50x1.5",
-      "price": 5354.0
+      "price": 5354.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3125020 TEAVA PATRATA CU GAURI PT. BROASCA 50x50x2.0",
-      "price": 2036.0
+      "price": 2036.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "2861550 TEAVA PATRATA 150X150X5.0",
-      "price": 15734.0
+      "price": 15734.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3104025 TEAVA PATRATA AMPRENTATA 40x40x2.5",
-      "price": 2042.0
+      "price": 2042.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861660 TEAVA PATRATA 160X160X6.0",
-      "price": 14637.0
+      "price": 14637.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3104004 TEAVA PATRATA AMPRENTATA 40x40x4.0",
-      "price": 2954.0
+      "price": 2954.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861680 TEAVA PATRATA 160X160X8.0",
-      "price": 18878.0
+      "price": 18878.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2862025 TEAVA PATRATA 20X20X2.5",
-      "price": 906.0
+      "price": 906.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2868080 TEAVA PATRATA 80X80X8.0",
-      "price": 8482.0
+      "price": 8482.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2863520 TEAVA PATRATA 35X35X2.0",
-      "price": 1347.0
+      "price": 1347.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3101501 TEAVA PATRATA AMPRENTATA PE COLT 15X15X1.5",
-      "price": 599.0
+      "price": 599.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2894020 TEAVA PATRATA ZINCATA 40X40X2.0",
-      "price": 2050.0
+      "price": 2050.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2893020 TEAVA PATRATA ZINCATA 30X30X2.0",
-      "price": 1491.0
+      "price": 1491.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2869020 TEAVA PATRATA 90X90X2.0",
-      "price": 3738.0
+      "price": 3738.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861650 TEAVA PATRATA 160X160X5.0",
-      "price": 12309.0
+      "price": 12309.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2864515 TEAVA PATRATA 45X45X1.5",
-      "price": 1491.0
+      "price": 1491.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2867040 TEAVA PATRATA 70X70X4.0",
-      "price": 5450.0
+      "price": 5450.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3105004 TEAVA PATRATA AMPRENTATA 50x50x4.0",
-      "price": 4668.0
+      "price": 4668.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3105005 TEAVA PATRATA AMPRENTATA 50X50X5.0",
-      "price": 4668.0
+      "price": 4668.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861540 TEAVA PATRATA 150X150X4.0",
-      "price": 12576.0
+      "price": 12576.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3125015 TEAVA PATRATA CU GAURI PT. BROASCA 50x50x1.5",
-      "price": 5354.0
+      "price": 5354.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "3124115 TEAVA PATRATA AMPRENTATA CU GAURI PT. BROASCA 40X40X1.5MM, L 2000 MM",
-      "price": 5476.0
+      "price": 5476.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "2861440 TEAVA PATRATA 140X140X4.0",
-      "price": 11731.0
+      "price": 11731.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3124015 TEAVA PATRATA CU GAURI PT. BROASCA 40X40X1.5MM, L 2000 MM",
-      "price": 3557.0
+      "price": 3557.0,
+      "um": "Pret / BUC"
     },
     {
       "name": "31141 TEAVA PATRATA AMPRENTATA MODEL GRECESC 40X40X2.0MM",
-      "price": 2879.0
+      "price": 2879.0,
+      "um": "Pret / ML"
     },
     {
       "name": "31140 TEAVA PATRATA AMPRENTATA CU FLOARE 40X40X2.0MM",
-      "price": 1952.0
+      "price": 1952.0,
+      "um": "Pret / ML"
     },
     {
       "name": "31131 TEAVA PATRATA AMPRENTATA MODEL GRECESC 30X30X2.0MM",
-      "price": 1655.0
+      "price": 1655.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3113015 TEAVA PATRATA AMPRENTATA CU FLOARE 30X30X1.5MM",
-      "price": 1776.0
+      "price": 1776.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861450 TEAVA PATRATA 140X140X5.0",
-      "price": 14605.0
+      "price": 14605.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3112015 TEAVA PATRATA AMPRENTATA CU FLOARE 20X20X1.5MM",
-      "price": 799.0
+      "price": 799.0,
+      "um": "Pret / ML"
     },
     {
       "name": "31120 TEAVA PATRATA AMPRENTATA CU FLOARE 20X20X2.0MM",
-      "price": 853.0
+      "price": 853.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3108004 TEAVA PATRATA AMPRENTATA 80X80X4.0",
-      "price": 6483.0
+      "price": 6483.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2861480 TEAVA PATRATA 140X140X8.0",
-      "price": 17080.0
+      "price": 17080.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106005 TEAVA PATRATA AMPRENTATA 60X60X5.0",
-      "price": 5853.0
+      "price": 5853.0,
+      "um": "Pret / ML"
     },
     {
       "name": "3106004 TEAVA PATRATA AMPRENTATA 60X60X4.0",
-      "price": 4718.0
+      "price": 4718.0,
+      "um": "Pret / ML"
     },
     {
       "name": "2865050 TEAVA PATRATA 50X50X5.0",
-      "price": 4533.0
+      "price": 4533.0,
+      "um": "Pret / ML"
     }
   ],
-  "time": 1785435544
+  "time": 1785435736
 }

@@ -47,7 +47,7 @@ if [ "$CURRENT_BRANCH" = "dev" ]; then
     git merge dev --no-edit
     git push origin master
 
-    echo "=== Sync complete. Returned to dev ==="
+    echo "=== Sync complete. Returned to $CURRENT_BRANCH ==="
 
 else
     echo "=== Detected '$CURRENT_BRANCH' branch. Merging master into dev ==="

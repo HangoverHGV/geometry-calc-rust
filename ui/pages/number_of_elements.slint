@@ -51,11 +51,7 @@ export component NumberOfElementsPage inherits Page {
                         clicked => {
                             total_distance.text = "";
                             thickness.text = "";
-                            number_of_objects.text = "0";
-                            root.distance = "0";
-                            root.center-distance = "0";
-                            
-                            // Send cleared states to Rust to reset the output dimensions immediately
+                            number_of_objects.text = "";
                             root.do_calculate();
                         }
                     }

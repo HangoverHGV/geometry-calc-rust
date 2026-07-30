@@ -6,6 +6,7 @@ import {
     HorizontalBox,
     ComboBox,
 } from "std-widgets.slint";
+import { AppStyles } from "../assets/styles.slint";
 
 import { Page } from "../components/page.slint";
 
@@ -61,12 +62,19 @@ export component ForceCalculator inherits Page {
                 VerticalBox {
                     Text {
                         text: "Mass";
+                        font-size: AppStyles.app-font-size;
+                        font-family: AppStyles.app-font-family;
+                        font-weight: AppStyles.app-font-weight;
+                        font-italic: AppStyles.app-font-italic;
                     }
 
                     mass := LineEdit {
                         placeholder-text: "0.0";
                         text: "";
                         input-type: decimal;
+                        font-size: AppStyles.app-font-size;
+                        font-family: AppStyles.app-font-family;
+                        font-italic: AppStyles.app-font-italic;
                         // This fires on every single keystroke change!
                         edited => { root.do_calculate(); }
                         accepted => { root.do_calculate(); }
@@ -76,6 +84,10 @@ export component ForceCalculator inherits Page {
                 VerticalBox {
                     Text {
                         text: "Unit";
+                        font-size: AppStyles.app-font-size;
+                        font-family: AppStyles.app-font-family;
+                        font-weight: AppStyles.app-font-weight;
+                        font-italic: AppStyles.app-font-italic;
                     }
 
                     mass_unit := ComboBox {
@@ -92,11 +104,18 @@ export component ForceCalculator inherits Page {
                 VerticalBox {
                     Text {
                         text: "Area (" + area_unit.current-value + ")";
+                        font-size: AppStyles.app-font-size;
+                        font-family: AppStyles.app-font-family;
+                        font-weight: AppStyles.app-font-weight;
+                        font-italic: AppStyles.app-font-italic;
                     }
 
                     area := LineEdit {
                         placeholder-text: "0.0";
                         text: "1";
+                        font-size: AppStyles.app-font-size;
+                        font-family: AppStyles.app-font-family;
+                        font-italic: AppStyles.app-font-italic;
                         input-type: decimal;
                         edited => { root.do_calculate(); }
                         accepted => { root.do_calculate(); }
@@ -106,6 +125,10 @@ export component ForceCalculator inherits Page {
                 VerticalBox {
                     Text {
                         text: "Unit";
+                        font-size: AppStyles.app-font-size;
+                        font-family: AppStyles.app-font-family;
+                        font-weight: AppStyles.app-font-weight;
+                        font-italic: AppStyles.app-font-italic;
                     }
 
                     area_unit := ComboBox {
@@ -121,6 +144,10 @@ export component ForceCalculator inherits Page {
             HorizontalBox {
                 Text {
                     text: "Convert Unit";
+                    font-size: AppStyles.app-font-size;
+                    font-family: AppStyles.app-font-family;
+                    font-weight: AppStyles.app-font-weight;
+                    font-italic: AppStyles.app-font-italic;
                 }
 
                 export_unit := ComboBox {
@@ -139,7 +166,10 @@ export component ForceCalculator inherits Page {
                     Text {
 
                         text: root.computed-force + " " + export_unit.current-value;
-                        font-size: 18px;
+                        font-size: AppStyles.app-font-size + 5px;
+                        font-family: AppStyles.app-font-family;
+                        font-weight: AppStyles.app-font-weight;
+                        font-italic: AppStyles.app-font-italic;
                     }
                 }
 
@@ -148,7 +178,10 @@ export component ForceCalculator inherits Page {
                     border-radius: 2px;
                     Text {
                         text: root.computed-mpa + " MPa";
-                        font-size: 18px;
+                        font-size: AppStyles.app-font-size + 5px;
+                        font-family: AppStyles.app-font-family;
+                        font-weight: AppStyles.app-font-weight;
+                        font-italic: AppStyles.app-font-italic;
                     }
                 }
             }

@@ -7,6 +7,7 @@ import {
 } from "std-widgets.slint";
 
 import { Page } from "../components/page.slint";
+import { AppStyles } from "../assets/styles.slint";
 
 export component NumberOfElementsPage inherits Page {
     title: "Number Of Elements";
@@ -20,7 +21,6 @@ export component NumberOfElementsPage inherits Page {
 
     property <length> max-image-wdth: 400px;
     property <length> max-iamge-height: 200px;
-
 
     // Main calculation function
     function do_calculate() {
@@ -38,7 +38,7 @@ export component NumberOfElementsPage inherits Page {
                 alignment: start;
                 padding: 0px;
                 spacing: 5px;
-                
+
                 // --- Removed the "Calculate" Button entirely ---
 
                 Rectangle {
@@ -60,39 +60,57 @@ export component NumberOfElementsPage inherits Page {
 
             Text {
                 text: "Total Distance (mm): ";
+                font-size: AppStyles.app-font-size;
+                font-family: AppStyles.app-font-family;
+                font-weight: AppStyles.app-font-weight;
+                font-italic: AppStyles.app-font-italic;
             }
 
             total_distance := LineEdit {
                 placeholder-text: "0.0";
                 text: "";
                 input-type: decimal;
-                // 👇 This fires on every single keystroke change!
+                font-size: AppStyles.app-font-size;
+                font-family: AppStyles.app-font-family;
+                font-italic: AppStyles.app-font-italic;
                 edited => { root.do_calculate(); }
                 accepted => { root.do_calculate(); }
             }
 
             Text {
                 text: "Object Thickness (mm): ";
+                font-size: AppStyles.app-font-size;
+                font-family: AppStyles.app-font-family;
+                font-weight: AppStyles.app-font-weight;
+                font-italic: AppStyles.app-font-italic;
             }
 
             thickness := LineEdit {
                 placeholder-text: "0.0";
                 text: "";
                 input-type: decimal;
-                // 👇 This fires on every single keystroke change!
+                font-size: AppStyles.app-font-size;
+                font-family: AppStyles.app-font-family;
+                font-italic: AppStyles.app-font-italic;
                 edited => { root.do_calculate(); }
                 accepted => { root.do_calculate(); }
             }
 
             Text {
                 text: "Number of Objects (mm): ";
+                font-size: AppStyles.app-font-size;
+                font-family: AppStyles.app-font-family;
+                font-weight: AppStyles.app-font-weight;
+                font-italic: AppStyles.app-font-italic;
             }
 
             number_of_objects := LineEdit {
                 placeholder-text: "0";
                 text: "0";
                 input-type: number;
-                // 👇 This fires on every single keystroke change!
+                font-size: AppStyles.app-font-size;
+                font-family: AppStyles.app-font-family;
+                font-italic: AppStyles.app-font-italic;
                 edited => { root.do_calculate(); }
                 accepted => { root.do_calculate(); }
             }
@@ -111,7 +129,10 @@ export component NumberOfElementsPage inherits Page {
 
                 Text {
                     text: "Distance from the edge: " + root.distance + " mm";
-                    font-size: 18px;
+                    font-size: AppStyles.app-font-size + 5px;
+                    font-family: AppStyles.app-font-family;
+                    font-weight: AppStyles.app-font-weight;
+                    font-italic: AppStyles.app-font-italic;
                 }
             }
 
@@ -125,8 +146,10 @@ export component NumberOfElementsPage inherits Page {
 
                 Text {
                     text: "Distance from the center: " + root.center-distance + " mm";
-                    font-size: 18px;
-
+                    font-size: AppStyles.app-font-size + 5px;
+                    font-family: AppStyles.app-font-family;
+                    font-weight: AppStyles.app-font-weight;
+                    font-italic: AppStyles.app-font-italic;
                 }
             }
         }

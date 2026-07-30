@@ -1,13 +1,15 @@
 // Copyright © SixtyFPS GmbH <info@slint.dev>
 // SPDX-License-Identifier: MIT
 
-import { Switch, HorizontalBox, VerticalBox, Palette } from "std-widgets.slint";
+import { Switch, HorizontalBox, VerticalBox, Palette, SpinBox } from "std-widgets.slint";
+import { AppStyles } from "../assets/styles.slint";
 
 export component Page inherits VerticalBox {
     in property <string> title: "title";
     in property <string> description: "description";
     in property <bool> show-enable-switch: true;
     in property <bool> show-enable-read-only: false;
+    in-out property <int> font-size-value: AppStyles.app-font-size / 1px;
 
     accessible-role: tab-panel;
     accessible-label: root.title;
@@ -28,6 +30,16 @@ export component Page inherits VerticalBox {
             toggled => {
                 Palette.color-scheme = self.checked ? ColorScheme.dark : ColorScheme.light;
             }
+        }
+        SpinBox{
+            minimum: 10;
+            maximum: 32;
+            value: root.font-size-value;
+            horizontal-stretch: 0;
+            edited(value) => {
+                root.font-size-value = self.value;
+                AppStyles.app-font-size = self.value * 1px;
+             }
         }
     }
 

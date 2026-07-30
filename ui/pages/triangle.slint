@@ -7,6 +7,8 @@ import {
     HorizontalBox,
     Button,
 } from "std-widgets.slint";
+import { AppStyles } from "../assets/styles.slint";
+
 
 export component Triangles inherits Page {
     title: "Triangle Calculator";
@@ -40,8 +42,6 @@ export component Triangles inherits Page {
     in-out property <string> bc-text: "";
     in-out property <string> abc-is-angle: "";
     in-out property <string> bac-is-angle: "";
-
-    property <length> result-size: 16px;
 
     // Send what the user is typing to Rust
     function do_calculate_right_angle() {
@@ -98,34 +98,55 @@ export component Triangles inherits Page {
                             alignment: start;
                             Text {
                                 text: "Hypotenuse BC";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             LineEdit {
                                 placeholder-text: "0.0";
                                 text <=> root.input-hypotenuse;
                                 input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
                                 edited => { root.do_calculate_right_angle(); }
                             }
 
                             Text {
                                 text: "Cathetus 1 AB: ";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             LineEdit {
                                 placeholder-text: "0.0";
                                 text <=> root.input-cathetus1;
                                 input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
                                 edited => { root.do_calculate_right_angle(); }
                             }
 
                             Text {
                                 text: "Cathetus 2 AC";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             LineEdit {
                                 placeholder-text: "0.0";
                                 text <=> root.input-cathetus2;
                                 input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
                                 edited => { root.do_calculate_right_angle(); }
                             }
                         }
@@ -134,23 +155,37 @@ export component Triangles inherits Page {
                             alignment: start;
                             Text {
                                 text: "ABC angle:";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             LineEdit {
                                 placeholder-text: "0.0";
                                 text <=> root.input-abc-angle;
                                 input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
                                 edited => { root.do_calculate_right_angle(); }
                             }
 
                             Text {
                                 text: "ACB angle:";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             LineEdit {
                                 placeholder-text: "0.0";
                                 text <=> root.input-acb-angle;
                                 input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
                                 edited => { root.do_calculate_right_angle(); }
                             }
                         }
@@ -167,29 +202,44 @@ export component Triangles inherits Page {
                         VerticalBox {
                             Text {
                                 text: "Hypotenuse BC: " + root.hypotenuse-text + " mm";
-                                font-size: result-size;
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             Text {
                                 text: "Cathetus 1 AB: " + root.cathetus1-text + " mm";
-                                font-size: result-size;
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             Text {
                                 text: "Cathetus 2 AC: " + root.cathetus2-text + " mm";
-                                font-size: result-size;
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
                         }
 
                         VerticalBox {
                             Text {
                                 text: "Angle ABC: " + root.abc-angle + "°";
-                                font-size: result-size;
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             Text {
                                 text: "Angle ACB: " + root.acb-angle + "°";
-                                font-size: result-size;
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
                         }
                     }
@@ -238,23 +288,37 @@ export component Triangles inherits Page {
                             alignment: start;
                             Text {
                                 text: "AB:";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             LineEdit {
                                 placeholder-text: "0.0";
                                 text <=> root.input-ab-text;
                                 input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
                                 edited => { root.do_calculate_is(); }
                             }
 
                             Text {
                                 text: "BC";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             LineEdit {
                                 placeholder-text: "0.0";
                                 text <=> root.input-bc-text;
                                 input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
                                 edited => { root.do_calculate_is(); }
                             }
                         }
@@ -263,23 +327,37 @@ export component Triangles inherits Page {
                             alignment: start;
                             Text {
                                 text: "ABC";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             LineEdit {
                                 placeholder-text: "0.0";
                                 text <=> root.input-abc-is-angle;
                                 input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
                                 edited => { root.do_calculate_is(); }
                             }
 
                             Text {
                                 text: "BAC";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             LineEdit {
                                 placeholder-text: "0.0";
                                 text <=> root.input-bac-is-angle;
                                 input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
                                 edited => { root.do_calculate_is(); }
                             }
                         }
@@ -296,34 +374,52 @@ export component Triangles inherits Page {
                         VerticalBox {
                             Text {
                                 text: "AB: " + root.ab-text + " mm";
-                                font-size: result-size;
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             Text {
                                 text: "AC: " + root.ab-text + " mm";
-                                font-size: result-size;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             Text {
                                 text: "BC: " + root.bc-text + " mm";
-                                font-size: result-size;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
                         }
 
                         VerticalBox {
                             Text {
                                 text: "Angle ABC: " + root.abc-is-angle + "°";
-                                font-size: result-size;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             Text {
                                 text: "Angle ACB: " + root.abc-is-angle + "°";
-                                font-size: result-size;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
 
                             Text {
                                 text: "Angle BAC: " + root.bac-is-angle + "°";
-                                font-size: result-size;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
                             }
                         }
                     }

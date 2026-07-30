@@ -1,5 +1,6 @@
 
 import { HorizontalBox, VerticalBox, Palette } from "std-widgets.slint";
+import { AppStyles } from "../assets/styles.slint";
 
 component SideBarItem inherits Rectangle {
     in property <int> tab-index;
@@ -18,16 +19,16 @@ component SideBarItem inherits Rectangle {
     accessible-action-default => { self.clicked(); }
 
     states [
-        pressed when touch.pressed : {
+        pressed when touch.pressed: {
             state.opacity: 0.8;
         }
-        hover when touch.has-hover : {
+        hover when touch.has-hover: {
             state.opacity: 0.6;
         }
-        selected when root.selected : {
+        selected when root.selected: {
             state.opacity: 1;
         }
-        focused when root.has-focus : {
+        focused when root.has-focus: {
             state.opacity: 0.8;
         }
     ]
@@ -45,6 +46,10 @@ component SideBarItem inherits Rectangle {
 
         label := Text {
             vertical-alignment: center;
+            font-size: AppStyles.app-font-size;
+            font-family: AppStyles.app-font-family;
+            font-weight: AppStyles.app-font-weight;
+            font-italic: AppStyles.app-font-italic;
             accessible-role: none;
         }
     }
@@ -74,7 +79,10 @@ export component SideBar inherits Rectangle {
         alignment: start;
 
         label := Text {
-            font-size: 1.3rem;
+            font-size: AppStyles.app-font-size;
+            font-family: AppStyles.app-font-family;
+            font-weight: AppStyles.app-font-weight;
+            font-italic: AppStyles.app-font-italic;
             horizontal-alignment: center;
         }
 
@@ -90,24 +98,24 @@ export component SideBar inherits Rectangle {
             fs := FocusScope {
                 key-pressed(event) => {
                     if (event.text == "\n") {
-                         root.current-item = root.current-focused;
-                         return accept;
+                        root.current-item = root.current-focused;
+                        return accept;
                     }
                     if (event.text == Key.UpArrow) {
-                         self.focused-tab = Math.max(self.focused-tab - 1, 0);
-                         return accept;
+                        self.focused-tab = Math.max(self.focused-tab - 1, 0);
+                        return accept;
                     }
                     if (event.text == Key.DownArrow) {
-                         self.focused-tab = Math.min(self.focused-tab + 1, root.model.length - 1);
-                         return accept;
+                        self.focused-tab = Math.min(self.focused-tab + 1, root.model.length - 1);
+                        return accept;
                     }
                     return reject;
                 }
 
                 key-released(event) => {
                     if (event.text == " ") {
-                         root.current-item = root.current-focused;
-                         return accept;
+                        root.current-item = root.current-focused;
+                        return accept;
                     }
                     return reject;
                 }
@@ -118,7 +126,7 @@ export component SideBar inherits Rectangle {
                 width: 0; // Do not react on clicks
             }
 
-            for item[index] in root.model : SideBarItem {
+            for item[index] in root.model: SideBarItem {
                 clicked => { root.current-item = index; }
 
                 tab-index: index;
@@ -134,7 +142,7 @@ export component SideBar inherits Rectangle {
                 padding-bottom: 0px;
 
                 @children
-             }
+            }
         }
     }
 }

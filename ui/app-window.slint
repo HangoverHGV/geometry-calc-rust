@@ -9,11 +9,11 @@ export component AppWindow inherits Window {
 
     icon: @image-url("assets/images/ico.png");
     maximized: false;
-    
+
     preferred-width: 1000px;
     preferred-height: 700px;
 
-    // Global Properties to be sent to rust 
+    // Global Properties to be sent to rust
     //                  ###
 
     // Object Distance Calculator
@@ -46,6 +46,7 @@ export component AppWindow inherits Window {
     callback calculate-triangle(string, string, string, string, string);
     callback calculate-force(string, string, string, string, string);
     callback calculate-isosceles-tringle(string, string, string, string);
+    callback sync-metal-data();
 
     HorizontalLayout {
         side-bar := SideBar {
@@ -62,6 +63,9 @@ export component AppWindow inherits Window {
             accessible-label: "Content";
 
             if(side-bar.current-item == 0): NumberOfElementsPage {
+
+                sync-db => {root.sync-metal-data();}
+
                 distance: root.computed-distance;
                 center-distance: root.computed-center-distance;
                 submit_values(total, thickness, count) => {
@@ -69,12 +73,15 @@ export component AppWindow inherits Window {
                 }
             }
             if(side-bar.current-item == 1): Triangles {
+
+                sync-db => {root.sync-metal-data();}
+
                 hypotenuse-text <=> root.computed-hypotenuse-text;
                 cathetus1-text <=> root.computed-cathetus1-text;
                 cathetus2-text <=> root.computed-cathetus2-text;
                 abc-angle <=> root.computed-abc-angle;
                 acb-angle <=> root.computed-acb-angle;
-                
+
                 calculate_triangle(hypotenuse, cathetus1, cathetus2, abc, acb) => {
                     root.calculate-triangle(hypotenuse, cathetus1, cathetus2, abc, acb);
                 }
@@ -89,6 +96,9 @@ export component AppWindow inherits Window {
                 }
             }
             if(side-bar.current-item ==2): ForceCalculator {
+
+                sync-db => {root.sync-metal-data();}
+
                 force-unit-options: root.force-unit-options;
                 mass-unit-options: root.mass-unit-options;
                 area-unit-options: root.area-unit-options;
@@ -99,7 +109,7 @@ export component AppWindow inherits Window {
                 calculate-force(mass, mass_unit, export_unit, area, area_unit) => {
                     root.calculate-force(mass, mass_unit, export_unit, area, area_unit);
                 }
-            } 
+            }
         }
     }
 }

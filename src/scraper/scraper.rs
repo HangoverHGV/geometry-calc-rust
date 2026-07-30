@@ -2,7 +2,6 @@ use std::fs;
 use std::path::Path;
 use std::collections::HashMap;
 use std::time::{SystemTime, UNIX_EPOCH};
-use chrono::{DateTime, Utc, Local};
 use reqwest;
 use scraper::{Html, Selector};
 use super::constants::{ BASE_URL };
@@ -41,9 +40,10 @@ pub struct CategoryLinks {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct MetalData {
     pub name: String,
-    pub price: f32,
+    pub price: String,
     pub um: String,
     #[serde(skip)]
+    #[allow(dead_code)]
     pub category: Category,
 }
 
@@ -51,29 +51,7 @@ pub async fn run(url: &str) {
     let folder_name = "scraped_data";
     let file_path = format!("{}/metal_prices.json", folder_name);
 
-    // 1. Check if file already exists and was created today
-    if Path::new(&file_path).exists() {
-        if let Ok(file_content) = fs::read_to_string(&file_path) {
-            // Parse just the time field or whole JSON to check the timestamp
-            if let Ok(json_val) = serde_json::from_str::<serde_json::Value>(&file_content) {
-                if let Some(timestamp_sec) = json_val.get("time").and_then(|v| v.as_u64()) {
-                    let file_datetime = DateTime::<Utc>::from_timestamp(timestamp_sec as i64, 0)
-                        .map(|dt| dt.with_timezone(&Local))
-                        .unwrap_or_else(|| Local::now());
-
-                    let today = Local::now().date_naive();
-                    let file_date = file_datetime.date_naive();
-
-                    if file_date == today {
-                        println!("Skipping execution: Scraper already ran today ({})!", today);
-                        return;
-                    }
-                }
-            }
-        }
-    }
-
-    println!("Starting scraper execution for today...");
+    println!("Start Sync");
 
     let links = match get_links(url).await {
         Ok(links) => links,
@@ -91,7 +69,6 @@ pub async fn run(url: &str) {
     let mut categorized_data: HashMap<String, Vec<MetalData>> = HashMap::new();
 
     for cat_link in links {
-        println!("Crawling category: {:?} -> {}", cat_link.name, cat_link.link);
 
         match get_all_category_products(&cat_link.link, cat_link.name).await {
             Ok(products) => {
@@ -105,14 +82,12 @@ pub async fn run(url: &str) {
         }
     }
 
-    // Get current Unix timestamp
     let start = SystemTime::now();
     let timestamp = start
         .duration_since(UNIX_EPOCH)
         .unwrap()
         .as_secs();
 
-    // Build final JSON structure
     let mut final_output = serde_json::Map::new();
     final_output.insert("time".to_string(), serde_json::json!(timestamp));
 
@@ -120,13 +95,11 @@ pub async fn run(url: &str) {
         final_output.insert(cat_name, serde_json::json!(products));
     }
 
-    // Create folder if it doesn't exist
     if let Err(e) = fs::create_dir_all(folder_name) {
         eprintln!("Failed to create directory: {}", e);
         return;
     }
 
-    // Save to JSON file
     let json_string = serde_json::to_string_pretty(&final_output).unwrap();
 
     if let Err(e) = fs::write(&file_path, json_string) {
@@ -194,15 +167,48 @@ pub async fn get_all_category_products(
             };
 
             let price = if let Some(price_el) = product_el.select(&price_selector).next() {
-                let raw_text = price_el.text().collect::<String>();
-                let cleaned: String = raw_text
-                    .replace(',', ".")
-                    .chars()
-                    .filter(|c| c.is_ascii_digit() || *c == '.')
-                    .collect();
-                cleaned.parse::<f32>().unwrap_or(0.0)
+                let html_content = price_el.inner_html();
+
+                let mut parsed_price = 0.0;
+
+                if let Some(sup_start) = html_content.find("<sup>") {
+                    let main_html = &html_content[..sup_start];
+                    let main_digits: String = main_html.chars().filter(|c| c.is_ascii_digit()).collect();
+
+                    let sup_content = &html_content[sup_start..];
+                    if let Some(sup_end_tag) = sup_content.find("</sup>") {
+                        if let Some(sup_val_start) = sup_content.find('>') {
+                            let sup_digits: String = sup_content[sup_val_start + 1..sup_end_tag]
+                                .chars()
+                                .filter(|c| c.is_ascii_digit())
+                                .collect();
+
+                            let combined = format!("{}.{}", main_digits, sup_digits);
+                            parsed_price = combined.parse::<f32>().unwrap_or(0.0);
+                        }
+                    }
+                }
+
+                if parsed_price == 0.0 {
+                    let raw_text = price_el.text().collect::<String>();
+                    let cleaned: String = raw_text
+                        .chars()
+                        .filter(|c| c.is_ascii_digit())
+                        .collect();
+
+                    if cleaned.len() > 2 {
+                        let (main, dec) = cleaned.split_at(cleaned.len() - 2);
+                        parsed_price = format!("{}.{}", main, dec).parse::<f32>().unwrap_or(0.0);
+                    } else if !cleaned.is_empty() {
+                        parsed_price = cleaned.parse::<f32>().unwrap_or(0.0) / 100.0;
+                    }
+                }
+
+                // Clean up float rounding artifacts (e.g., 6.349999 -> 6.35)
+                let rounded = (parsed_price * 100.0).round() / 100.0;
+                format!("{:.2}", rounded)
             } else {
-                0.0
+                "0.00".to_string()
             };
 
             // Extract Unit of Measure (e.g., "Pret / KG" or "Pret / ML")

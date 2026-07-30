@@ -18,18 +18,22 @@ fn main() -> Result<(), Box<dyn Error>> {
     // Init
     force_calculator::setup_ui_dropdowns(&ui);
 
-    std::thread::spawn(|| {
-        let rt = match tokio::runtime::Runtime::new() {
-            Ok(runtime) => runtime,
-            Err(e) => {
-                eprintln!("Failed to create Tokio runtime for scraper: {}", e);
-                return;
-            }
-        };
-        rt.block_on(async {
-            scraper::scraper::run(scraper::constants::START_URL).await;
-        })
+    ui.on_sync_metal_data(move || {
+        std::thread::spawn(|| {
+            let rt = match tokio::runtime::Runtime::new() {
+                Ok(runtime) => runtime,
+                Err(e) => {
+                    eprintln!("Failed to create Tokio runtime for scraper: {}", e);
+                    return;
+                }
+            };
+            rt.block_on(async {
+                scraper::scraper::run(scraper::constants::START_URL).await;
+            })
+        });
     });
+
+
 
     // Call the re-exported function from your module
     object_calculator::setup_callbacks(&ui);

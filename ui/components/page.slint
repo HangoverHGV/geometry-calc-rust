@@ -1,7 +1,7 @@
 // Copyright © SixtyFPS GmbH <info@slint.dev>
 // SPDX-License-Identifier: MIT
 
-import { Switch, HorizontalBox, VerticalBox, Palette, SpinBox } from "std-widgets.slint";
+import { Switch, HorizontalBox, VerticalBox, Palette, SpinBox, Button } from "std-widgets.slint";
 import { AppStyles } from "../assets/styles.slint";
 
 export component Page inherits VerticalBox {
@@ -11,13 +11,27 @@ export component Page inherits VerticalBox {
     in property <bool> show-enable-read-only: false;
     in-out property <int> font-size-value: AppStyles.app-font-size / 1px;
 
+    property <image> sync-icon: @image-url("../assets/images/sync.svg");
+
     accessible-role: tab-panel;
     accessible-label: root.title;
+
+    callback sync-db();
 
     HorizontalBox {
         Text {
             font-size: 20px;
             text <=> root.title;
+        }
+
+        Button {
+            horizontal-stretch: 0;
+            text: "Sync";
+            icon: sync-icon;
+            primary: true;
+            clicked => {
+                sync-db();
+            }
         }
 
         // Spacer

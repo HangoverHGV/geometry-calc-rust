@@ -8,6 +8,8 @@ mod triangle_calculator;
 mod force_calculator;
 mod scraper;
 
+
+
 slint::include_modules!();
 
 fn main() -> Result<(), Box<dyn Error>> {
@@ -15,6 +17,19 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     // Init
     force_calculator::setup_ui_dropdowns(&ui);
+
+    std::thread::spawn(|| {
+        let rt = match tokio::runtime::Runtime::new() {
+            Ok(runtime) => runtime,
+            Err(e) => {
+                eprintln!("Failed to create Tokio runtime for scraper: {}", e);
+                return;
+            }
+        };
+        rt.block_on(async {
+            scraper::scraper::run(scraper::constants::START_URL).await;
+        })
+    });
 
     // Call the re-exported function from your module
     object_calculator::setup_callbacks(&ui);

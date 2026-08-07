@@ -6,7 +6,7 @@ xdata = pkgtype=pkg
 pkgver = 0.2.2-1
 pkgdesc = A sleek geometry and spacer calculator helper built with Rust and Slint UI.
 url = https://github.com/HangoverHGV/geometry-calc-rust
-builddate = 1786119993
+builddate = 1786121405
 packager = Unknown Packager
 size = 26673366
 arch = x86_64
@@ -14,8 +14,3 @@ license = MIT
 depend = fontconfig
 depend = libxcb
 depend = libxkbcommon
-makedepend = rust
-makedepend = cargo
-makedepend = cmake
-makedepend = clang
-makedepend = go

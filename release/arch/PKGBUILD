@@ -8,7 +8,7 @@ url="https://github.com/HangoverHGV/geometry-calc-rust"
 license=('MIT')
 depends=('fontconfig' 'libxcb' 'libxkbcommon')
 # Added cmake, clang, and go - required by aws-lc-sys to compile its C/Assembly code
-makedepends=('rust' 'cargo' 'cmake' 'clang' 'go')
+makedepends=()
 # Added !lto to prevent Arch from stripping cryptography symbols
 options=('!debug' '!lto')
 

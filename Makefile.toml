@@ -208,8 +208,7 @@ script = [
 
     # 1. FIXED: Correctly recreate the exact ui/assets/images folder structure
     "New-Item -ItemType Directory -Force -Path 'release/windows/ui/assets/images' | Out-Null",
-    "Copy-Item -Path 'ui/assets/images\*' -Destination 'release/windows/ui/assets/images\' -Recurse",
-
+    "Copy-Item -Path 'ui/assets/images/*' -Destination 'release/windows/ui/assets/images/' -Recurse",
     "Write-Host 'Copying installer configuration script...'",
     "Copy-Item 'build_assets/installer.iss' 'release/windows/'",
 

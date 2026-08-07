@@ -9,7 +9,7 @@ Compression=lzma2
 SolidCompression=yes
 OutputDir=.
 OutputBaseFilename=cad-helper-3d-setup
-SetupIconFile=ui\images\ico.ico
+SetupIconFile=ui\assets\images\ico.ico
 
 [Files]
 ; Copy the main executable

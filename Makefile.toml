@@ -136,7 +136,6 @@ script = [
     fi
     '''
 ]
-
 # ==========================================
 # 1. ARCH LINUX TASKS
 # ==========================================
@@ -144,9 +143,17 @@ script = [
 [tasks.clean-arch]
 description = "Clean up previous Arch Linux build artifacts"
 condition = { platforms = ["linux"] }
+script_runner = "@shell"
 script = [
-    "echo 'Cleaning up old Arch packages...'",
-    "cd release/arch && rm -rf pkg/ src/ *.pkg.tar.zst"
+    '''
+    echo "Cleaning up old Arch packages..."
+    cd release/arch
+
+    # Fakeroot can leave folders with strict permissions if a previous build aborted.
+    # We change permissions first so standard rm -rf won't fail.
+    chmod -R 777 pkg/ src/ 2>/dev/null || true
+    rm -rf pkg/ src/ *.pkg.tar.zst
+    '''
 ]
 
 [tasks.build-arch]
@@ -156,6 +163,9 @@ dependencies = ["clean-arch"]
 script_runner = "@shell"
 script = [
     '''
+    echo "Compiling locally before packaging..."
+    cargo build --release
+
     echo "Injecting Cargo.toml version ${APP_VERSION} into PKGBUILD..."
     cp release/arch/PKGBUILD release/arch/PKGBUILD.tmp
     sed -i "s/^pkgver=.*/pkgver=${APP_VERSION}/" release/arch/PKGBUILD.tmp
@@ -164,10 +174,8 @@ script = [
     cd release/arch
     makepkg -Cf -p PKGBUILD.tmp --skipinteg
 
-    # Cleanup temporary files
     rm -f PKGBUILD.tmp
-    rm -rf src/ pkg/
-    echo "Arch Linux installer package created successfully in release/arch/"
+    echo "Arch Linux installer package created successfully!"
     '''
 ]
 # ==========================================

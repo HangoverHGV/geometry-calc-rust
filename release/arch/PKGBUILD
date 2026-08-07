@@ -7,20 +7,20 @@ arch=('x86_64')
 url="https://github.com/HangoverHGV/geometry-calc-rust"
 license=('MIT')
 depends=('fontconfig' 'libxcb' 'libxkbcommon')
-makedepends=('rust' 'cargo')
-options=('!debug')
+# Added cmake, clang, and go - required by aws-lc-sys to compile its C/Assembly code
+makedepends=('rust' 'cargo' 'cmake' 'clang' 'go')
+# Added !lto to prevent Arch from stripping cryptography symbols
+options=('!debug' '!lto')
 
 source=()
 sha256sums=()
 
 package() {
-  # Change directory to the project root (exactly 2 directories up from release/arch)
+  # Change directory to the project root
   cd "$startdir/../.."
 
-  echo "🔨 Compiling the local binary in Release mode..."
-  cargo build --release
-
   echo "📦 Packaging the application for the system..."
+
   # 1. Install the compiled binary into the system binary path
   install -Dm755 "target/release/cad-helper-3d" "${pkgdir}/usr/bin/cad-helper-3d"
 

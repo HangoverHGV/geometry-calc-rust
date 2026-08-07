@@ -17,7 +17,7 @@ assets = [
     # 1. Install the binary
     ["target/release/cad-helper-3d", "usr/bin/cad-helper-3d", "755"],
     # 2. Install the app icon
-    ["ui/images/ico.svg", "usr/share/icons/hicolor/scalable/apps/cad-helper-3d.svg", "644"],
+    ["ui/assets/images/ico.svg", "usr/share/icons/hicolor/scalable/apps/cad-helper-3d.svg", "644"],
     # 3. Create the Desktop file shortcut launcher
     ["release/debian/cad-helper-3d.desktop", "usr/share/applications/cad-helper-3d.desktop", "644"]
 ]

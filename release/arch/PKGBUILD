@@ -25,7 +25,7 @@ package() {
   install -Dm755 "target/release/cad-helper-3d" "${pkgdir}/usr/bin/cad-helper-3d"
 
   # 2. Install your custom app icon using the new name
-  install -Dm644 "ui/images/ico.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/cad-helper-3d.svg"
+  install -Dm644 "ui/assets/images/ico.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/cad-helper-3d.svg"
 
   # 3. Generate and install the desktop launcher shortcut pointing to the new binary and icon
   echo -e "[Desktop Entry]\nName=Inventor Calculator Helper\nExec=cad-helper-3d\nIcon=cad-helper-3d\nType=Application\nTerminal=false\nCategories=Utility;Math;Science;" > "cad-helper-3d.desktop"

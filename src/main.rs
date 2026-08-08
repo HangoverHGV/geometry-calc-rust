@@ -34,11 +34,14 @@ fn main() -> Result<(), Box<dyn Error>> {
     });
 
 
-
     // Call the re-exported function from your module
     object_calculator::setup_callbacks(&ui);
     triangle_calculator::setup_callbacks(&ui);
     force_calculator::setup_callback(&ui);
+
+    let ui_handle = ui.as_weak();
+    let ui = ui_handle.unwrap();
+    ui.invoke_trigger_backend_message(0, "Start".into());
 
     ui.run()?;
     Ok(())

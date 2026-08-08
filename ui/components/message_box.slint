@@ -1,7 +1,7 @@
 import  { MessageStyle } from "../assets/styles.slint";
 import { HorizontalBox } from "std-widgets.slint";
 
-export component MessageBox {
+export component MessageBox inherits Rectangle {
     in property <int> message-type; //0 - info; 1 - warn; 2 - error
     in property <string> message-text;
     in property <image> type-image;
@@ -10,13 +10,16 @@ export component MessageBox {
         message-type == 1 ? MessageStyle.warning-color :
         MessageStyle.error-color;
 
-    Rectangle {
-        HorizontalBox {
-            Text {
-                text: message-text;
-                font-family: MessageStyle.app-font-family;
-                font-size: MessageStyle.message-font-size;
-            }
+    width: 500px;
+    height: 200px;
+    background: black;
+
+    HorizontalBox {
+        Text {
+            text: message-text;
+            font-family: MessageStyle.app-font-family;
+            font-size: MessageStyle.message-font-size;
+            color: white;
         }
-     }
+    }
 }

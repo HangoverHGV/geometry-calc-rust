@@ -30,6 +30,9 @@ jobs:
       - name: Install cargo-make
         uses: davidB/rust-cargo-make@v1
 
+      - name: Install Inno Setup
+        run: choco install innosetup -y
+
       - name: Cache Cargo Registry & Build
         uses: Swatinem/rust-cache@v2
         with:
@@ -67,11 +70,12 @@ jobs:
           name: windows-installer
           path: release-assets/
 
-      # Publish Windows installer to GitHub Release
+      # Publish files and automatically load release notes from release/vX.Y.Z.md
       - name: Publish files to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             release-assets/cad-helper-3d-setup.exe
+          body_path: release/versions/${{ github.ref_name }}.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

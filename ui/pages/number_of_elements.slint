@@ -8,6 +8,7 @@ import {
 
 import { Page } from "../components/page.slint";
 import { AppStyles } from "../assets/styles.slint";
+import { ClearButton } from "../components/clear_button.slint";
 
 export component NumberOfElementsPage inherits Page {
     title: "Number Of Elements";
@@ -39,21 +40,14 @@ export component NumberOfElementsPage inherits Page {
                 padding: 0px;
                 spacing: 5px;
 
-                // --- Removed the "Calculate" Button entirely ---
 
-                Rectangle {
-                    border-radius: 3px;
-                    background: clear_btn.pressed ? gray : red;
-                    max-height: 33px;
-                    clear_btn := Button {
-                        text: "Clear";
-                        max-height: 33px;
-                        clicked => {
-                            total_distance.text = "";
-                            thickness.text = "";
-                            number_of_objects.text = "";
-                            root.do_calculate();
-                        }
+                ClearButton {
+                    text: "Clear";
+                    clicked => {
+                        total_distance.text = "";
+                        thickness.text = "";
+                        number_of_objects.text = "";
+                        root.do_calculate();
                     }
                 }
             }

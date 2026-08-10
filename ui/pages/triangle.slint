@@ -8,6 +8,8 @@ import {
     Button,
 } from "std-widgets.slint";
 import { AppStyles } from "../assets/styles.slint";
+import { ClearButton } from "../components/clear_button.slint";
+
 
 
 export component Triangles inherits Page {
@@ -63,31 +65,22 @@ export component Triangles inherits Page {
                         padding: 0px;
                         spacing: 5px;
 
-                        Rectangle {
-                            border-radius: 3px;
-                            background: clear_btn.pressed ? gray : red;
-                            max-height: 33px;
-                            clear_btn := Button {
-                                text: "Clear";
-                                max-height: 33px;
+                        ClearButton {
+                            text: "Clear";
+                            clicked => {
+                                root.input-hypotenuse = "";
+                                root.input-cathetus1 = "";
+                                root.input-cathetus2 = "";
+                                root.input-abc-angle = "";
+                                root.input-acb-angle = "";
 
-                                clicked => {
-                                    // Reset inputs
-                                    root.input-hypotenuse = "";
-                                    root.input-cathetus1 = "";
-                                    root.input-cathetus2 = "";
-                                    root.input-abc-angle = "";
-                                    root.input-acb-angle = "";
-                                    
-                                    // Reset results
-                                    root.hypotenuse-text = "";
-                                    root.cathetus1-text = "";
-                                    root.cathetus2-text = "";
-                                    root.abc-angle = "";
-                                    root.acb-angle = "";
+                                root.hypotenuse-text = "";
+                                root.cathetus1-text = "";
+                                root.cathetus2-text = "";
+                                root.abc-angle = "";
+                                root.acb-angle = "";
 
-                                    root.do_calculate_right_angle();
-                                }
+                                root.do_calculate_right_angle();
                             }
                         }
                     }
@@ -255,172 +248,163 @@ export component Triangles inherits Page {
                         padding: 0px;
                         spacing: 5px;
 
-                        Rectangle {
-                            border-radius: 3px;
-                            background: clear_btn_is.pressed ? gray : red;
-                            max-height: 33px;
-                            clear_btn_is := Button {
-                                text: "Clear";
-                                max-height: 33px;
+                        ClearButton {
+                            text: "Clear";
+                            clicked => {
+                                root.input-ab-text = "";
+                                root.input-bc-text = "";
+                                root.input-abc-is-angle = "";
+                                root.input-bac-is-angle = "";
 
-                                clicked => {
-                                    // Reset inputs
-                                    root.input-ab-text = "";
-                                    root.input-bc-text = "";
-                                    root.input-abc-is-angle = "";
-                                    root.input-bac-is-angle = "";
+                                root.ab-text = "";
+                                root.bc-text = "";
+                                root.abc-is-angle = "";
+                                root.bac-is-angle = "";
 
-                                    // Reset results
-                                    root.ab-text = "";
-                                    root.bc-text = "";
-                                    root.abc-is-angle = "";
-                                    root.bac-is-angle = "";
-
-                                    root.do_calculate_is();
-                                }
+                                root.do_calculate_is();
                             }
                         }
                     }
+                }
 
-                    HorizontalBox {
+                HorizontalBox {
+                    alignment: start;
+                    VerticalBox {
                         alignment: start;
-                        VerticalBox {
-                            alignment: start;
-                            Text {
-                                text: "AB:";
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-weight: AppStyles.app-font-weight;
-                                font-italic: AppStyles.app-font-italic;
-                            }
-
-                            LineEdit {
-                                placeholder-text: "0.0";
-                                text <=> root.input-ab-text;
-                                input-type: decimal;
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-italic: AppStyles.app-font-italic;
-                                edited => { root.do_calculate_is(); }
-                            }
-
-                            Text {
-                                text: "BC";
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-weight: AppStyles.app-font-weight;
-                                font-italic: AppStyles.app-font-italic;
-                            }
-
-                            LineEdit {
-                                placeholder-text: "0.0";
-                                text <=> root.input-bc-text;
-                                input-type: decimal;
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-italic: AppStyles.app-font-italic;
-                                edited => { root.do_calculate_is(); }
-                            }
+                        Text {
+                            text: "AB:";
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-weight: AppStyles.app-font-weight;
+                            font-italic: AppStyles.app-font-italic;
                         }
 
-                        VerticalBox {
-                            alignment: start;
-                            Text {
-                                text: "ABC";
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-weight: AppStyles.app-font-weight;
-                                font-italic: AppStyles.app-font-italic;
-                            }
-
-                            LineEdit {
-                                placeholder-text: "0.0";
-                                text <=> root.input-abc-is-angle;
-                                input-type: decimal;
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-italic: AppStyles.app-font-italic;
-                                edited => { root.do_calculate_is(); }
-                            }
-
-                            Text {
-                                text: "BAC";
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-weight: AppStyles.app-font-weight;
-                                font-italic: AppStyles.app-font-italic;
-                            }
-
-                            LineEdit {
-                                placeholder-text: "0.0";
-                                text <=> root.input-bac-is-angle;
-                                input-type: decimal;
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-italic: AppStyles.app-font-italic;
-                                edited => { root.do_calculate_is(); }
-                            }
+                        LineEdit {
+                            placeholder-text: "0.0";
+                            text <=> root.input-ab-text;
+                            input-type: decimal;
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-italic: AppStyles.app-font-italic;
+                            edited => { root.do_calculate_is(); }
                         }
 
-                        Image {
-                            horizontal-alignment: ImageHorizontalAlignment.center;
-                            source: is-triangle-svg;
-                            height: 300px;
-                            width: 300px;
+                        Text {
+                            text: "BC";
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-weight: AppStyles.app-font-weight;
+                            font-italic: AppStyles.app-font-italic;
+                        }
+
+                        LineEdit {
+                            placeholder-text: "0.0";
+                            text <=> root.input-bc-text;
+                            input-type: decimal;
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-italic: AppStyles.app-font-italic;
+                            edited => { root.do_calculate_is(); }
                         }
                     }
 
-                    HorizontalBox {
-                        VerticalBox {
-                            Text {
-                                text: "AB: " + root.ab-text + " mm";
-                                font-size: AppStyles.app-font-size + 3px;
-                                font-family: AppStyles.app-font-family;
-                                font-weight: AppStyles.app-font-weight;
-                                font-italic: AppStyles.app-font-italic;
-                            }
-
-                            Text {
-                                text: "AC: " + root.ab-text + " mm";
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-weight: AppStyles.app-font-weight;
-                                font-italic: AppStyles.app-font-italic;
-                            }
-
-                            Text {
-                                text: "BC: " + root.bc-text + " mm";
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-weight: AppStyles.app-font-weight;
-                                font-italic: AppStyles.app-font-italic;
-                            }
+                    VerticalBox {
+                        alignment: start;
+                        Text {
+                            text: "ABC";
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-weight: AppStyles.app-font-weight;
+                            font-italic: AppStyles.app-font-italic;
                         }
 
-                        VerticalBox {
-                            Text {
-                                text: "Angle ABC: " + root.abc-is-angle + "°";
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-weight: AppStyles.app-font-weight;
-                                font-italic: AppStyles.app-font-italic;
-                            }
+                        LineEdit {
+                            placeholder-text: "0.0";
+                            text <=> root.input-abc-is-angle;
+                            input-type: decimal;
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-italic: AppStyles.app-font-italic;
+                            edited => { root.do_calculate_is(); }
+                        }
 
-                            Text {
-                                text: "Angle ACB: " + root.abc-is-angle + "°";
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-weight: AppStyles.app-font-weight;
-                                font-italic: AppStyles.app-font-italic;
-                            }
+                        Text {
+                            text: "BAC";
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-weight: AppStyles.app-font-weight;
+                            font-italic: AppStyles.app-font-italic;
+                        }
 
-                            Text {
-                                text: "Angle BAC: " + root.bac-is-angle + "°";
-                                font-size: AppStyles.app-font-size;
-                                font-family: AppStyles.app-font-family;
-                                font-weight: AppStyles.app-font-weight;
-                                font-italic: AppStyles.app-font-italic;
-                            }
+                        LineEdit {
+                            placeholder-text: "0.0";
+                            text <=> root.input-bac-is-angle;
+                            input-type: decimal;
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-italic: AppStyles.app-font-italic;
+                            edited => { root.do_calculate_is(); }
+                        }
+                    }
+
+                    Image {
+                        horizontal-alignment: ImageHorizontalAlignment.center;
+                        source: is-triangle-svg;
+                        height: 300px;
+                        width: 300px;
+                    }
+                }
+
+                HorizontalBox {
+                    VerticalBox {
+                        Text {
+                            text: "AB: " + root.ab-text + " mm";
+                            font-size: AppStyles.app-font-size + 3px;
+                            font-family: AppStyles.app-font-family;
+                            font-weight: AppStyles.app-font-weight;
+                            font-italic: AppStyles.app-font-italic;
+                        }
+
+                        Text {
+                            text: "AC: " + root.ab-text + " mm";
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-weight: AppStyles.app-font-weight;
+                            font-italic: AppStyles.app-font-italic;
+                        }
+
+                        Text {
+                            text: "BC: " + root.bc-text + " mm";
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-weight: AppStyles.app-font-weight;
+                            font-italic: AppStyles.app-font-italic;
+                        }
+                    }
+
+                    VerticalBox {
+                        Text {
+                            text: "Angle ABC: " + root.abc-is-angle + "°";
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-weight: AppStyles.app-font-weight;
+                            font-italic: AppStyles.app-font-italic;
+                        }
+
+                        Text {
+                            text: "Angle ACB: " + root.abc-is-angle + "°";
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-weight: AppStyles.app-font-weight;
+                            font-italic: AppStyles.app-font-italic;
+                        }
+
+                        Text {
+                            text: "Angle BAC: " + root.bac-is-angle + "°";
+                            font-size: AppStyles.app-font-size;
+                            font-family: AppStyles.app-font-family;
+                            font-weight: AppStyles.app-font-weight;
+                            font-italic: AppStyles.app-font-italic;
                         }
                     }
                 }

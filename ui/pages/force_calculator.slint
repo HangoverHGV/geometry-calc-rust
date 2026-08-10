@@ -5,10 +5,12 @@ import {
     LineEdit,
     HorizontalBox,
     ComboBox,
+    Palette,
 } from "std-widgets.slint";
 import { AppStyles } from "../assets/styles.slint";
 
 import { Page } from "../components/page.slint";
+import { ClearButton } from "../components/clear_button.slint";
 
 export component ForceCalculator inherits Page {
     title: "Force Elements";
@@ -40,22 +42,14 @@ export component ForceCalculator inherits Page {
                 padding: 0px;
                 spacing: 5px;
 
-                // --- Removed the "Calculate" Button entirely ---
-
-                Rectangle {
-                    background: clear_btn.pressed ? gray : red;
-                    border-radius: 3px;
-                    max-height: 33px;
-                    clear_btn := Button {
-                        text: "Clear";
-                        max-height: 33px;
-                        clicked => {
-                            mass.text = "";
-                            area.text = "1";
-                            root.do_calculate();
-                        }
-                    }
-                }
+               ClearButton {
+                   text: "Clear";
+                   clicked => {
+                           mass.text = "";
+                           area.text = "1";
+                           root.do_calculate();
+                       }
+               }
             }
 
             HorizontalBox {
@@ -160,7 +154,7 @@ export component ForceCalculator inherits Page {
 
             HorizontalBox {
                 Rectangle {
-                    background: #3d3636;
+                    background: Palette.color-scheme == ColorScheme.dark ? #3d3636 : #e0e0e0;
                     border-radius: 2px;
 
                     Text {
@@ -174,7 +168,7 @@ export component ForceCalculator inherits Page {
                 }
 
                 Rectangle {
-                    background: #3d3636;
+                    background: Palette.color-scheme == ColorScheme.dark ? #3d3636 : #e0e0e0;
                     border-radius: 2px;
                     Text {
                         text: root.computed-mpa + " MPa";

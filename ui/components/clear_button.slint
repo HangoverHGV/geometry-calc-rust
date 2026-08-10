@@ -1,0 +1,34 @@
+import { AppStyles } from "../assets/styles.slint";
+
+export component ClearButton inherits Rectangle {
+    // Universal configurable properties with sensible defaults
+    in property <string> text: "Button";
+    in property <color> bg-color: #e53935;         // Default red
+    in property <color> hover-color: #ef5350;     // Lighter red on hover
+    in property <color> pressed-color: #c62828;   // Darker red when pressed
+    in property <color> text-color: white;
+
+    // Expose a callback so the parent component can handle the click event
+    callback clicked();
+
+    height: 33px;
+    min-width: 75px;
+    background: touch.pressed ? root.pressed-color : (touch.has-hover ? root.hover-color : root.bg-color);
+    border-radius: 4px;
+
+    Text {
+        text: root.text;
+        color: root.text-color;
+        font-size: AppStyles.app-font-size;
+        font-family: AppStyles.app-font-family;
+        font-weight: 500;
+        horizontal-alignment: center;
+        vertical-alignment: center;
+    }
+
+    touch := TouchArea {
+        clicked => {
+            root.clicked();
+        }
+    }
+}

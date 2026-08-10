@@ -58,7 +58,18 @@ export component AppWindow inherits Window {
         root.message-type = type;
         root.message-text = text;
         show-message-box = true;
+
+        hide-timer.running = true;
     }
+
+        hide-timer := Timer {
+            interval: 2s;
+            running: false;
+            triggered() => {
+                root.show-message-box = false;
+                self.running = false;
+            }
+        }
 
     HorizontalLayout {
         side-bar := SideBar {

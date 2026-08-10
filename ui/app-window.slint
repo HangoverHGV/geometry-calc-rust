@@ -45,7 +45,6 @@ export component AppWindow inherits Window {
     in-out property <int> message-type: 0;
     in-out property <string> message-text:"";
     in-out property <bool> show-message-box: false;
-
     //                  ###
 
     callback calculate-distance(string, string, string);
@@ -55,28 +54,10 @@ export component AppWindow inherits Window {
     callback sync-metal-data();
     callback trigger-backend-message(int, string);
 
-    hide-timer := Timer {
-        interval: 4s;
-        running: false;
-        triggered() => {
-            root.show-message-box = false;
-            self.running = false;
-        }
-    }
-
     trigger-backend-message(type, text) => {
         root.message-type = type;
         root.message-text = text;
-        root.show-message-box = true;
-
-        hide-timer.running = true;
-    }
-
-    if show-message-box: MessageBox{
-        y: 250px;
-        x: 250px;
-        message-text: root.message-text;
-        message-type: root.message-type;
+        show-message-box = true;
     }
 
     HorizontalLayout {
@@ -139,5 +120,15 @@ export component AppWindow inherits Window {
                 }
             }
         }
+    }
+
+    if show-message-box: MessageBox {
+        x: (root.width - 300px) / 2;
+        y: (root.height - 150px) / 2;
+        background: black;
+        message-text: root.message-text;
+        message-type: root.message-type;
+        accepted => { root.show-message-box = false; }
+        rejected => { root.show-message-box = false; }
     }
 }

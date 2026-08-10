@@ -14,7 +14,6 @@ run_task = [
     { name = "sync-windows", condition = { platforms = ["windows"] } },
     { name = "sync-linux",   condition = { platforms = ["linux", "mac"] } }
 ]
-
 [tasks.sync-windows]
 private = true
 script_runner = "powershell"
@@ -23,8 +22,11 @@ script = [
     "Write-Host '=== Checking current branch ==='",
     "$currentBranch = (git branch --show-current).Trim()",
     "Write-Host \"Current branch: $currentBranch\"",
-    "# 1. Check for uncommitted local changes",
-    "$status = (git status --porcelain).Trim()",
+
+    "# 1. Check for uncommitted local changes safely",
+    "$gitOutput = git status --porcelain",
+    "$status = if ($gitOutput) { ($gitOutput -join \"`n\").Trim() } else { \"\" }",
+
     "if (-not [string]::IsNullOrEmpty($status)) {",
     "    Write-Host \"=== Uncommitted changes detected on '$currentBranch' ===\"",
     "    $commitMsg = Read-Host 'Enter a commit message'",
@@ -37,9 +39,11 @@ script = [
     "    git add .",
     "    git commit -m $commitMsg",
     "}",
+
     "# 2. Push the current branch to origin",
     "Write-Host \"=== Pushing '$currentBranch' to remote ===\"",
     "git push origin $currentBranch",
+
     "# 3. Execute dynamic merge logic",
     "if ($currentBranch -eq 'dev') {",
     "    Write-Host '=== Detected ''dev'' branch. Merging dev into master ==='",

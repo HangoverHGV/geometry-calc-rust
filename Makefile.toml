@@ -150,47 +150,97 @@ echo "Successfully wiped $LAST_TAG from existence."
 # ==========================================
 # 0.2 AUTO-TAGGING & DEPLOYMENT AUTOMATION
 # ==========================================
+# ==========================================
+# 0.2 AUTO-TAGGING & DEPLOYMENT AUTOMATION
+# ==========================================
 
 [tasks.publish-version]
 description = "Automatically tags the current commit with Cargo.toml version and pushes it to trigger CI/CD"
 category = "Publish"
 dependencies = ["git-check-clean"]
-script_runner = "@shell"
-script = [
-    '''
-    echo "=========================================================="
-    echo "Automated Release Deployer starting..."
-    echo "Target App Version: v${APP_VERSION}"
-    echo "=========================================================="
-
-    # Check if this Git tag already exists locally or on remote
-    if git rev-parse "v${APP_VERSION}" >/dev/null 2>&1; then
-        echo "Error: Git tag 'v${APP_VERSION}' already exists locally!"
-        exit 1
-    fi
-
-    echo "Creating Git tag: v${APP_VERSION}"
-    git tag -a "v${APP_VERSION}" -m "Release version ${APP_VERSION}"
-
-    echo "Pushing tag to GitHub..."
-    git push origin "v${APP_VERSION}"
-
-    echo "Successfully tagged and pushed v${APP_VERSION}! GitHub Actions is now building your releases."
-    '''
+run_task = [
+    { name = "publish-version-windows", condition = { platforms = ["windows"] } },
+    { name = "publish-version-linux",   condition = { platforms = ["linux", "mac"] } }
 ]
+
+[tasks.publish-version-windows]
+private = true
+script_runner = "powershell"
+script_extension = "ps1"
+script = [
+    "Write-Host '=========================================================='",
+    "Write-Host 'Automated Release Deployer starting...'",
+    "Write-Host \"Target App Version: v${env:APP_VERSION}\"",
+    "Write-Host '=========================================================='",
+
+    "git rev-parse \"v${env:APP_VERSION}\" 2>&1 | Out-Null",
+    "if ($LASTEXITCODE -eq 0) {",
+    "    Write-Error \"Error: Git tag 'v${env:APP_VERSION}' already exists locally!\"",
+    "    exit 1",
+    "}",
+
+    "Write-Host \"Creating Git tag: v${env:APP_VERSION}\"",
+    "git tag -a \"v${env:APP_VERSION}\" -m \"Release version ${env:APP_VERSION}\"",
+
+    "Write-Host 'Pushing tag to GitHub...'",
+    "git push origin \"v${env:APP_VERSION}\"",
+
+    "Write-Host \"Successfully tagged and pushed v${env:APP_VERSION}! GitHub Actions is now building your releases.\""
+]
+
+[tasks.publish-version-linux]
+private = true
+script = '''
+#!/usr/bin/env bash
+echo "=========================================================="
+echo "Automated Release Deployer starting..."
+echo "Target App Version: v${APP_VERSION}"
+echo "=========================================================="
+
+if git rev-parse "v${APP_VERSION}" >/dev/null 2>&1; then
+    echo "Error: Git tag 'v${APP_VERSION}' already exists locally!"
+    exit 1
+fi
+
+echo "Creating Git tag: v${APP_VERSION}"
+git tag -a "v${APP_VERSION}" -m "Release version ${APP_VERSION}"
+
+echo "Pushing tag to GitHub..."
+git push origin "v${APP_VERSION}"
+
+echo "Successfully tagged and pushed v${APP_VERSION}! GitHub Actions is now building your releases."
+'''
 
 # Helper task to ensure you don't tag an uncommitted working directory
 [tasks.git-check-clean]
 private = true
-script_runner = "@shell"
-script = [
-    '''
-    if [ -n "$(git status --porcelain)" ]; then
-        echo "Error: Working directory has uncommitted changes. Please commit or stash them first."
-        exit 1
-    fi
-    '''
+run_task = [
+    { name = "git-check-clean-windows", condition = { platforms = ["windows"] } },
+    { name = "git-check-clean-linux",   condition = { platforms = ["linux", "mac"] } }
 ]
+
+[tasks.git-check-clean-windows]
+private = true
+script_runner = "powershell"
+script_extension = "ps1"
+script = [
+    "$gitOutput = git status --porcelain",
+    "$status = if ($gitOutput) { ($gitOutput -join \"`n\").Trim() } else { \"\" }",
+    "if (-not [string]::IsNullOrEmpty($status)) {",
+    "    Write-Error 'Error: Working directory has uncommitted changes. Please commit or stash them first.'",
+    "    exit 1",
+    "}"
+]
+
+[tasks.git-check-clean-linux]
+private = true
+script = '''
+#!/usr/bin/env bash
+if [ -n "$(git status --porcelain)" ]; then
+    echo "Error: Working directory has uncommitted changes. Please commit or stash them first."
+    exit 1
+fi
+'''
 # ==========================================
 # 1. ARCH LINUX TASKS
 # ==========================================

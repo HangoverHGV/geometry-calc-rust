@@ -150,9 +150,6 @@ echo "Successfully wiped $LAST_TAG from existence."
 # ==========================================
 # 0.2 AUTO-TAGGING & DEPLOYMENT AUTOMATION
 # ==========================================
-# ==========================================
-# 0.2 AUTO-TAGGING & DEPLOYMENT AUTOMATION
-# ==========================================
 
 [tasks.publish-version]
 description = "Automatically tags the current commit with Cargo.toml version and pushes it to trigger CI/CD"

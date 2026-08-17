@@ -378,3 +378,76 @@ script = [
     echo "Debian package version ${APP_VERSION} created successfully in release/debian/"
     '''
 ]
+
+[tasks.sync-to-dev]
+description = "Merges dev into current branch, pushes, switches to dev, and merges the feature branch"
+run_task = [
+    { name = "sync-to-dev-windows", condition = { platforms = ["windows"] } },
+    { name = "sync-to-dev-linux",   condition = { platforms = ["linux", "mac"] } }
+]
+
+[tasks.sync-to-dev-windows]
+private = true
+script_runner = "pwsh"
+script_extension = "ps1"
+script = [
+    "Write-Host '=== Checking current branch ==='",
+    "$currentBranch = (git branch --show-current).Trim()",
+    "Write-Host \"Current branch: $currentBranch\"",
+
+    "$gitOutput = git status --porcelain",
+    "if ($gitOutput) {",
+    "    Write-Error 'Error: Working directory has uncommitted changes. Please commit or stash them first.'",
+    "    exit 1",
+    "}",
+
+    "if ($currentBranch -eq 'dev') {",
+    "    Write-Host '=== Already on dev branch. Pulling latest origin/dev ==='",
+    "    git pull origin dev",
+    "    exit 0",
+    "}",
+
+    "git fetch origin",
+    "Write-Host \"=== Merging origin/dev into '$currentBranch' ===\"",
+    "git merge origin/dev --no-edit",
+    "git push origin $currentBranch",
+
+    "Write-Host '=== Switching back to dev and merging ==='",
+    "git checkout dev",
+    "git pull origin dev",
+    "git merge $currentBranch --no-edit",
+    "git push origin dev",
+    "Write-Host '=== Sync complete. Successfully merged into dev and checked out! ==='"
+]
+
+[tasks.sync-to-dev-linux]
+private = true
+script = '''
+#!/usr/bin/env bash
+CURRENT_BRANCH=$(git branch --show-current)
+echo "=== Checking current branch: $CURRENT_BRANCH ==="
+
+if [ -n "$(git status --porcelain)" ]; then
+    echo "Error: Working directory has uncommitted changes. Please commit or stash them first."
+    exit 1
+fi
+
+if [ "$CURRENT_BRANCH" = "dev" ]; then
+    echo "=== Already on dev branch. Pulling latest origin/dev ==="
+    git pull origin dev
+    exit 0
+fi
+
+git fetch origin
+echo "=== Merging origin/dev into '$CURRENT_BRANCH' ==="
+git merge origin/dev --no-edit
+git push origin "$CURRENT_BRANCH"
+
+echo "=== Switching back to dev and merging ==="
+git checkout dev
+git pull origin dev
+git merge "$CURRENT_BRANCH" --no-edit
+git push origin dev
+
+echo "=== Sync complete. Successfully merged into dev and checked out! ==="
+'''

@@ -33,7 +33,6 @@ slint = "1.16.1"
 strum = { version = "0.28.0", features = ["derive"] }
 serde = { version = "1.0.228", features = ["derive"] }
 tokio = { version = "1.53.1", features = ["full"] }
-printers = "2.3.0"
 rfd = "0.17.2"
 winprint = { version = "0.2.1", features = ["pdfium"] }
 

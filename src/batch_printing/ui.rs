@@ -48,35 +48,47 @@ pub fn setup_ui_printers(ui: &AppWindow) {
     });
 }
 
-pub fn open_file_dialog(ui: &AppWindow){
+pub fn open_file_dialog(ui: &AppWindow) {
     let ui_handle = ui.as_weak();
 
-    ui.on_open_file_dialog(move |printer_name|{
+    ui.on_open_file_dialog(move |printer_name| {
+        let ui = ui_handle.unwrap();
+
         if printer_name.is_empty() {
-            eprintln!("Cannot print: No printer selected in the UI.");
+            ui.invoke_trigger_backend_message(
+                1,
+                "Cannot print: No printer selected in the UI.".into()
+            );
             return;
         }
 
-        // 2. Open the file dialog
         let files = FileDialog::new()
             .set_title("Choose files to print")
             .add_filter("PDF Files", &["pdf", "PDF"])
             .add_filter("All Files", &["*"])
             .pick_files();
 
-        // 3. If the user selected files (didn't click cancel)
         if let Some(paths) = files {
-            // Convert Vec<PathBuf> into Vec<String>
             let file_strings: Vec<String> = paths
                 .into_iter()
                 .map(|p| p.to_string_lossy().to_string())
                 .collect();
 
-            // 4. Send directly to your print function!
-            println!("Sending {} files to printer '{}'", file_strings.len(), printer_name);
-            print_files(&printer_name, file_strings);
+            match print_files(&printer_name, file_strings.clone()) {
+                Ok(count) => {
+                    ui.invoke_trigger_backend_message(
+                        0,
+                        format!("Successfully queued: {} file(s) to {}", count, printer_name).into()
+                    );
+                }
+                Err(error_message) => {
+                    ui.invoke_trigger_backend_message(
+                        1, // Error type
+                        error_message.into()
+                    );
+                }
+            }
         }
     });
 }
-
 

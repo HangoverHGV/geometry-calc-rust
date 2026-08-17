@@ -1,7 +1,6 @@
 use std::path::Path;
 use winprint::printer::{FilePrinter, PdfiumPrinter, PrinterDevice};
 
-/// Fetches the list of printers directly using winprint to ensure perfect name matching
 pub fn get_all_printers() -> Result<Option<Vec<String>>, String> {
     let devices = match PrinterDevice::all() {
         Ok(devs) => devs,
@@ -20,34 +19,33 @@ pub fn get_all_printers() -> Result<Option<Vec<String>>, String> {
     Ok(Some(printer_names))
 }
 
-pub fn print_files(printer_name: &str, files: Vec<String>) {
-    // 1. Get all Windows printer devices and find the one that matches the UI selection
-    let devices = match PrinterDevice::all() {
-        Ok(devs) => devs,
-        Err(e) => {
-            eprintln!("Failed to fetch Windows printers: {}", e);
-            return;
-        }
-    };
+pub fn print_files(printer_name: &str, files: Vec<String>) -> Result<usize, String> {
+    let devices = PrinterDevice::all()
+        .map_err(|e| format!("Failed to fetch Windows printers: {}", e))?;
 
-    let selected_device = devices.into_iter().find(|dev| dev.name() == printer_name);
+    let selected_device = devices
+        .into_iter()
+        .find(|dev| dev.name() == printer_name)
+        .ok_or_else(|| format!("Printer '{}' not found in Windows devices.", printer_name))?;
 
-    if let Some(device) = selected_device {
-        // 2. Wrap the device in a PdfiumPrinter to handle PDFs natively
-        let pdf_printer = PdfiumPrinter::new(device);
+    let pdf_printer = PdfiumPrinter::new(selected_device);
+    let mut failed_count = 0;
+    let total_files = files.len();
 
-        // 3. Print each file
-        for file in files {
-            println!("Attempting to print PDF using winprint: {}", file);
-            let path = Path::new(&file);
-
-            // Print with default ticket (default Windows printing preferences)
-            match pdf_printer.print(path, Default::default()) {
-                Ok(_) => println!("Successfully queued: {}", file),
-                Err(e) => eprintln!("Failed to print {}: {:?}", e),
+    for file in files {
+        let path = Path::new(&file);
+        match pdf_printer.print(path, Default::default()) {
+            Ok(_) => {}
+            Err(e) => {
+                eprintln!("Failed to print {}: {:?}", file, e);
+                failed_count += 1;
             }
         }
+    }
+
+    if failed_count > 0 {
+        Err(format!("Completed with errors: {} out of {} files failed to print.", failed_count, total_files))
     } else {
-        eprintln!("Printer '{}' not found in Windows devices.", printer_name);
+        Ok(total_files)
     }
 }

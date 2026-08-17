@@ -1,6 +1,8 @@
-use slint::{ModelRc, SharedString, VecModel};
+use slint::{Model, ModelRc, SharedString, VecModel};
 use crate::AppWindow;
 use crate::batch_printing::get_all_printers;
+use crate::PrinterItem;
+use std::rc::Rc;
 
 pub fn setup_ui_printers(ui: &AppWindow) {
     let printer_names = match get_all_printers() {
@@ -9,18 +11,39 @@ pub fn setup_ui_printers(ui: &AppWindow) {
             // Handle the case where no printers were found
             Vec::new()
         }
-        Err(e) => {
+        Err(_e) => {
             ui.invoke_trigger_backend_message(2, "Failed to fetch printers".into());
             return;
         }
     };
 
-    let shared_printer_names : Vec<SharedString> = printer_names.into_iter()
-        .map(Into::into)
-        .collect();
+    let printer_model = Rc::new(VecModel::default());
 
-    let printer_model = ModelRc::new(VecModel::from(shared_printer_names));
+    for name in printer_names {
+        printer_model.push(PrinterItem {
+            name: SharedString::from(name),
+            is_selected: false,
+        });
+    }
 
-    ui.set_printers_list(printer_model);
+    let model_rc = ModelRc::new(printer_model.clone());
 
+    ui.set_printers_list(model_rc);
+
+    ui.on_select_printer(move |selected_name| {
+        
+        let mut updated_items = Vec::new();
+
+
+        for i in 0..printer_model.row_count() {
+            if let Some(mut item) = printer_model.row_data(i) {
+
+                item.is_selected = item.name == selected_name;
+                updated_items.push(item);
+            }
+        }
+
+        printer_model.set_vec(updated_items);
+    });
 }
+

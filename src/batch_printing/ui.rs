@@ -60,6 +60,8 @@ pub fn open_file_dialog(ui: &AppWindow){
         // 2. Open the file dialog
         let files = FileDialog::new()
             .set_title("Choose files to print")
+            .add_filter("PDF Files", &["pdf", "PDF"])
+            .add_filter("All Files", &["*"])
             .pick_files();
 
         // 3. If the user selected files (didn't click cancel)

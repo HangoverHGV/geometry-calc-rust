@@ -47,12 +47,18 @@ export component AppWindow inherits Window {
     in-out property <bool> show-message-box: false;
     //                  ###
 
+    //Printing
+    in-out property <[string]> printers-list;
+
+    //                  ###
+
     callback calculate-distance(string, string, string);
     callback calculate-triangle(string, string, string, string, string);
     callback calculate-force(string, string, string, string, string);
     callback calculate-isosceles-tringle(string, string, string, string);
     callback sync-metal-data();
     callback trigger-backend-message(int, string);
+    callback select-printer(string);
 
     trigger-backend-message(type, text) => {
         root.message-type = type;
@@ -77,9 +83,17 @@ export component AppWindow inherits Window {
             MenuItem {
                 title: "Files";
             }
+            MenuSeparator {}
             Menu {
                 title: "Printers";
-                
+                for printer in root.printers-list: MenuItem{
+                    title: printer;
+                    activated => {
+                        select-printer(printer)
+                    }
+
+                }
+
             }
         }
     }

@@ -31,14 +31,11 @@ fn main() -> Result<(), Box<dyn Error>> {
             })
         });
     });
-
-
-    // Call the re-exported function from your module
+    
     object_calculator::setup_callbacks(&ui);
     triangle_calculator::setup_callbacks(&ui);
     force_calculator::setup_callback(&ui);
-
-    batch_printing::get_all_printers();
+    batch_printing::setup_ui_printers(&ui);
 
     ui.run()?;
     Ok(())

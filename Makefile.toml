@@ -123,8 +123,40 @@ fi
 # ==========================================
 [tasks.delete-last-tag]
 description = "Finds the most recent release tag, deletes it locally, and removes it from the remote repository"
-script_runner = "@shell"
+category = "Publish"
+run_task = [
+    { name = "delete-last-tag-windows", condition = { platforms = ["windows"] } },
+    { name = "delete-last-tag-linux",   condition = { platforms = ["linux", "mac"] } }
+]
+
+[tasks.delete-last-tag-windows]
+private = true
+script_runner = "pwsh"
+script_extension = "ps1"
+script = [
+    "Write-Host '=== Fetching latest tags from remote ==='",
+    "git fetch --tags --prune",
+    "",
+    "# Get the most recent tag matching the 'v*' pattern",
+    "$lastTag = (git describe --tags --abbrev=0 --match 'v*' 2>$null)",
+    "if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($lastTag)) {",
+    "    Write-Error '❌ Error: No tags matching ''v*'' found in this repository.'",
+    "    exit 1",
+    "}",
+    "$lastTag = $lastTag.Trim()",
+    "",
+    "Write-Host \"Found target tag to delete: $lastTag\"",
+    "Write-Host '=== Deleting tag locally ==='",
+    "git tag -d $lastTag",
+    "Write-Host '=== Deleting tag from remote origin ==='",
+    "git push origin --delete $lastTag",
+    "Write-Host \"Successfully wiped $lastTag from existence.\""
+]
+
+[tasks.delete-last-tag-linux]
+private = true
 script = '''
+#!/usr/bin/env bash
 echo "=== Fetching latest tags from remote ==="
 git fetch --tags --prune
 
@@ -137,13 +169,10 @@ if [ -z "$LAST_TAG" ]; then
 fi
 
 echo "Found target tag to delete: $LAST_TAG"
-
 echo "=== Deleting tag locally ==="
 git tag -d "$LAST_TAG"
-
 echo "=== Deleting tag from remote origin ==="
 git push origin --delete "$LAST_TAG"
-
 echo "Successfully wiped $LAST_TAG from existence."
 '''
 

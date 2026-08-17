@@ -54,7 +54,7 @@ export component AppWindow inherits Window {
 
     //Printing
     in-out property <[PrinterItem]> printers-list;
-
+    in-out property <string> active-printer: "";
     //                  ###
 
     callback calculate-distance(string, string, string);
@@ -64,6 +64,7 @@ export component AppWindow inherits Window {
     callback sync-metal-data();
     callback trigger-backend-message(int, string);
     callback select-printer(string);
+    callback open-file-dialog(string);
 
     trigger-backend-message(type, text) => {
         root.message-type = type;
@@ -87,6 +88,9 @@ export component AppWindow inherits Window {
             title: "Files";
             MenuItem {
                 title: "Files";
+                activated => {
+                    root.open-file-dialog(root.active-printer);
+                }
             }
             MenuSeparator {}
             Menu {
@@ -95,7 +99,8 @@ export component AppWindow inherits Window {
                     title: printer.name;
                     checkable: true;
                     activated => {
-                        root.select-printer(printer.name)
+                        root.active-printer = printer.name;
+                        root.select-printer(printer.name);
                     }
                     checked: printer.is_selected;
                 }

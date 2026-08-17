@@ -31,11 +31,12 @@ fn main() -> Result<(), Box<dyn Error>> {
             })
         });
     });
-    
+
     object_calculator::setup_callbacks(&ui);
     triangle_calculator::setup_callbacks(&ui);
     force_calculator::setup_callback(&ui);
     batch_printing::setup_ui_printers(&ui);
+    batch_printing::open_file_dialog(&ui);
 
     ui.run()?;
     Ok(())

@@ -34,6 +34,7 @@ strum = { version = "0.28.0", features = ["derive"] }
 serde = { version = "1.0.228", features = ["derive"] }
 tokio = { version = "1.53.1", features = ["full"] }
 printers = "2.3.0"
+rfd = "0.17.2"
 
 [build-dependencies]
 slint-build = "1.16.1"

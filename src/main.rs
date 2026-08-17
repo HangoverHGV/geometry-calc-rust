@@ -7,8 +7,7 @@ mod object_calculator;
 mod triangle_calculator;
 mod force_calculator;
 mod scraper;
-
-
+mod batch_printing;
 
 slint::include_modules!();
 
@@ -38,6 +37,8 @@ fn main() -> Result<(), Box<dyn Error>> {
     object_calculator::setup_callbacks(&ui);
     triangle_calculator::setup_callbacks(&ui);
     force_calculator::setup_callback(&ui);
+
+    batch_printing::get_all_printers();
 
     ui.run()?;
     Ok(())

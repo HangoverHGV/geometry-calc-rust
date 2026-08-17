@@ -71,6 +71,19 @@ export component AppWindow inherits Window {
             }
         }
 
+    MenuBar {
+        Menu {
+            title: "Files";
+            MenuItem {
+                title: "Files";
+            }
+            Menu {
+                title: "Printers";
+                
+            }
+        }
+    }
+
     HorizontalLayout {
         side-bar := SideBar {
             accessible-role: navigation;

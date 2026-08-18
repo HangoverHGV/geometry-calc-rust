@@ -3,6 +3,8 @@ import { NumberOfElementsPage } from "pages/number_of_elements.slint";
 import { Triangles } from "pages/triangle.slint";
 import { ForceCalculator } from "pages/force_calculator.slint";
 import { MessageBox } from "./components/message_box.slint";
+import { Voronoi } from "./pages/voronoi.slint";
+
 
 export struct PrinterItem {
     name: string,
@@ -113,7 +115,7 @@ export component AppWindow inherits Window {
         side-bar := SideBar {
             accessible-role: navigation;
             accessible-label: "Sidebar";
-            model: ["Number of elements", "Triangles", "Force Calculator"];
+            model: ["Number of elements", "Triangles", "Force Calculator", "Voronoi"];
         }
 
         VerticalLayout {
@@ -167,6 +169,9 @@ export component AppWindow inherits Window {
                 calculate-force(mass, mass_unit, export_unit, area, area_unit) => {
                     root.calculate-force(mass, mass_unit, export_unit, area, area_unit);
                 }
+            }
+            if(side-bar.current-item == 3): Voronoi{
+
             }
         }
     }

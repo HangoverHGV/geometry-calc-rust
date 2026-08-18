@@ -22,5 +22,5 @@ Source: "pdfium.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "ui/assets/images/*"; DestDir: "{app}/ui/assets/images"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
-Name: "{group}\Cad Helper 3d"; Filename: "{app}\cad-helper-3d.exe"
-Name: "{autodesktop}\Cad Helper 3d"; Filename: "{app}\cad-helper-3d.exe"
+Name: "{group}\Cad Helper 3d"; Filename: "{app}\cad-helper-3d.exe"; IconFilename: "{app}\ui\assets\images\ico.ico"
+Name: "{autodesktop}\Cad Helper 3d"; Filename: "{app}\cad-helper-3d.exe"; IconFilename: "{app}\ui\assets\images\ico.ico"

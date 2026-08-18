@@ -1,5 +1,10 @@
 fn main() {
-    slint_build::compile("ui/app-window.slint").expect("Slint build failed");
+    // 1. Force the dark theme for Slint safely at compile time
+    let config = slint_build::CompilerConfiguration::new()
+        .with_style("fluent-dark".into());
+
+    slint_build::compile_with_config("ui/app-window.slint", config)
+        .expect("Slint build failed");
 
     #[cfg(target_os = "windows")]
     {

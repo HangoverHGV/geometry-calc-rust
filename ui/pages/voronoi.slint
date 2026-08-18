@@ -1,6 +1,6 @@
 import { Page } from "../components/page.slint";
 import { AppStyles } from "../assets/styles.slint";
-import { HorizontalBox, GroupBox, LineEdit, Palette } from "std-widgets.slint";
+import { HorizontalBox, GroupBox, LineEdit, Button, Palette } from "std-widgets.slint";
 import { LabeledSlider } from "../components/label_slider.slint";
 
 export component Voronoi inherits Page {
@@ -13,11 +13,22 @@ export component Voronoi inherits Page {
     in property <[string]> voronoi-cells;
 
     callback submit-voronoi(string, string, float, float, float);
+    callback request-export-dxf(string, string, float, float, float);
 
     function do_submit() {
         root.submit-voronoi(
-            width.text,
-            height.text,
+            width-input.text,
+            height-input.text,
+            root.active-seed,
+            root.space-between-cells,
+            root.min-cells-edge
+        );
+    }
+
+    function do_export() {
+        root.request-export-dxf(
+            width-input.text,
+            height-input.text,
             root.active-seed,
             root.space-between-cells,
             root.min-cells-edge
@@ -46,7 +57,9 @@ export component Voronoi inherits Page {
                         vertical-alignment: center;
                     }
 
-                    width := LineEdit {
+                    // Renamed from `width` — that name collides with every
+                    // element's built-in geometry property.
+                    width-input := LineEdit {
                         placeholder-text: "0.0";
                         text: "";
                         input-type: decimal;
@@ -68,7 +81,7 @@ export component Voronoi inherits Page {
                         vertical-alignment: center;
                     }
 
-                    height := LineEdit {
+                    height-input := LineEdit {
                         placeholder-text: "0.0";
                         text: "";
                         input-type: decimal;
@@ -90,14 +103,30 @@ export component Voronoi inherits Page {
                 LabeledSlider {
                     title: "Space between cells";
                     minimum: 0;
-                    maximum: 30;
+                    maximum: 500;
                     value <=> root.space-between-cells;
                 }
+
+                // Capped at 10: this filters on cell VERTEX COUNT, and real
+                // Voronoi cells almost never have more than ~10 vertices.
+                // A higher max would silently blank the whole preview.
                 LabeledSlider {
                     title: "Min cell edges";
                     minimum: 0;
-                    maximum: 100;
+                    maximum: 10;
                     value <=> root.min-cells-edge;
+                }
+
+                HorizontalBox {
+                    alignment: end;
+
+                    Button {
+                        text: "Export DXF...";
+                        primary: true;
+                        // Disabled until there's something worth exporting.
+                        enabled: root.voronoi-cells.length > 0;
+                        clicked => { root.do_export(); }
+                    }
                 }
             }
         }
@@ -113,10 +142,18 @@ export component Voronoi inherits Page {
                 border-color: Palette.border;
                 clip: true;
 
-                // Clean loop drawing native paths directly
+                // The viewbox is essential: without it every Path independently
+                // scales its own commands to fill the element, so all cells end
+                // up stacked on top of each other at full size instead of
+                // tiling. A shared mm-space viewbox puts them in one coordinate
+                // system.
                 for cell-path in root.voronoi-cells: Path {
                     width: 100%;
                     height: 100%;
+                    viewbox-x: 0;
+                    viewbox-y: 0;
+                    viewbox-width: Math.max(width-input.text.to-float(), 1);
+                    viewbox-height: Math.max(height-input.text.to-float(), 1);
                     commands: cell-path;
                     fill: Palette.background;
                     stroke: Palette.foreground;

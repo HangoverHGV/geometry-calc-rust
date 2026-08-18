@@ -35,6 +35,7 @@ serde = { version = "1.0.228", features = ["derive"] }
 tokio = { version = "1.53.1", features = ["full"] }
 rfd = "0.17.2"
 winprint = { version = "0.2.1", features = ["pdfium"] }
+voronoice = "0.2.0"
 
 [build-dependencies]
 slint-build = "1.16.1"

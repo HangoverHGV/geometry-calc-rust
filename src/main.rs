@@ -38,6 +38,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     force_calculator::setup_callback(&ui);
     batch_printing::setup_ui_printers(&ui);
     batch_printing::open_file_dialog(&ui);
+    voronoi_calculator::setup_callbacks(&ui);
 
     ui.run()?;
     Ok(())

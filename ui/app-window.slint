@@ -72,6 +72,7 @@ export component AppWindow inherits Window {
     callback select-printer(string);
     callback open-file-dialog(string);
     callback calculate-voronoi(string, string, float, float, float);
+    callback export-dxf(string, string, float, float, float);
 
     trigger-backend-message(type, text) => {
         root.message-type = type;
@@ -180,6 +181,9 @@ export component AppWindow inherits Window {
                 voronoi-cells <=> root.voronoi-cells;
                 submit-voronoi(width, height, seed, space, min_edge) => {
                     root.calculate-voronoi(width, height, seed, space, min_edge);
+                }
+                request-export-dxf(w, h, seed, space, min-edge) => {
+                    root.export-dxf(w, h, seed, space, min-edge);
                 }
             }
         }

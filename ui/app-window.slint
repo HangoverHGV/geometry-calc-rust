@@ -59,6 +59,10 @@ export component AppWindow inherits Window {
     in-out property <string> active-printer: "";
     //                  ###
 
+    //Voronoi
+    in-out property <[string]> voronoi-cells;
+    //                  ###
+
     callback calculate-distance(string, string, string);
     callback calculate-triangle(string, string, string, string, string);
     callback calculate-force(string, string, string, string, string);
@@ -67,6 +71,7 @@ export component AppWindow inherits Window {
     callback trigger-backend-message(int, string);
     callback select-printer(string);
     callback open-file-dialog(string);
+    callback calculate-voronoi(string, string, float, float, float);
 
     trigger-backend-message(type, text) => {
         root.message-type = type;
@@ -76,14 +81,14 @@ export component AppWindow inherits Window {
         hide-timer.running = true;
     }
 
-        hide-timer := Timer {
-            interval: 2s;
-            running: false;
-            triggered() => {
-                root.show-message-box = false;
-                self.running = false;
-            }
+    hide-timer := Timer {
+        interval: 2s;
+        running: false;
+        triggered() => {
+            root.show-message-box = false;
+            self.running = false;
         }
+    }
 
     MenuBar {
         Menu {
@@ -94,10 +99,12 @@ export component AppWindow inherits Window {
                     root.open-file-dialog(root.active-printer);
                 }
             }
-            MenuSeparator {}
+
+            MenuSeparator { }
+
             Menu {
                 title: "Printers";
-                for printer in root.printers-list: MenuItem{
+                for printer in root.printers-list: MenuItem {
                     title: printer.name;
                     checkable: true;
                     activated => {
@@ -106,7 +113,6 @@ export component AppWindow inherits Window {
                     }
                     checked: printer.is_selected;
                 }
-
             }
         }
     }
@@ -170,8 +176,11 @@ export component AppWindow inherits Window {
                     root.calculate-force(mass, mass_unit, export_unit, area, area_unit);
                 }
             }
-            if(side-bar.current-item == 3): Voronoi{
-
+            if(side-bar.current-item == 3): Voronoi {
+                voronoi-cells <=> root.voronoi-cells;
+                submit-voronoi(width, height, seed, space, min_edge) => {
+                    root.calculate-voronoi(width, height, seed, space, min_edge);
+                }
             }
         }
     }

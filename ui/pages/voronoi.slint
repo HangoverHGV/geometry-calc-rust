@@ -1,22 +1,134 @@
 import { Page } from "../components/page.slint";
 import { AppStyles } from "../assets/styles.slint";
-import { ClearButton } from "../components/clear_button.slint";
-import { HorizontalBox, Slider, GroupBox } from "std-widgets.slint";
+import { HorizontalBox, GroupBox, LineEdit, Palette } from "std-widgets.slint";
 import { LabeledSlider } from "../components/label_slider.slint";
-
-
 
 export component Voronoi inherits Page {
     title: "Voronoi Generator";
 
     out property <float> active-seed;
-    GroupBox {
-        VerticalLayout {
-            LabeledSlider {
-                title: "Seed";
-                minimum: 0;
-                maximum: 200;
-                value <=> root.active-seed;
+    out property <float> space-between-cells;
+    out property <float> min-cells-edge;
+
+    in property <[string]> voronoi-cells;
+
+    callback submit-voronoi(string, string, float, float, float);
+
+    function do_submit() {
+        root.submit-voronoi(
+            width.text,
+            height.text,
+            root.active-seed,
+            root.space-between-cells,
+            root.min-cells-edge
+        );
+    }
+
+    changed active-seed => { root.do_submit(); }
+    changed space-between-cells => { root.do_submit(); }
+    changed min-cells-edge => { root.do_submit(); }
+
+    VerticalLayout {
+        spacing: 10px;
+
+        GroupBox {
+            title: "Parameters";
+            vertical-stretch: 0;
+
+            VerticalLayout {
+                HorizontalBox {
+                    Text {
+                        text: "Width (mm)";
+                        font-family: AppStyles.app-font-family;
+                        font-size: AppStyles.app-font-size;
+                        font-weight: AppStyles.app-font-weight;
+                        font-italic: AppStyles.app-font-italic;
+                        vertical-alignment: center;
+                    }
+
+                    width := LineEdit {
+                        placeholder-text: "0.0";
+                        text: "";
+                        input-type: decimal;
+                        font-size: AppStyles.app-font-size;
+                        font-family: AppStyles.app-font-family;
+                        font-italic: AppStyles.app-font-italic;
+                        edited => { root.do_submit(); }
+                        accepted => { root.do_submit(); }
+                    }
+                }
+
+                HorizontalBox {
+                    Text {
+                        text: "Height (mm)";
+                        font-family: AppStyles.app-font-family;
+                        font-size: AppStyles.app-font-size;
+                        font-weight: AppStyles.app-font-weight;
+                        font-italic: AppStyles.app-font-italic;
+                        vertical-alignment: center;
+                    }
+
+                    height := LineEdit {
+                        placeholder-text: "0.0";
+                        text: "";
+                        input-type: decimal;
+                        font-size: AppStyles.app-font-size;
+                        font-family: AppStyles.app-font-family;
+                        font-italic: AppStyles.app-font-italic;
+                        edited => { root.do_submit(); }
+                        accepted => { root.do_submit(); }
+                    }
+                }
+
+                LabeledSlider {
+                    title: "Seed";
+                    minimum: 0;
+                    maximum: 200;
+                    value <=> root.active-seed;
+                }
+
+                LabeledSlider {
+                    title: "Space between cells";
+                    minimum: 0;
+                    maximum: 30;
+                    value <=> root.space-between-cells;
+                }
+                LabeledSlider {
+                    title: "Min cell edges";
+                    minimum: 0;
+                    maximum: 100;
+                    value <=> root.min-cells-edge;
+                }
+            }
+        }
+
+        GroupBox {
+            title: "Live Preview";
+            vertical-stretch: 1;
+
+            Rectangle {
+                background: Palette.background.darker(0.1);
+                border-radius: 4px;
+                border-width: 1px;
+                border-color: Palette.border;
+                clip: true;
+
+                // Clean loop drawing native paths directly
+                for cell-path in root.voronoi-cells: Path {
+                    width: 100%;
+                    height: 100%;
+                    commands: cell-path;
+                    fill: Palette.background;
+                    stroke: Palette.foreground;
+                    stroke-width: 1px;
+                }
+
+                if (root.voronoi-cells.length == 0) : Text {
+                    text: "Enter dimensions to generate preview...";
+                    color: Palette.foreground.darker(0.5);
+                    font-size: AppStyles.app-font-size;
+                    font-family: AppStyles.app-font-family;
+                }
             }
         }
     }

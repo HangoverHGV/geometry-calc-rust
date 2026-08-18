@@ -8,6 +8,7 @@ mod triangle_calculator;
 mod force_calculator;
 mod scraper;
 mod batch_printing;
+mod voronoi_calculator;
 
 slint::include_modules!();
 

@@ -1,9 +1,23 @@
 import { Page } from "../components/page.slint";
 import { AppStyles } from "../assets/styles.slint";
 import { ClearButton } from "../components/clear_button.slint";
+import { HorizontalBox, Slider, GroupBox } from "std-widgets.slint";
+import { LabeledSlider } from "../components/label_slider.slint";
 
 
 
 export component Voronoi inherits Page {
     title: "Voronoi Generator";
+
+    out property <float> active-seed;
+    GroupBox {
+        VerticalLayout {
+            LabeledSlider {
+                title: "Seed";
+                minimum: 0;
+                maximum: 200;
+                value <=> root.active-seed;
+            }
+        }
+    }
 }

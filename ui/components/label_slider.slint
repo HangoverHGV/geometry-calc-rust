@@ -1,0 +1,38 @@
+import { Slider, HorizontalBox } from "std-widgets.slint";
+import { AppStyles } from "../assets/styles.slint";
+
+export component LabeledSlider inherits HorizontalBox {
+    in property <string> title: "Label";
+    in property <float> minimum: 0;
+    in property <float> maximum: 100;
+
+    in-out property <float> value: 50;
+
+    alignment: stretch;
+    spacing: 10px;
+
+    Text {
+        text: root.title;
+        font-family: AppStyles.app-font-family;
+        font-size: AppStyles.app-font-size;
+        font-weight: AppStyles.app-font-weight;
+        font-italic: AppStyles.app-font-italic;
+        vertical-alignment: center;
+    }
+
+    slider := Slider {
+        minimum: root.minimum;
+        maximum: root.maximum;
+        value <=> root.value;
+    }
+
+    Text {
+        text: "" + round(root.value);
+        min-width: 30px;
+        font-family: AppStyles.app-font-family;
+        font-size: AppStyles.app-font-size;
+        font-weight: AppStyles.app-font-weight;
+        font-italic: AppStyles.app-font-italic;
+        vertical-alignment: center;
+    }
+}

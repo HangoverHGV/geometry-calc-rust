@@ -1,6 +1,6 @@
 [package]
 name = "cad-helper-3d"
-version = "0.2.4"
+version = "0.3.0"
 edition = "2024"
 license = "MIT"
 description = "A sleek geometry and spacer calculator helper."

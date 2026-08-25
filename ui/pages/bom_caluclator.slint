@@ -10,11 +10,21 @@ import { AppStyles } from "../assets/styles.slint";
 
 import { Page } from "../components/page.slint";
 import { ClearButton } from "../components/clear_button.slint";
+import { Button } from "std-widgets.slint";
+
+export struct BomRow {
+    name: string,
+    quantity: string,
+}
 
 export component BomCalculator inherits Page {
     title: "BOM Calculator";
 
     callback calculate-materials();
+    callback upload-spreadsheet();
+
+    in-out property <[BomRow]> bom-rows: [];
+    in-out property <string> loaded-file-name: "";
 
     GroupBox {
         VerticalBox {
@@ -27,9 +37,19 @@ export component BomCalculator inherits Page {
                 padding: 0px;
                 spacing: 5px;
 
+                Button {
+                    text: "Upload Spreadsheet";
+                    clicked => { root.upload-spreadsheet(); }
+                }
+
                 ClearButton {
                     text: "Clear";
                 }
+            }
+
+            if root.loaded-file-name != "": Text {
+                text: "Loaded: " + root.loaded-file-name;
+                color: Palette.foreground;
             }
         }
     }

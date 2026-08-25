@@ -9,6 +9,7 @@ mod force_calculator;
 mod scraper;
 mod batch_printing;
 mod voronoi_calculator;
+mod bom_calculator;
 
 slint::include_modules!();
 

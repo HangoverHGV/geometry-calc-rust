@@ -40,6 +40,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     batch_printing::setup_ui_printers(&ui);
     batch_printing::open_file_dialog(&ui);
     voronoi_calculator::setup_callbacks(&ui);
+    bom_calculator::upload_spreadsheet(&ui);
 
     ui.run()?;
     Ok(())

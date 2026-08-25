@@ -242,6 +242,10 @@ export component Triangles inherits Page {
             Tab {
                 title: "Isosceles";
 
+                // A Tab stacks its children at the same origin instead of
+                // laying them out, so EVERYTHING in the tab has to live inside
+                // this one VerticalBox. Closing it early is what put the Clear
+                // button on top of the results text.
                 VerticalBox {
                     HorizontalBox {
                         alignment: start;
@@ -265,146 +269,149 @@ export component Triangles inherits Page {
                             }
                         }
                     }
-                }
 
-                HorizontalBox {
-                    alignment: start;
-                    VerticalBox {
+                    HorizontalBox {
                         alignment: start;
-                        Text {
-                            text: "AB:";
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-weight: AppStyles.app-font-weight;
-                            font-italic: AppStyles.app-font-italic;
+                        VerticalBox {
+                            alignment: start;
+                            Text {
+                                text: "AB:";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.input-ab-text;
+                                input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
+                                edited => { root.do_calculate_is(); }
+                            }
+
+                            Text {
+                                text: "BC";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.input-bc-text;
+                                input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
+                                edited => { root.do_calculate_is(); }
+                            }
                         }
 
-                        LineEdit {
-                            placeholder-text: "0.0";
-                            text <=> root.input-ab-text;
-                            input-type: decimal;
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-italic: AppStyles.app-font-italic;
-                            edited => { root.do_calculate_is(); }
+                        VerticalBox {
+                            alignment: start;
+                            Text {
+                                text: "ABC";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.input-abc-is-angle;
+                                input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
+                                edited => { root.do_calculate_is(); }
+                            }
+
+                            Text {
+                                text: "BAC";
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
+                            }
+
+                            LineEdit {
+                                placeholder-text: "0.0";
+                                text <=> root.input-bac-is-angle;
+                                input-type: decimal;
+                                font-size: AppStyles.app-font-size;
+                                font-family: AppStyles.app-font-family;
+                                font-italic: AppStyles.app-font-italic;
+                                edited => { root.do_calculate_is(); }
+                            }
                         }
 
-                        Text {
-                            text: "BC";
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-weight: AppStyles.app-font-weight;
-                            font-italic: AppStyles.app-font-italic;
-                        }
-
-                        LineEdit {
-                            placeholder-text: "0.0";
-                            text <=> root.input-bc-text;
-                            input-type: decimal;
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-italic: AppStyles.app-font-italic;
-                            edited => { root.do_calculate_is(); }
-                        }
-                    }
-
-                    VerticalBox {
-                        alignment: start;
-                        Text {
-                            text: "ABC";
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-weight: AppStyles.app-font-weight;
-                            font-italic: AppStyles.app-font-italic;
-                        }
-
-                        LineEdit {
-                            placeholder-text: "0.0";
-                            text <=> root.input-abc-is-angle;
-                            input-type: decimal;
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-italic: AppStyles.app-font-italic;
-                            edited => { root.do_calculate_is(); }
-                        }
-
-                        Text {
-                            text: "BAC";
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-weight: AppStyles.app-font-weight;
-                            font-italic: AppStyles.app-font-italic;
-                        }
-
-                        LineEdit {
-                            placeholder-text: "0.0";
-                            text <=> root.input-bac-is-angle;
-                            input-type: decimal;
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-italic: AppStyles.app-font-italic;
-                            edited => { root.do_calculate_is(); }
-                        }
-                    }
-
-                    Image {
-                        horizontal-alignment: ImageHorizontalAlignment.center;
-                        source: is-triangle-svg;
-                        height: 300px;
-                        width: 300px;
-                    }
-                }
-
-                HorizontalBox {
-                    VerticalBox {
-                        Text {
-                            text: "AB: " + root.ab-text + " mm";
-                            font-size: AppStyles.app-font-size + 3px;
-                            font-family: AppStyles.app-font-family;
-                            font-weight: AppStyles.app-font-weight;
-                            font-italic: AppStyles.app-font-italic;
-                        }
-
-                        Text {
-                            text: "AC: " + root.ab-text + " mm";
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-weight: AppStyles.app-font-weight;
-                            font-italic: AppStyles.app-font-italic;
-                        }
-
-                        Text {
-                            text: "BC: " + root.bc-text + " mm";
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-weight: AppStyles.app-font-weight;
-                            font-italic: AppStyles.app-font-italic;
+                        Image {
+                            horizontal-alignment: ImageHorizontalAlignment.center;
+                            source: is-triangle-svg;
+                            height: 300px;
+                            width: 300px;
                         }
                     }
 
-                    VerticalBox {
-                        Text {
-                            text: "Angle ABC: " + root.abc-is-angle + "°";
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-weight: AppStyles.app-font-weight;
-                            font-italic: AppStyles.app-font-italic;
+                    HorizontalBox {
+                        VerticalBox {
+                            // AB and AC are the two equal legs, so both read
+                            // from ab-text by design.
+                            Text {
+                                text: "AB: " + root.ab-text + " mm";
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
+                            }
+
+                            Text {
+                                text: "AC: " + root.ab-text + " mm";
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
+                            }
+
+                            Text {
+                                text: "BC: " + root.bc-text + " mm";
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
+                            }
                         }
 
-                        Text {
-                            text: "Angle ACB: " + root.abc-is-angle + "°";
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-weight: AppStyles.app-font-weight;
-                            font-italic: AppStyles.app-font-italic;
-                        }
+                        VerticalBox {
+                            // ABC and ACB are the equal base angles.
+                            Text {
+                                text: "Angle ABC: " + root.abc-is-angle + "°";
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
+                            }
 
-                        Text {
-                            text: "Angle BAC: " + root.bac-is-angle + "°";
-                            font-size: AppStyles.app-font-size;
-                            font-family: AppStyles.app-font-family;
-                            font-weight: AppStyles.app-font-weight;
-                            font-italic: AppStyles.app-font-italic;
+                            Text {
+                                text: "Angle ACB: " + root.abc-is-angle + "°";
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
+                            }
+
+                            Text {
+                                text: "Angle BAC: " + root.bac-is-angle + "°";
+                                font-size: AppStyles.app-font-size + 3px;
+                                font-family: AppStyles.app-font-family;
+                                font-weight: AppStyles.app-font-weight;
+                                font-italic: AppStyles.app-font-italic;
+                            }
                         }
                     }
                 }

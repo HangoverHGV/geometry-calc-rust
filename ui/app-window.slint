@@ -4,7 +4,7 @@ import { Triangles } from "pages/triangle.slint";
 import { ForceCalculator } from "pages/force_calculator.slint";
 import { MessageBox } from "./components/message_box.slint";
 import { Voronoi } from "./pages/voronoi.slint";
-
+import { BomCalculator } from "./pages/bom_caluclator.slint";
 
 export struct PrinterItem {
     name: string,
@@ -122,7 +122,7 @@ export component AppWindow inherits Window {
         side-bar := SideBar {
             accessible-role: navigation;
             accessible-label: "Sidebar";
-            model: ["Number of elements", "Triangles", "Force Calculator", "Voronoi"];
+            model: ["Number of elements", "Triangles", "Force Calculator", "Voronoi", "BOM Calculator"];
         }
 
         VerticalLayout {
@@ -185,6 +185,9 @@ export component AppWindow inherits Window {
                 request-export-dxf(w, h, seed, space, min-edge) => {
                     root.export-dxf(w, h, seed, space, min-edge);
                 }
+            }
+            if(side-bar.current-item == 4): BomCalculator{
+
             }
         }
     }

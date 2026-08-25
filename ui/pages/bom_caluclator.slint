@@ -1,0 +1,36 @@
+import {
+    GroupBox,
+    VerticalBox,
+    LineEdit,
+    HorizontalBox,
+    ComboBox,
+    Palette,
+} from "std-widgets.slint";
+import { AppStyles } from "../assets/styles.slint";
+
+import { Page } from "../components/page.slint";
+import { ClearButton } from "../components/clear_button.slint";
+
+export component BomCalculator inherits Page {
+    title: "BOM Calculator";
+
+    callback calculate-materials();
+
+    GroupBox {
+        VerticalBox {
+            spacing: 3px;
+            alignment: start;
+            padding: 10px;
+
+            HorizontalBox {
+                alignment: start;
+                padding: 0px;
+                spacing: 5px;
+
+                ClearButton {
+                    text: "Clear";
+                }
+            }
+        }
+    }
+}

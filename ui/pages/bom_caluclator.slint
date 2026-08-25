@@ -5,6 +5,7 @@ import {
     HorizontalBox,
     ComboBox,
     Palette,
+    ListView,
 } from "std-widgets.slint";
 import { AppStyles } from "../assets/styles.slint";
 
@@ -14,7 +15,12 @@ import { Button } from "std-widgets.slint";
 
 export struct BomRow {
     name: string,
-    quantity: string,
+    total-length-m: string,
+    total-mass-kg: string,
+    bars-6m: int,
+    bars-12m: int,
+    length-6m-m: string,
+    length-12m-m: string,
 }
 
 export component BomCalculator inherits Page {
@@ -50,6 +56,119 @@ export component BomCalculator inherits Page {
             if root.loaded-file-name != "": Text {
                 text: "Loaded: " + root.loaded-file-name;
                 color: Palette.foreground;
+            }
+            if root.bom-rows.length > 0: VerticalBox {
+                padding: 0px;
+                spacing: 2px;
+
+                HorizontalBox {
+                    padding: 4px;
+                    spacing: 5px;
+
+                    Text {
+                        text: "Part Name";
+                        font-weight: 700;
+                        width: 26%;
+                    }
+
+                    Text {
+                        text: "Length (m)";
+                        font-weight: 700;
+                        width: 12%;
+                        horizontal-alignment: right;
+                    }
+
+                    Text {
+                        text: "Mass (kg)";
+                        font-weight: 700;
+                        width: 12%;
+                        horizontal-alignment: right;
+                    }
+
+                    Text {
+                        text: "6m Bars";
+                        font-weight: 700;
+                        width: 10%;
+                        horizontal-alignment: right;
+                    }
+
+                    Text {
+                        text: "6m Total";
+                        font-weight: 700;
+                        width: 15%;
+                        horizontal-alignment: right;
+                    }
+
+                    Text {
+                        text: "12m Bars";
+                        font-weight: 700;
+                        width: 10%;
+                        horizontal-alignment: right;
+                    }
+
+                    Text {
+                        text: "12m Total";
+                        font-weight: 700;
+                        width: 15%;
+                        horizontal-alignment: right;
+                    }
+                }
+
+                Rectangle {
+                    height: 1px;
+                    background: Palette.border;
+                }
+
+                ListView {
+                    height: 280px;
+
+                    for row in root.bom-rows: HorizontalBox {
+                        padding: 4px;
+                        spacing: 5px;
+
+                        Text {
+                            text: row.name;
+                            width: 26%;
+                            overflow: elide;
+                        }
+
+                        Text {
+                            text: row.total-length-m;
+                            width: 12%;
+                            horizontal-alignment: right;
+                        }
+
+                        Text {
+                            text: row.total-mass-kg;
+                            width: 12%;
+                            horizontal-alignment: right;
+                        }
+
+                        Text {
+                            text: row.bars-6m;
+                            width: 10%;
+                            horizontal-alignment: right;
+                        }
+
+                        Text {
+                            text: row.length-6m-m;
+                            width: 15%;
+                            horizontal-alignment: right;
+                        }
+
+                        Text {
+                            text: row.bars-12m;
+                            width: 10%;
+                            horizontal-alignment: right;
+                        }
+
+                        Text {
+                            text: row.length-12m-m;
+                            width: 15%;
+                            horizontal-alignment: right;
+                        }
+                    }
+                }
             }
         }
     }

@@ -4,15 +4,11 @@ import { Triangles } from "pages/triangle.slint";
 import { ForceCalculator } from "pages/force_calculator.slint";
 import { MessageBox } from "./components/message_box.slint";
 import { Voronoi } from "./pages/voronoi.slint";
-import { BomCalculator } from "./pages/bom_caluclator.slint";
+import { BomCalculator, BomRow } from "./pages/bom_caluclator.slint";
 
 export struct PrinterItem {
     name: string,
     is_selected: bool,
-}
-export struct BomRow {
-    name: string,
-    quantity: string,
 }
 
 export component AppWindow inherits Window {
@@ -133,7 +129,13 @@ export component AppWindow inherits Window {
         side-bar := SideBar {
             accessible-role: navigation;
             accessible-label: "Sidebar";
-            model: ["Number of elements", "Triangles", "Force Calculator", "Voronoi", "BOM Calculator"];
+            model: [
+                "Number of elements",
+                "Triangles",
+                "Force Calculator",
+                "Voronoi",
+                "BOM Calculator"
+            ];
         }
 
         VerticalLayout {
@@ -197,9 +199,9 @@ export component AppWindow inherits Window {
                     root.export-dxf(w, h, seed, space, min-edge);
                 }
             }
-            if(side-bar.current-item == 4): BomCalculator{
+            if(side-bar.current-item == 4): BomCalculator {
                 bom-rows <=> root.bom-rows;
-                loaded-file-name: root.bom-loaded-file-name;
+                loaded-file-name <=> root.bom-loaded-file-name;
                 upload-spreadsheet => {
                     root.upload-bom-spreadsheet();
                 }

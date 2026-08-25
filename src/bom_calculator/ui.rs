@@ -16,9 +16,7 @@ pub fn upload_spreadsheet(ui: &AppWindow) {
             .add_filter("All Files", &["*"])
             .pick_file();
 
-        let Some(path) = file else {
-            return; // user cancelled
-        };
+        let Some(path) = file else { return };
 
         let path_str = path.to_string_lossy().to_string();
         let file_name = path
@@ -28,7 +26,20 @@ pub fn upload_spreadsheet(ui: &AppWindow) {
 
         match parse_spreadsheet(&path_str) {
             Ok(rows) => {
-                let model = Rc::new(VecModel::from(rows));
+                let slint_rows: Vec<crate::BomRow> = rows
+                    .into_iter()
+                    .map(|r| crate::BomRow {
+                        name: r.name.into(),
+                        total_length_m: format!("{:.3}", r.total_length_m).into(),
+                        total_mass_kg: format!("{:.3}", r.total_mass_kg).into(),
+                        bars_6m: r.bars_6m as i32,
+                        bars_12m: r.bars_12m as i32,
+                        length_6m_m: format!("{:.1} m", r.length_6m_total_m).into(),
+                        length_12m_m: format!("{:.1} m", r.length_12m_total_m).into(),
+                    })
+                    .collect();
+
+                let model = Rc::new(VecModel::from(slint_rows));
                 ui.set_bom_rows(ModelRc::from(model));
                 ui.set_bom_loaded_file_name(file_name.into());
             }

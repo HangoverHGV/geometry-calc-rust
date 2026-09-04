@@ -1,4 +1,17 @@
 export global Backend {
-    callback schedule-shutdown(int); // seconds from now
+    callback schedule-shutdown(int);
     callback cancel-shutdown();
+
+    // Seconds left; 0 means nothing pending.
+    in-out property <int> shutdown-remaining: 0;
+    out property <bool> shutdown-pending: shutdown-remaining > 0;
+
+    out property <int> rem-h: Math.floor(shutdown-remaining / 3600);
+    out property <int> rem-m: Math.floor(Math.mod(shutdown-remaining, 3600) / 60);
+    out property <int> rem-s: Math.mod(shutdown-remaining, 60);
+
+    out property <string> remaining-text:
+        rem-h + ":"
+        + (rem-m < 10 ? "0" : "") + rem-m + ":"
+        + (rem-s < 10 ? "0" : "") + rem-s;
 }

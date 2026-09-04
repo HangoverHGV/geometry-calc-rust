@@ -9,6 +9,7 @@ import {
 } from "std-widgets.slint";
 import { AppStyles } from "../assets/styles.slint";
 import { Backend } from "../globals.slint";
+import { ClearButton } from "./clear_button.slint";
 
 export component Page inherits VerticalBox {
     in property <string> title: "title";
@@ -64,11 +65,35 @@ export component Page inherits VerticalBox {
             }
         }
 
-        time-picker-button := Button {
-            text: "Open TimePicker";
 
+        if !Backend.shutdown-pending: ClearButton {
+            text: "Shutdown";
+            background: #ff0800;
             clicked => {
                 time-picker.show();
+            }
+        }
+
+        shutdown-timer := Timer {
+            interval: 1s;
+            running: Backend.shutdown-pending;
+            triggered() => {
+                Backend.shutdown-remaining -= 1;
+            }
+        }
+        if Backend.shutdown-pending: Text {
+            horizontal-stretch: 0;
+            vertical-alignment: center;
+            text: "Shutdown in " + Backend.remaining-text;
+            color: #d9534f;
+            font-size: AppStyles.app-font-size;
+        }
+
+        if Backend.shutdown-pending: Button {
+            horizontal-stretch: 0;
+            text: "Cancel Shutdown";
+            clicked => {
+                Backend.cancel-shutdown();
             }
         }
 

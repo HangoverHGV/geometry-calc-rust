@@ -10,6 +10,7 @@ mod scraper;
 mod batch_printing;
 mod voronoi_calculator;
 mod bom_calculator;
+mod schedule_shutdown;
 
 slint::include_modules!();
 

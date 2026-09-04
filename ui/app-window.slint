@@ -81,6 +81,8 @@ export component AppWindow inherits Window {
     callback export-dxf(string, string, float, float, float);
     callback upload-bom-spreadsheet();
 
+    
+
     trigger-backend-message(type, text) => {
         root.message-type = type;
         root.message-text = text;

@@ -5,6 +5,8 @@ import { ForceCalculator } from "pages/force_calculator.slint";
 import { MessageBox } from "./components/message_box.slint";
 import { Voronoi } from "./pages/voronoi.slint";
 import { BomCalculator, BomRow } from "./pages/bom_caluclator.slint";
+import { Backend } from "./globals.slint";
+export {Backend}
 
 export struct PrinterItem {
     name: string,
@@ -81,7 +83,7 @@ export component AppWindow inherits Window {
     callback export-dxf(string, string, float, float, float);
     callback upload-bom-spreadsheet();
 
-    
+
 
     trigger-backend-message(type, text) => {
         root.message-type = type;

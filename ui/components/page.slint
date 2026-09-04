@@ -8,6 +8,7 @@ import {
     TimePickerPopup,
 } from "std-widgets.slint";
 import { AppStyles } from "../assets/styles.slint";
+import { Backend } from "../globals.slint";
 
 export component Page inherits VerticalBox {
     in property <string> title: "title";
@@ -83,7 +84,7 @@ export component Page inherits VerticalBox {
             }
 
             accepted(time) => {
-                root.shutdown-at(time.hour, time.minute, time.second);
+                Backend.schedule-shutdown(time.hour * 3600 + time.minute * 60 + time.second );
                 time-picker.close();
             }
         }

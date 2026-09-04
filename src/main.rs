@@ -42,6 +42,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     batch_printing::open_file_dialog(&ui);
     voronoi_calculator::setup_callbacks(&ui);
     bom_calculator::upload_spreadsheet(&ui);
+    schedule_shutdown::setup_callbacks(&ui);
 
     ui.run()?;
     Ok(())

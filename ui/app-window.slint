@@ -6,12 +6,13 @@ import { MessageBox } from "./components/message_box.slint";
 import { Voronoi } from "./pages/voronoi.slint";
 import { BomCalculator, BomRow } from "./pages/bom_caluclator.slint";
 import { Backend } from "./globals.slint";
-export {Backend}
-
+export { Backend }
 export struct PrinterItem {
     name: string,
     is_selected: bool,
 }
+
+export enum PrintOrientation { portrait, landscape }
 
 export component AppWindow inherits Window {
     title: "CAD Helper 3D";
@@ -59,6 +60,7 @@ export component AppWindow inherits Window {
     //Printing
     in-out property <[PrinterItem]> printers-list;
     in-out property <string> active-printer: "";
+    in-out property <PrintOrientation> print-orientation: PrintOrientation.landscape;
     //                  ###
 
     //Voronoi
@@ -82,8 +84,6 @@ export component AppWindow inherits Window {
     callback calculate-voronoi(string, string, float, float, float);
     callback export-dxf(string, string, float, float, float);
     callback upload-bom-spreadsheet();
-
-
 
     trigger-backend-message(type, text) => {
         root.message-type = type;
@@ -124,6 +124,23 @@ export component AppWindow inherits Window {
                         root.select-printer(printer.name);
                     }
                     checked: printer.is_selected;
+                }
+            }
+
+            Menu {
+                title: "Orientation";
+                MenuItem {
+                    title: "Portrait";
+                    checkable: true;
+                    checked: root.print-orientation == PrintOrientation.portrait;
+                    activated => { root.print-orientation = PrintOrientation.portrait; }
+                }
+
+                MenuItem {
+                    title: "Landscape";
+                    checkable: true;
+                    checked: root.print-orientation == PrintOrientation.landscape;
+                    activated => { root.print-orientation = PrintOrientation.landscape; }
                 }
             }
         }

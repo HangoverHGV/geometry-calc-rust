@@ -1,7 +1,7 @@
 use slint::{ComponentHandle, Model, ModelRc, SharedString, VecModel};
 use crate::AppWindow;
 use crate::batch_printing::{get_all_printers, print_files};
-use crate::PrinterItem;
+use crate::{PrinterItem};
 use std::rc::Rc;
 use rfd::FileDialog;
 
@@ -73,8 +73,9 @@ pub fn open_file_dialog(ui: &AppWindow) {
                 .into_iter()
                 .map(|p| p.to_string_lossy().to_string())
                 .collect();
+            let orientation = ui.get_print_orientation();
 
-            match print_files(&printer_name, file_strings.clone()) {
+            match print_files(&printer_name, file_strings.clone(), orientation) {
                 Ok(count) => {
                     ui.invoke_trigger_backend_message(
                         0,

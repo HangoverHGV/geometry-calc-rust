@@ -64,7 +64,7 @@ pub fn write_parts_list(draw_dir: &Path) -> Result<PathBuf, Box<dyn Error>> {
         ws.set_column_format(col as u16, &cell_fmt)?;
     }
 
-    let out = project_dir.join(format!("{project_name}.xlsx"));
+    let out = draw_dir.join(format!("{project_name}.xlsx"));
     wb.save(&out)?;
     Ok(out)
 }

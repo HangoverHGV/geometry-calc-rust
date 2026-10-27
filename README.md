@@ -39,7 +39,7 @@ Download the latest Windows installer from the [Releases](../../releases) page a
 
 Works out how many elements fit along a length, or around a circle, and how far apart they are. The spacing can be measured from the edges or from the centre of a circle. Use it for hole patterns, bolt circles, fins, slats and similar repeated features.
 
-![Number of Elements](README_IMGs/NofEl.png)
+![Number of Elements](README_IMGs/number_of_elements.png)
 
 ### Triangle Solver
 
@@ -50,7 +50,7 @@ Enter the values you know and the solver fills in the rest. It has two tabs:
 
 Handy for chamfers, gussets, bends and slopes without leaving your CAD workflow.
 
-![Right-Angle Triangle](README_IMGs/RightAngleTriangle.png)
+![Right-Angle Triangle](README_IMGs/right_angle_triangle.png)
 
 ### Force & Pressure Calculator
 
@@ -67,7 +67,7 @@ Generates a Voronoi pattern for decorative or lightening cut-outs.
 
 The file is a plain **DXF R12 (ASCII)**. It opens in Inventor, Fusion 360, AutoCAD and most laser/plasma CAM software.
 
-![Voronoi Generator](README_IMGs/voronoi.png)
+![Voronoi Generator](README_IMGs/voronoi_generator.png)
 
 ### BOM Calculator
 

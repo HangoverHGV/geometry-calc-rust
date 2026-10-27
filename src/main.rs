@@ -44,6 +44,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     voronoi_calculator::setup_callbacks(&ui);
     bom_calculator::upload_spreadsheet(&ui);
     schedule_shutdown::setup_callbacks(&ui);
+    sheet_generator::open_directory_dialog(&ui);
 
     ui.run()?;
     Ok(())

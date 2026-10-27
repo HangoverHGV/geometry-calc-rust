@@ -84,6 +84,7 @@ export component AppWindow inherits Window {
     callback calculate-voronoi(string, string, float, float, float);
     callback export-dxf(string, string, float, float, float);
     callback upload-bom-spreadsheet();
+    callback open-directory();
 
     trigger-backend-message(type, text) => {
         root.message-type = type;
@@ -141,6 +142,16 @@ export component AppWindow inherits Window {
                     checkable: true;
                     checked: root.print-orientation == PrintOrientation.landscape;
                     activated => { root.print-orientation = PrintOrientation.landscape; }
+                }
+            }
+        }
+
+        Menu {
+            title: "Generate";
+            MenuItem {
+                title: "Generate Excel";
+                activated => {
+                    root.open-directory();
                 }
             }
         }

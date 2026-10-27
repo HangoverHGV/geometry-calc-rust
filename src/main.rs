@@ -11,6 +11,7 @@ mod batch_printing;
 mod voronoi_calculator;
 mod bom_calculator;
 mod schedule_shutdown;
+mod sheet_generator;
 
 slint::include_modules!();
 

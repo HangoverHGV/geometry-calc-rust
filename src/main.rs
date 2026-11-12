@@ -12,6 +12,7 @@ mod voronoi_calculator;
 mod bom_calculator;
 mod schedule_shutdown;
 mod sheet_generator;
+mod oferta;
 
 slint::include_modules!();
 
@@ -45,6 +46,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     bom_calculator::upload_spreadsheet(&ui);
     schedule_shutdown::setup_callbacks(&ui);
     sheet_generator::open_directory_dialog(&ui);
+    oferta::setup_callbacks(&ui);
 
     ui.run()?;
     Ok(())

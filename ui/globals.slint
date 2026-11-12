@@ -15,3 +15,65 @@ export global Backend {
         + (rem-m < 10 ? "0" : "") + rem-m + ":"
         + (rem-s < 10 ? "0" : "") + rem-s;
 }
+
+// ---------------------------------------------------------------------
+//  Price offer (oferta-typst)
+//
+//  One property per variable in oferta-typst/oferta.json. The state lives
+//  in a global so the form survives switching tabs in the sidebar.
+//  Numbers are kept as typed ("7,5", "12000") and parsed in Rust.
+// ---------------------------------------------------------------------
+
+// One row of `items[]`.
+export struct OfertaItem {
+    denumire: string,   // items[].denumire
+    descriere: string,  // items[].descriere (optional)
+    um: string,         // items[].um
+    cant: string,       // items[].cant
+    pret: string,       // items[].pret, unit price without VAT
+    valoare: string,    // cant × pret, filled in by Rust (preview only)
+}
+
+export global OfertaState {
+    // Offer
+    in-out property <string> data-oferta;       // data_oferta
+    in-out property <string> valabilitate;      // valabilitate
+    in-out property <string> obiect-titlu;      // obiect_titlu
+    in-out property <string> obiect-descriere;  // obiect_descriere
+    in-out property <string> referinta;         // referinta
+
+    // Client
+    in-out property <string> client-nume;       // client.nume
+    in-out property <string> client-cui;        // client.cui
+    in-out property <string> client-adresa;     // client.adresa
+    in-out property <string> client-contact;    // client.contact
+
+    // Items
+    in-out property <[OfertaItem]> items;       // items[]
+
+    // Commercial terms
+    in-out property <string> cota-tva;          // cota_tva
+    in-out property <string> termen-zile;       // termen_zile
+    in-out property <string> conditii-plata;    // conditii_plata
+    in-out property <string> livrare;           // livrare
+
+    // Totals preview, filled in by Rust. The template computes its own.
+    in-out property <string> total-fara-tva: "0,00";
+    in-out property <string> total-tva: "0,00";
+    in-out property <string> total-de-plata: "0,00";
+
+    // Name of the JSON file last opened or saved, empty for a new offer.
+    in-out property <string> loaded-file;
+
+    // True while a PDF is being rendered in the background.
+    in-out property <bool> generating-pdf: false;
+
+    callback recalculate();
+    callback add-item();
+    callback remove-item(int);
+    callback set-today();
+    callback new-oferta();
+    callback load-json();
+    callback save-json();
+    callback generate-pdf();
+}

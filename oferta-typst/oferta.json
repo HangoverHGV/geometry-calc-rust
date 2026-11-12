@@ -1,0 +1,26 @@
+{
+  "data_oferta": "12.11.2026",
+  "valabilitate": "30 de zile",
+  "obiect_titlu": "Cupă trapez pentru săpare șanțuri, conform proiect",
+  "obiect_descriere": "Proiectare și execuție cupă trapez pentru săpare șanțuri, conform proiectului transmis de beneficiar.",
+  "referinta": "Cerere din 10.11.2026",
+  "client": {
+    "nume": "S.C. Exemplu S.R.L.",
+    "cui": "RO12345678",
+    "adresa": "Baia Mare, jud. Maramureș",
+    "contact": "Ion Popescu"
+  },
+  "items": [
+    {
+      "denumire": "Cupă trapez săpare șanțuri",
+      "descriere": "Execuție conform proiect",
+      "um": "buc.",
+      "cant": 1,
+      "pret": 12000
+    }
+  ],
+  "cota_tva": 21,
+  "termen_zile": 15,
+  "conditii_plata": "50% avans la comandă, 50% la livrare",
+  "livrare": "Contracost"
+}

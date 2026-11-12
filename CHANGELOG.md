@@ -6,6 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [Unreleased]
+
+### Added
+- **Price Offer page** for the `oferta-typst` template. Every variable in `oferta.json` has a field, with its JSON key shown under the label.
+    - Sections: Offer, Client, Items (`items[]`, add and remove rows), Commercial terms, and a totals preview.
+    - The form state lives in the `OfertaState` global, so it survives switching tabs in the sidebar.
+    - Quantities and prices can be typed Romanian or English style (`7,5`, `7.5`, `1.234,56`). Each row's value and the totals use the template's rounding and `12.000,00` formatting. A value that isn't a number shows `?`.
+    - **Open JSON** / **Save JSON** read and write the template's data format. Optional fields left empty are omitted, so the template uses its own defaults (`30 de zile`, `Contracost`, 21% VAT). Whole numbers are written as integers and `termen_zile` stays text for ranges like `10-15`.
+    - Saving is refused when a quantity, price or VAT rate isn't a number. Empty required fields only trigger a warning after the save.
+    - **Generate PDF** renders the offer with the `oferta-typst` template inside the app, so Typst doesn't need to be installed. The template, logo, stamp and Liberation Sans fonts are compiled into the executable; change anything in `oferta-typst/` and rebuild to pick it up.
+        - The form goes in as the JSON string `sys.inputs.data`, the same input as the CLI's `--input data=...`. The output is pixel-identical to `typst compile`.
+        - The PDF is suggested next to the open JSON file with the same name, otherwise as `oferta <client> <date>.pdf`.
+        - Rendering runs on a background thread. The button shows "Generating…" until it's done.
+    - Logic and serde mapping in `src/oferta/`, with unit tests, including a round trip of `oferta-typst/oferta.json` and three PDF renders.
+- `typst`, `typst-as-lib`, `typst-layout` and `typst-pdf` dependencies for rendering the PDF.
+
+### Notes
+- **New** clears the form without asking.
+- Generate PDF doesn't save the JSON. Use Save JSON as well if you want to edit the offer later.
+- Writing the PDF fails while the file is open in a viewer that locks it, such as Acrobat.
+- The `oferta-typst/` folder must be committed, because the build embeds files from it.
+- Typst 0.15 needs Rust 1.92 or newer.
+
 ## [0.5.2] - 2026-10-27
 
 ### Added

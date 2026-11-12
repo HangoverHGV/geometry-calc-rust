@@ -1,0 +1,31 @@
+{
+  "data_oferta": "12.11.2026",
+  "valabilitate": "30 de zile",
+  "obiect_titlu": "Cupa trapez",
+  "obiect_descriere": "Cupa de trapez",
+  "referinta": "VDN101201",
+  "client": {
+    "nume": "S.C. Selina",
+    "cui": "Ro17785714"
+  },
+  "items": [
+    {
+      "denumire": "Cupa Trapezoidala",
+      "descriere": "Execitie conform Proiect",
+      "um": "buc.",
+      "cant": 1,
+      "pret": 12000
+    },
+    {
+      "denumire": "Cupa trapez executie",
+      "descriere": "conf. Proiect",
+      "um": "buc.",
+      "cant": 1,
+      "pret": 150
+    }
+  ],
+  "cota_tva": 21,
+  "termen_zile": 20,
+  "conditii_plata": "50",
+  "livrare": "Contracost"
+}

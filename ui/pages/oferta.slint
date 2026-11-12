@@ -1,0 +1,449 @@
+import {
+    Button,
+    GroupBox,
+    HorizontalBox,
+    LineEdit,
+    Palette,
+    ScrollView,
+    TextEdit,
+} from "std-widgets.slint";
+
+import { Page } from "../components/page.slint";
+import { ClearButton } from "../components/clear_button.slint";
+import { AppStyles } from "../assets/styles.slint";
+import { OfertaState } from "../globals.slint";
+
+// Field caption with the oferta.json key it maps to underneath,
+// e.g. "Date *" over `data_oferta`.
+component FieldLabel inherits VerticalLayout {
+    in property <string> text;
+    in property <string> key;
+    in property <bool> required: false;
+    in property <TextHorizontalAlignment> align: left;
+
+    alignment: center;
+    spacing: 0px;
+
+    Text {
+        text: root.text + (root.required ? " *" : "");
+        horizontal-alignment: root.align;
+        font-size: AppStyles.app-font-size;
+        font-family: AppStyles.app-font-family;
+        font-weight: AppStyles.app-font-weight;
+        font-italic: AppStyles.app-font-italic;
+    }
+
+    if root.key != "": Text {
+        text: root.key;
+        horizontal-alignment: root.align;
+        font-size: AppStyles.app-font-size * 0.7;
+        font-family: "monospace";
+        color: Palette.foreground.transparentize(0.45);
+    }
+}
+
+component Field inherits LineEdit {
+    font-size: AppStyles.app-font-size;
+    font-family: AppStyles.app-font-family;
+    font-italic: AppStyles.app-font-italic;
+}
+
+component TotalRow inherits HorizontalLayout {
+    in property <string> label;
+    in property <string> value;
+    in property <bool> emphasis: false;
+
+    spacing: 12px;
+
+    Text {
+        text: root.label;
+        vertical-alignment: center;
+        font-size: AppStyles.app-font-size;
+        font-weight: root.emphasis ? 700 : AppStyles.app-font-weight;
+    }
+
+    Text {
+        text: root.value + " RON";
+        horizontal-alignment: right;
+        vertical-alignment: center;
+        font-size: root.emphasis ? AppStyles.app-font-size + 3px : AppStyles.app-font-size;
+        font-weight: 700;
+        color: root.emphasis ? #C96A1B : Palette.foreground;
+    }
+}
+
+export component OfertaPage inherits Page {
+    title: "Price Offer";
+
+    // Column widths of the items table, shared by the header and the rows.
+    property <length> col-nr: 32px;
+    property <length> col-text-min: 100px; // Name / Details shrink to this
+    property <length> col-um: 70px;
+    property <length> col-cant: 70px;
+    property <length> col-pret: 110px;
+    property <length> col-valoare: 120px;
+    property <length> col-remove: 40px;
+    property <length> col-spacing: 6px;
+
+    HorizontalBox {
+        alignment: start;
+        padding: 0px;
+        spacing: 5px;
+
+        Button {
+            text: "New";
+            clicked => { OfertaState.new-oferta(); }
+        }
+
+        Button {
+            text: "Open JSON";
+            clicked => { OfertaState.load-json(); }
+        }
+
+        Button {
+            text: "Save JSON";
+            clicked => { OfertaState.save-json(); }
+        }
+
+        Button {
+            text: OfertaState.generating-pdf ? "Generating…" : "Generate PDF";
+            primary: true;
+            enabled: !OfertaState.generating-pdf;
+            clicked => { OfertaState.generate-pdf(); }
+        }
+
+        Text {
+            text: OfertaState.loaded-file == "" ? "New offer, not saved yet" : OfertaState.loaded-file;
+            vertical-alignment: center;
+            overflow: elide;
+            font-size: AppStyles.app-font-size;
+            color: Palette.foreground.transparentize(0.4);
+        }
+    }
+
+    ScrollView {
+        vertical-stretch: 1;
+
+        VerticalLayout {
+            alignment: start; // don't spread spare height when the window is tall
+            padding-right: 14px; // keep clear of the scrollbar
+            spacing: 10px;
+
+            HorizontalLayout {
+                spacing: 10px;
+
+                // ---------- Offer ----------
+                GroupBox {
+                    title: "Offer";
+                    horizontal-stretch: 1;
+
+                    VerticalLayout {
+                        alignment: start;
+
+                        GridLayout {
+                            spacing: 6px;
+
+                            Row {
+                                FieldLabel { text: "Date"; key: "data_oferta"; required: true; }
+                                HorizontalLayout {
+                                    spacing: 5px;
+                                    Field {
+                                        text <=> OfertaState.data-oferta;
+                                        placeholder-text: "zz.ll.aaaa";
+                                    }
+                                    Button {
+                                        text: "Today";
+                                        horizontal-stretch: 0;
+                                        clicked => { OfertaState.set-today(); }
+                                    }
+                                }
+                            }
+
+                            Row {
+                                FieldLabel { text: "Valid for"; key: "valabilitate"; }
+                                Field {
+                                    text <=> OfertaState.valabilitate;
+                                    placeholder-text: "30 de zile";
+                                }
+                            }
+
+                            Row {
+                                FieldLabel { text: "Title"; key: "obiect_titlu"; required: true; }
+                                Field {
+                                    text <=> OfertaState.obiect-titlu;
+                                    placeholder-text: "Line under OFERTĂ DE PREȚ";
+                                }
+                            }
+
+                            Row {
+                                FieldLabel { text: "Description"; key: "obiect_descriere"; required: true; }
+                                TextEdit {
+                                    text <=> OfertaState.obiect-descriere;
+                                    wrap: word-wrap;
+                                    min-height: 80px;
+                                    font-size: AppStyles.app-font-size;
+                                }
+                            }
+
+                            Row {
+                                FieldLabel { text: "Reference"; key: "referinta"; }
+                                Field {
+                                    text <=> OfertaState.referinta;
+                                    placeholder-text: "optional, e.g. Cerere din 10.11.2026";
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // ---------- Client ----------
+                GroupBox {
+                    title: "Client";
+                    horizontal-stretch: 1;
+
+                    VerticalLayout {
+                        alignment: start;
+
+                        GridLayout {
+                            spacing: 6px;
+
+                            Row {
+                                FieldLabel { text: "Name"; key: "client.nume"; required: true; }
+                                Field {
+                                    text <=> OfertaState.client-nume;
+                                    placeholder-text: "S.C. Exemplu S.R.L.";
+                                }
+                            }
+
+                            Row {
+                                FieldLabel { text: "Tax ID"; key: "client.cui"; }
+                                Field {
+                                    text <=> OfertaState.client-cui;
+                                    placeholder-text: "RO12345678";
+                                }
+                            }
+
+                            Row {
+                                FieldLabel { text: "Address"; key: "client.adresa"; }
+                                Field {
+                                    text <=> OfertaState.client-adresa;
+                                    placeholder-text: "Localitate, jud.";
+                                }
+                            }
+
+                            Row {
+                                FieldLabel { text: "Contact"; key: "client.contact"; }
+                                Field {
+                                    text <=> OfertaState.client-contact;
+                                    placeholder-text: "În atenția";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // ---------- Items ----------
+            GroupBox {
+                title: "Items  ·  items[]";
+
+                VerticalLayout {
+                    spacing: 4px;
+
+                    HorizontalLayout {
+                        spacing: root.col-spacing;
+
+                        FieldLabel { width: root.col-nr; text: "Nr."; align: center; }
+                        FieldLabel { horizontal-stretch: 2; min-width: root.col-text-min; text: "Name"; key: "denumire"; required: true; }
+                        FieldLabel { horizontal-stretch: 2; min-width: root.col-text-min; text: "Details"; key: "descriere"; }
+                        FieldLabel { width: root.col-um; text: "U.M."; key: "um"; required: true; }
+                        FieldLabel { width: root.col-cant; text: "Qty"; key: "cant"; required: true; align: right; }
+                        FieldLabel { width: root.col-pret; text: "Unit price"; key: "pret"; required: true; align: right; }
+                        FieldLabel { width: root.col-valoare; text: "Value"; key: "cant × pret"; align: right; }
+                        Rectangle { width: root.col-remove; }
+                    }
+
+                    Rectangle {
+                        height: 1px;
+                        background: Palette.border;
+                    }
+
+                    for item[i] in OfertaState.items: HorizontalLayout {
+                        spacing: root.col-spacing;
+
+                        Text {
+                            width: root.col-nr;
+                            text: i + 1;
+                            horizontal-alignment: center;
+                            vertical-alignment: center;
+                            font-size: AppStyles.app-font-size;
+                        }
+
+                        Field {
+                            horizontal-stretch: 2;
+                            min-width: root.col-text-min;
+                            text: item.denumire;
+                            placeholder-text: "Name";
+                            edited(t) => { item.denumire = t; }
+                        }
+
+                        Field {
+                            horizontal-stretch: 2;
+                            min-width: root.col-text-min;
+                            text: item.descriere;
+                            placeholder-text: "optional";
+                            edited(t) => { item.descriere = t; }
+                        }
+
+                        Field {
+                            width: root.col-um;
+                            text: item.um;
+                            placeholder-text: "buc.";
+                            edited(t) => { item.um = t; }
+                        }
+
+                        Field {
+                            width: root.col-cant;
+                            text: item.cant;
+                            horizontal-alignment: right;
+                            placeholder-text: "1";
+                            edited(t) => {
+                                item.cant = t;
+                                OfertaState.recalculate();
+                            }
+                        }
+
+                        Field {
+                            width: root.col-pret;
+                            text: item.pret;
+                            horizontal-alignment: right;
+                            placeholder-text: "0,00";
+                            edited(t) => {
+                                item.pret = t;
+                                OfertaState.recalculate();
+                            }
+                        }
+
+                        Text {
+                            width: root.col-valoare;
+                            text: item.valoare;
+                            horizontal-alignment: right;
+                            vertical-alignment: center;
+                            font-size: AppStyles.app-font-size;
+                            font-weight: 700;
+                        }
+
+                        ClearButton {
+                            // ClearButton sets min-width: 75px, so pin it with min/max instead of width
+                            min-width: root.col-remove;
+                            max-width: root.col-remove;
+                            text: "X";
+                            clicked => { OfertaState.remove-item(i); }
+                        }
+                    }
+
+                    HorizontalLayout {
+                        alignment: start;
+                        padding-top: 4px;
+
+                        Button {
+                            text: "Add row";
+                            clicked => { OfertaState.add-item(); }
+                        }
+                    }
+                }
+            }
+
+            HorizontalLayout {
+                spacing: 10px;
+
+                // ---------- Commercial terms ----------
+                GroupBox {
+                    title: "Commercial terms";
+                    horizontal-stretch: 1;
+
+                    VerticalLayout {
+                        alignment: start;
+
+                        GridLayout {
+                            spacing: 6px;
+
+                            Row {
+                                FieldLabel { text: "VAT rate (%)"; key: "cota_tva"; }
+                                Field {
+                                    text <=> OfertaState.cota-tva;
+                                    placeholder-text: "21";
+                                    edited => { OfertaState.recalculate(); }
+                                }
+                            }
+
+                            Row {
+                                FieldLabel { text: "Lead time (working days)"; key: "termen_zile"; }
+                                Field {
+                                    text <=> OfertaState.termen-zile;
+                                    placeholder-text: "15 sau 10-15";
+                                }
+                            }
+
+                            Row {
+                                FieldLabel { text: "Payment terms"; key: "conditii_plata"; }
+                                Field {
+                                    text <=> OfertaState.conditii-plata;
+                                    placeholder-text: "50% avans la comandă, 50% la livrare";
+                                }
+                            }
+
+                            Row {
+                                FieldLabel { text: "Delivery"; key: "livrare"; }
+                                Field {
+                                    text <=> OfertaState.livrare;
+                                    placeholder-text: "Contracost";
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // ---------- Totals ----------
+                GroupBox {
+                    title: "Totals (preview)";
+                    horizontal-stretch: 0;
+                    min-width: 300px;
+
+                    VerticalLayout {
+                        alignment: start;
+                        spacing: 8px;
+
+                        TotalRow {
+                            label: "Subtotal (excl. VAT)";
+                            value: OfertaState.total-fara-tva;
+                        }
+
+                        TotalRow {
+                            label: "VAT (" + (OfertaState.cota-tva == "" ? "21" : OfertaState.cota-tva) + "%)";
+                            value: OfertaState.total-tva;
+                        }
+
+                        Rectangle {
+                            height: 1px;
+                            background: Palette.border;
+                        }
+
+                        TotalRow {
+                            label: "Total due";
+                            value: OfertaState.total-de-plata;
+                            emphasis: true;
+                        }
+
+                        Text {
+                            text: "The PDF template recalculates these; they are not saved to the JSON.";
+                            wrap: word-wrap;
+                            font-size: AppStyles.app-font-size * 0.75;
+                            color: Palette.foreground.transparentize(0.45);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

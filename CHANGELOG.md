@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [Unreleased]
+## [1.0.0] - 2026-11-12
 
 ### Added
 - **Price Offer page** for the `oferta-typst` template. Every variable in `oferta.json` has a field, with its JSON key shown under the label.
@@ -26,7 +26,6 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - **New** clears the form without asking.
 - Generate PDF doesn't save the JSON. Use Save JSON as well if you want to edit the offer later.
 - Writing the PDF fails while the file is open in a viewer that locks it, such as Acrobat.
-- The `oferta-typst/` folder must be committed, because the build embeds files from it.
 - Typst 0.15 needs Rust 1.92 or newer.
 
 ## [0.5.2] - 2026-10-27

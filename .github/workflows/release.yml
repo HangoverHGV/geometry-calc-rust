@@ -70,12 +70,24 @@ jobs:
           name: windows-installer
           path: release-assets/
 
-      # Publish files and automatically load release notes from release/vX.Y.Z.md
+      # Release notes live in a folder per minor version:
+      # tag v1.0.0 -> release/versions/1.0/v1.0.0.md
+      - name: Find release notes
+        id: notes
+        run: |
+          v="${GITHUB_REF_NAME#v}"
+          path="release/versions/${v%.*}/${GITHUB_REF_NAME}.md"
+          if [ ! -f "$path" ]; then
+            echo "::error::Release notes not found: $path"
+            exit 1
+          fi
+          echo "path=$path" >> "$GITHUB_OUTPUT"
+
       - name: Publish files to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             release-assets/cad-helper-3d-setup.exe
-          body_path: release/versions/${{ github.ref_name }}.md
+          body_path: ${{ steps.notes.outputs.path }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

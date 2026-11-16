@@ -5,6 +5,7 @@ use winprint::ticket::{
     PrintTicket, PrintTicketBuilder,
 };
 use crate::PrintOrientation;
+use super::worker::{FailedFile, PrintJob, PrintReport};
 
 pub fn get_all_printers() -> Result<Option<Vec<String>>, String> {
     let devices = match PrinterDevice::all() {
@@ -51,39 +52,44 @@ fn build_ticket(
         .map_err(|e| format!("Failed to build print ticket: {:?}", e))
 }
 
-pub fn print_files(
-    printer_name: &str,
-    files: Vec<String>,
-    orientation: PrintOrientation,
-) -> Result<usize, String> {
-    let devices = PrinterDevice::all()
-        .map_err(|e| format!("Failed to fetch Windows printers: {}", e))?;
+/// Prints a whole job. Runs inside the `--print-worker` process (see
+/// `worker.rs`), never on the UI thread.
+pub fn print_job(job: &PrintJob) -> PrintReport {
+    let orientation = if job.landscape {
+        PrintOrientation::Landscape
+    } else {
+        PrintOrientation::Portrait
+    };
 
-    let selected_device = devices
-        .into_iter()
-        .find(|dev| dev.name() == printer_name)
-        .ok_or_else(|| format!("Printer '{}' not found in Windows devices.", printer_name))?;
+    let devices = match PrinterDevice::all() {
+        Ok(devices) => devices,
+        Err(e) => return PrintReport::job_error(format!("Failed to fetch Windows printers: {}", e)),
+    };
 
-    let ticket = build_ticket(&selected_device, orientation)?;
+    let Some(selected_device) = devices.into_iter().find(|dev| dev.name() == job.printer) else {
+        return PrintReport::job_error(format!(
+            "Printer '{}' not found in Windows devices.",
+            job.printer
+        ));
+    };
+
+    let ticket = match build_ticket(&selected_device, orientation) {
+        Ok(ticket) => ticket,
+        Err(e) => return PrintReport::job_error(e),
+    };
 
     let pdf_printer = PdfiumPrinter::new(selected_device);
-    let mut failed_count = 0;
-    let total_files = files.len();
+    let mut report = PrintReport::default();
 
-    for file in &files {
-        let path = Path::new(file);
-        if let Err(e) = pdf_printer.print(path, ticket.clone()) {
-            eprintln!("Failed to print {}: {:?}", file, e);
-            failed_count += 1;
+    for file in &job.files {
+        match pdf_printer.print(Path::new(file), ticket.clone()) {
+            Ok(_) => report.printed += 1,
+            Err(e) => report.failed.push(FailedFile {
+                file: file.clone(),
+                error: format!("{:?}", e),
+            }),
         }
     }
 
-    if failed_count > 0 {
-        Err(format!(
-            "Completed with errors: {} out of {} files failed to print.",
-            failed_count, total_files
-        ))
-    } else {
-        Ok(total_files)
-    }
+    report
 }

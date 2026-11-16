@@ -62,6 +62,8 @@ export component AppWindow inherits Window {
     in-out property <[PrinterItem]> printers-list;
     in-out property <string> active-printer: "";
     in-out property <PrintOrientation> print-orientation: PrintOrientation.landscape;
+    // True while a print worker process is running a batch.
+    in-out property <bool> printing: false;
     //                  ###
 
     //Voronoi
@@ -92,7 +94,12 @@ export component AppWindow inherits Window {
         root.message-text = text;
         show-message-box = true;
 
-        hide-timer.running = true;
+        // Give every message its own 2 s, even if the previous one is still showing.
+        if hide-timer.running {
+            hide-timer.restart();
+        } else {
+            hide-timer.running = true;
+        }
     }
 
     hide-timer := Timer {
@@ -108,7 +115,8 @@ export component AppWindow inherits Window {
         Menu {
             title: "Files";
             MenuItem {
-                title: "Files";
+                title: root.printing ? "Printing..." : "Files";
+                enabled: !root.printing;
                 activated => {
                     root.open-file-dialog(root.active-printer);
                 }

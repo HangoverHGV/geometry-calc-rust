@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [Unreleased]
+
+### Changed
+- **Batch printing no longer freezes the app.** Each print batch now runs in a separate worker process, a second copy of the app started with `--print-worker`.
+    - The app sends the job (printer, orientation, files) to the worker as JSON on stdin and reads a one-line JSON report from its stdout. A background thread waits for the worker, so the window stays responsive while pdfium renders and spools the pages.
+    - The worker starts with `CREATE_NO_WINDOW` and never opens a window. If the app is closed mid-batch, the worker still finishes the batch.
+    - While a batch is printing, the print menu item shows "Printing..." and is disabled. Starting a second batch shows "Still printing the previous batch." instead, so two batches don't interleave in the queue.
+    - When files fail, the message now names up to three of them instead of only giving a count. Every failure and its error still goes to the console.
+    - If the worker crashes, the app reports "The print worker stopped unexpectedly" with its exit code instead of hanging.
+- `print_files` is replaced by `print_job` (inside the worker). Process handling and the JSON protocol live in `src/batch_printing/worker.rs`, with unit tests.
+
+### Fixed
+- A message that arrived while another was still showing was hidden early. It used whatever was left of the previous message's 2 seconds. Each message now gets its full 2 seconds (`Timer.restart()`).
+
 ## [1.0.0] - 2026-11-12
 
 ### Added

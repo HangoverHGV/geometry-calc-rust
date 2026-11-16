@@ -17,6 +17,12 @@ mod oferta;
 slint::include_modules!();
 
 fn main() -> Result<(), Box<dyn Error>> {
+    // Print jobs run in a second copy of this exe (`--print-worker`) so
+    // pdfium and the spooler never block the UI. No window in that mode.
+    if std::env::args_os().nth(1).is_some_and(|arg| arg == batch_printing::WORKER_ARG) {
+        std::process::exit(batch_printing::run_worker());
+    }
+
     let ui = AppWindow::new()?;
 
     // Init
